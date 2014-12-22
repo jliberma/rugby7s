@@ -1,0 +1,848 @@
+MATCH,HALF,TEAM,OPP,TYPE,LOCATION,RETAINED,NOTE
+1,1,ENG,ARG,Restart,11,No,PEN: illegal ctc with receiver
+1,1,ARG,ENG,PK,5,No,"Kicked, did not find touch"
+1,1,ARG,ENG,Restart,11,No,
+1,1,ARG,ENG,Scrum,11,Yes,Scrum: knock on
+1,1,ARG,ENG,PK,11,Yes,PEN: kicked to touch
+1,1,ARG,ENG,Line out,13,Yes,
+1,1,ARG,ENG,Scrum,13,Yes,Scrum: knock on
+1,1,ENG,ARG,Scrum,2,Yes,
+1,1,ENG,ARG,Restart,11,No,
+1,1,ENG,ARG,PK,8,Yes,PEN: bc not releasing; PK: tap
+1,2,ARG,ENG,Restart,11,Yes,
+1,2,ARG,ENG,PK,11,Yes,PEN: collapsing ruck; PK: touch kick 
+1,2,ARG,ENG,Line out,13,Yes,
+1,2,ARG,ENG,Restart,10,No,
+1,2,ENG,ARG,Restart,12,No,
+1,2,ARG,ENG,PK,11,Yes,PEN: bc not releasing; PK: tap
+1,2,ARG,ENG,Restart,13,No,
+1,2,ENG,ARG,Restart,12,No,
+1,2,ARG,ENG,PK,8,No,PEN: hands in ruck; PK: touch kick
+2,1,CAN,USA,Restart,11,No,
+2,1,USA,CAN,PK,4,Yes,PEN: tackler not rolling away; PK: tap
+2,1,CAN,USA,Scrum,8,Yes,
+2,1,USA,CAN,Scrum,3,Yes,
+2,1,CAN,USA,PK,8,Yes,PEN: bc not releasing; PK: tap
+2,1,USA,CAN,PK,7,Yes,PEN: bc not releasing; PK: tap
+2,1,USA,CAN,Restart,13,No,
+2,1,CAN,USA,PK,6,Yes,PEN: bc not releasing; PK: touch kick
+2,1,CAN,USA,Line out,12,Yes,
+2,1,CAN,USA,PK,12,Yes,PEN: illegal ctc with receiver; PK: tap
+2,2,USA,CAN,Restart,10,Yes,
+2,2,USA,CAN,Restart,10,Yes,
+2,2,CAN,USA,Line out,9,Yes,
+2,2,USA,CAN,PK,1,Yes,PEN: hands in ruck; PK: tap
+2,2,CAN,USA,PK,14,Yes,PEN: bc not releasing; PK: tap
+2,2,CAN,USA,Restart,10,Yes,
+2,2,CAN,USA,Restart,11,No,
+2,2,USA,CAN,Scrum,8,Yes,
+3,1,FRA,NZL,Restart,10,Yes,
+3,1,FRA,NZL,Scrum,10,Yes,
+3,1,NZL,FRA,Scrum,5,Yes,
+3,1,NZL,FRA,PK,10,Yes,PEN: off side; PK: tap
+3,1,NZL,FRA,Restart,12,No,
+3,1,FRA,NZL,PK,10,Yes,PEN: bc not releasing; PK: tap
+3,1,FRA,NZL,PK,12,Yes,PEN: side entry; PK: tap
+3,1,FRA,NZL,PK,11,Yes,PEN: side entry; PK: touch kick
+3,1,FRA,NZL,Line out,13,Yes,
+3,1,NZL,FRA,PK,2,Yes,PEN: bc not releasing; PK: tap
+3,1,NZL,FRA,Restart,13,No,
+3,1,NZL,FRA,PK,14,Yes,PEN: bc not releasing; PK:quick tap
+3,2,NZL,FRA,Restart,10,No,
+3,2,FRA,NZL,Restart,7,No,Restart not 10
+3,2,NZL,FRA,FK,8,Yes,FK: restart not 10
+3,2,FRA,NZL,PK,3,Yes,PEN: side entry; PK: tap
+3,2,NZL,FRA,PK,14,Yes,PEN: bc not releasing; PK: tap
+3,2,NZL,FRA,Restart,10,No,
+3,2,NZL,FRA,PK,11,Yes,PEN: bc not releasing; PK:quick tap
+3,2,NZL,FRA,Restart,11,No,
+3,2,NZL,FRA,Scrum,11,Yes,
+4,1,SAM,JPN,Restart,10,No,
+4,1,JPN,SAM,PK,11,Yes,PEN: off side; PK: tap
+4,1,JPN,SAM,Restart,10,No,
+4,1,JPN,SAM,Scrum,11,Yes,Scrum: knock on
+4,1,SAM,JPN,Restart,11,No,
+4,1,JPN,SAM,Scrum,5,Yes,Scrum: knock on
+4,1,SAM,JPN,PK,14,Yes,PEN: diving over; PK: tap
+4,1,SAM,JPN,Restart,11,No,
+4,1,SAM,JPN,Scrum,8,Yes,Scrum: knock on
+4,2,JPN,SAM,Restart,10,Yes,
+4,2,SAM,JPN,PK,5,Yes,PEN: bc not releasing; PK: tap
+4,2,SAM,JPN,Restart,10,No,
+4,2,SAM,JPN,Restart,11,No,
+4,2,JPN,SAM,PK,6,Yes,PEN: bc not releasing; PK: tap
+4,2,JPN,SAM,Scrum,9,Yes,Scrum: knock on
+4,2,JPN,SAM,FK,9,Yes,FK: scrum infraction
+4,2,SAM,JPN,Restart,10,No,
+4,2,JPN,SAM,PK,2,Yes,PEN: bc not releasing; PK: tap
+5,1,WAL,RSA,Restart,9,No,Restart: not 10 but played
+5,1,RSA,WAL,Line out,3,Yes,
+5,1,WAL,RSA,Line out,7,Yes,
+5,1,RSA,WAL,PK,12,Yes,PEN: side entry; PK: touch kick
+5,1,RSA,WAL,Line out,15,No,Line out: not straight
+5,1,WAL,RSA,Scrum,3,Yes,
+5,1,RSA,WAL,PK,13,Yes,PEN: off side; PK: tap
+5,1,RSA,WAL,PT,14,,PT: intentional knock in goal
+5,1,RSA,WAL,Restart,15,No,
+5,1,RSA,WAL,Scrum,4,Yes,Scrum: knock on
+5,2,RSA,WAL,Restart,14,No,
+5,2,WAL,RSA,PK,5,Yes,PEN: off side; PK: tap
+5,2,WAL,RSA,Restart,10,No,
+5,2,RSA,WAL,PK,6,Yes,PEN: tackler not rolling away; PK:kick to touch
+5,2,RSA,WAL,Line out,12,Yes,
+5,2,RSA,WAL,Restart,9,No,Restart not 10
+5,2,WAL,RSA,FK,8,Yes,FK: restart not 10
+5,2,WAL,RSA,Restart,12,No,
+5,2,WAL,RSA,PK,12,Yes,PEN: bc not releasing; PK: tap
+5,2,RSA,WAL,PK,1,Yes,PEN: bc not releasing; PK: touch kick
+5,2,RSA,WAL,Line out,4,Yes,
+6,1,ASM,KEN,Restart,10,No,
+6,1,KEN,ASM,Scrum,5,Yes,
+6,1,KEN,ASM,Restart,11,No,
+6,1,KEN,ASM,PK,11,Yes,PEN: off side; PK: tap
+6,1,KEN,ASM,Scrum,14,Yes,Scrum: knock on
+6,1,KEN,ASM,Line out,6,Yes,Line out: quick
+6,1,KEN,ASM,Restart,10,Yes,
+6,1,ASM,KEN,Line out,3,No,
+6,1,KEN,ASM,Restart,10,Yes,
+6,1,ASM,SAM,PK,7,Yes,PEN: diving over; PK: tap
+6,2,KEN,ASM,Restart,10,No,
+6,2,ASM,KEN,PK,1,Yes,PEN: side entry; PK: tap
+6,2,ASM,KEN,Scrum,7,Yes,
+6,2,ASM,KEN,PK,7,Yes,PEN: hands in ruck; PK:quick tap
+6,2,KEN,ASM,PK,7,Yes,PEN: bc not releasing; PK: tap
+6,2,KEN,ASM,Restart,11,No,
+6,2,ASM,KEN,PK,2,Yes,PEN: bc not releasing; PK:quick tap
+6,2,KEN,ASM,PK,11,Yes,PEN: diving over; PK: tap
+6,2,KEN,ASM,Restart,10,No,
+6,2,ASM,KEN,Scrum,7,Yes,
+6,2,ASM,KEN,PK,7,Yes,PEN: off side; PK: tap
+7,1,FIJ,SCO,Restart,10,Yes,
+7,1,SCO,FIJ,Scrum,2,Yes,
+7,1,FIJ,SCO,PK,13,Yes,PEN: diving over; PK: tap
+7,1,FIJ,SCO,Restart,11,No,
+7,1,FIJ,SCO,Line out,6,Yes,Line out: quick
+7,1,SCO,FIJ,Scrum,2,Yes,Scrum: knock on
+7,1,FIJ,SCO,Restart,10,Yes,
+7,1,SCO,FIJ,PK,3,Yes,PEN: diving over; PK: tap
+7,2,SCO,FIJ,Restart,10,Yes,
+7,2,FIJ,SCO,PK,4,Yes,PEN: bc not releasing; PK: tap
+7,2,FIJ,SCO,Restart,10,No,
+7,2,FIJ,SCO,PK,10,Yes,PEN: bc not releasing; PK: tap
+7,2,FIJ,SCO,Restart,8,No,
+7,2,SCO,FIJ,PK,8,Yes,PEN: hands in ruck; PK:quick tap
+7,2,SCO,FIJ,Line out,9,Yes,
+7,2,FIJ,SCO,Restart,12,Yes,
+7,2,FIJ,SCO,Restart,11,Yes,
+7,2,SCO,FIJ,PK,15,Yes,PEN: off side; PK: tap
+7,2,SCO,FIJ,PK,1,Yes,PEN: playing the man; PK: tap
+8,1,AUS,POR,Restart,12,No,
+8,1,AUS,POR,Scrum,9,Yes,Scrum: held up maul
+8,1,AUS,POR,PK,12,Yes,PEN: hands in ruck; PK: tap
+8,1,AUS,POR,PK,15,Yes,PEN: high tackle; PK: tap
+8,1,AUS,POR,Restart,10,Yes,
+8,1,AUS,POR,PK,10,Yes,PEN: not rolling away; PK: tap
+8,1,AUS,POR,Restart,9,No,Restart not 10
+8,1,POR,AUS,FK,8,Yes,Restart not 10
+8,1,POR,AUS,PK,12,Yes,PEN: bc not releasing; PK: tap
+8,1,AUS,POR,Scrum,3,Yes,Scrum: held up maul
+8,1,AUS,POR,PK,6,Yes,PEN: tackler not rolling away; PK: touch kick
+8,1,AUS,POR,Line out,9,Yes,
+8,2,POR,AUS,Restart,11,Yes,
+8,2,POR,AUS,Scrum,8,Yes,Scrum: knock on
+8,2,POR,AUS,PK,8,Yes,PEN: kicked through scrum; PK: tap
+8,2,AUS,POR,Line out,6,Yes,
+8,2,AUS,POR,Restart,10,Yes,
+8,2,AUS,POR,Scrum,13,Yes,Scrum: knock on
+8,2,AUS,POR,PK,14,Yes,PEN: hands in ruck; PK: tap
+8,2,AUS,POR,Restart,12,No,
+8,2,POR,AUS,Scrum,4,Yes,Scrum: knock on
+9,1,ENG,USA,Restart,11,No,
+9,1,ENG,USA,PK,9,Yes,PEN: bc not releasing; PK: tap
+9,1,ENG,USA,PK,12,Yes,PEN: hands in ruck; PK: tap
+9,1,ENG,USA,Line out,13,No,Line out: not straight
+9,1,USA,ENG,Scrum,3,Yes,
+9,1,USA,ENG,PK,5,Yes,PEN: tackler not releasing; PK: tap
+9,1,USA,ENG,PK,8,Yes,PEN: off side; PK: tap
+9,1,ENG,USA,PK,1,Yes,PEN: bc not releasing; PK: touch kick
+9,1,ENG,USA,Line out,4,Yes,
+9,1,USA,ENG,Line out,4,Yes,
+9,2,USA,ENG,Restart,12,Yes,
+9,2,ENG,USA,PK,3,Yes,PEN: diving over; PK: touch
+9,2,ENG,USA,Line out,6,Yes,
+9,2,USA,ENG,Scrum,8,Yes,Scrum: knock on
+9,2,USA,ENG,PK,8,Yes,PEN: bc not releasing; PK: tap
+9,2,ENG,USA,PK,10,Yes,PEN: side entry; PK: tap
+9,2,USA,ENG,Restart,12,No,
+9,2,ENG,USA,Line out,10,No,
+9,2,USA,ENG,PK,8,Yes,PEN: off side; PK: tap
+9,2,ENG,USA,PK,4,Yes,PEN: diving over; PK: tap
+9,2,ENG,USA,Restart,12,No,Restart: direct to touch
+9,2,USA,ENG,FK,8,Yes,
+9,2,ENG,USA,PK,8,Yes,PEN: obstruction; PK: touch
+10,1,CAN,ARG,Restart,13,No,
+10,1,CAN,ARG,PK,13,Yes,PEN: bc not releasing; PK: tap
+10,1,CAN,ARG,Restart,10,Yes,
+10,1,CAN,ARG,Scrum,14,Yes,Scrum: 5m scrum
+10,1,CAN,ARG,Restart,13,No,
+10,1,ARG,CAN,PK,6,Yes,PEN: tackler not rolling away; PK: tap
+10,1,ARG,CAN,Restart,11,No,
+10,1,CAN,ARG,Scrum,5,Yes,Scrum: knock on
+10,1,CAN,ARG,PK,5,No,PEN: off side; PK: touch kick
+10,2,ARG,CAN,Restart,11,No,
+10,2,ARG,CAN,PK,2,Yes,PEN: hands in ruck; PK: tap
+10,2,ARG,CAN,Restart,12,No,
+10,2,CAN,ARG,PK,5,Yes,PEN: side entry; PK: touch kick
+10,2,CAN,ARG,Line out,7,Yes,
+10,2,ARG,CAN,Scrum,7,Yes,Scrum: knock on
+10,2,ARG,CAN,PK,7,Yes,PEN: pulling in scrum; PK: touch kick
+10,2,ARG,CAN,Line out,13,No,
+10,2,CAN,ARG,PK,3,Yes,PEN: not rolling away; PK: touch kick
+10,2,CAN,ARG,Line out,6,Yes,
+10,2,ARG,CAN,Scrum,12,Yes,
+10,2,ARG,CAN,PK,11,Yes,PEN: not rolling away; PK: touch kick
+10,2,ARG,CAN,Line out,15,Yes,
+11,1,NZL,JPN,Restart,11,No,
+11,1,NZL,JPN,Restart,10,Yes,
+11,1,NZL,JPN,Restart,11,No,
+11,1,NZL,JPN,Restart,10,No,
+11,1,JPN,NZL,PK,6,Yes,PEN: off side; PK: tap
+11,1,NZL,JPN,Restart,11,Yes,
+11,1,JPN,NZL,Restart,10,Yes,
+11,2,JPN,NZL,Scrum,10,Yes,
+11,2,JPN,NZL,PK,11,Yes,PEN: off side; PK: tap
+11,2,JPN,NZL,PK,11,Yes,PEN: diving over; PK: tap
+11,2,NZL,JPN,PK,2,Yes,PEN: collapsing ruck; PK: touch kick 
+11,2,NZL,JPN,Line out,9,No,
+11,2,NZL,JPN,Scrum,5,Yes,
+11,2,NZL,JPN,Restart,12,No,
+11,2,NZL,JPN,Restart,11,Yes,
+11,2,NZL,JPN,Restart,12,Yes,
+11,2,NZL,JPN,PK,12,Yes,PEN: high tackle; PK: tap
+12,1,SAM,FRA,Restart,10,No,
+12,1,FRA,SAM,Restart,10,No,
+12,1,FRA,SAM,Line out,3,Yes,
+12,1,FRA,SAM,Scrum,1,Yes,Scrum: knock on
+12,1,FRA,SAM,PK,1,Yes,PEN: bc not releasing; PK: tap
+12,1,SAM,FRA,PK,2,Yes,PEN: bc not releasing; PK: tap
+12,1,SAM,FRA,Scrum,2,Yes,Scrum: knock on
+12,1,SAM,FRA,Restart,10,No,
+12,1,SAM,FRA,Scrum,11,Yes,
+12,1,FRA,SAM,PK,5,Yes,PEN: side entry; PK: tap
+12,2,FRA,SAM,Restart,10,No,
+12,2,FRA,SAM,Restart,10,Yes,
+12,2,FRA,SAM,PK,9,Yes,PEN: bc not releasing; PK: tap
+12,2,SAM,FRA,Line out,10,No,
+12,2,SAM,FRA,Restart,11,No,
+12,2,SAM,FRA,Scrum,11,Yes,Scrum: knock on
+12,2,SAM,FRA,Scrum,9,Yes,Scrum: knock on
+12,2,SAM,FRA,FK,9,Yes,FK: foot up early in scrum
+13,1,RSA,ASM,Restart,12,No,
+13,1,RSA,ASM,Scrum,12,Yes,
+13,1,ASM,RSA,Scrum,5,No,
+13,1,RSA,ASM,PK,11,Yes,PEN: collapsing the scrum; PK: tap
+13,1,ASM,RSA,Scrum,5,No,
+13,1,RSA,ASM,FK,11,Yes,FK: foot up early in scrum
+13,1,RSA,ASM,Scrum,9,Yes,Scrum: restart knocked to touch
+13,1,RSA,ASM,Restart,12,Yes,
+13,1,RSA,ASM,Restart,12,No,
+13,2,ASM,RSA,Restart,11,No,
+13,2,RSA,ASM,Restart,12,No,Restart: direct to touch
+13,2,ASM,RSA,FK,8,Yes,FK: restart direct to touch
+13,2,RSA,ASM,PK,8,Yes,PEN: bc not releasing; PK: tap
+13,2,RSA,ASM,Restart,12,No,
+13,2,RSA,ASM,Restart,11,No,
+13,2,RSA,ASM,Restart,12,No,
+13,2,ASM,RSA,PK,6,Yes,PEN: tackler not releasing; PK: tap
+13,2,RSA,ASM,PK,12,Yes,PEN: bc not releasing; PK: tap
+13,2,RSA,ASM,PK,15,Yes,PEN: off side; PK: tap
+14,1,KEN,WAL,Restart,13,No,
+14,1,WAL,KEN,Restart,10,No,
+14,1,WAL,KEN,Restart,10,No,
+14,1,WAL,KEN,Scrum,9,Yes,
+14,1,WAL,KEN,PK,9,Yes,PEN: tackler not releasing; PK: tap
+14,1,KEN,WAL,PK,9,Yes,PEN: bc not releasing; PK: tap
+14,1,KEN,WAL,PK,12,Yes,PEN: tackler not releasing; PK: tap
+14,1,WAL,KEN,Line out,7,Yes,Line out: quick
+14,1,WAL,KEN,Scrum,2,Yes,
+14,2,WAL,KEN,Restart,10,Yes,
+14,2,WAL,KEN  ,Restart,11,No,
+14,2,KEN,WAL,Restart,11,No,
+14,2,KEN,WAL,PK,11,Yes,PEN: bc not releasing; PK: tap
+14,2,KEN,WAL,Restart,10,No,
+14,2,KEN,WAL,Scrum,10,Yes,Scrum: knock on restart
+14,2,KEN,WAL,Restart,10,Yes,
+14,2,KEN,WAL,Scrum,8,Yes,Scrum: knock on
+15,1,FIJ,POR,Restart,10,No,
+15,1,FIJ,POR,Line out,10,Yes,
+15,1,FIJ,POR,PK,15,Yes,PEN: high tackle; PK: tap
+15,1,POR,FIJ,Scrum,2,Yes,Scrum: fwd pass
+15,1,FIJ,POR,PK,13,Yes,PEN: offside; PK: tap
+15,1,FIJ,POR,Restart,10,No,
+15,1,FIJ,POR,Scrum,12,Yes,Scrum: knock on
+15,1,FIJ,POR,Restart,10,Yes,
+15,1,POR,FIJ,Scrum,5,Yes,Scrum: knock on
+15,1,POR,FIJ,PK,5,Yes,PEN: offside; PK: tap
+15,1,FIJ,POR,PK,6,Yes,PEN: bc not releasing; PK: tap
+15,2,POR,FIJ,Restart,10,No,
+15,2,FIJ,POR,Restart,10,No,
+15,2,POR,FIJ,PK,8,Yes,PEN: tackler not releasing; PK: tap
+15,2,POR,FIJ,22,2,No,
+15,2,FIJ,POR,Line out,1,Yes,
+15,2,FIJ,POR,Restart,10,No,
+15,2,POR,FIJ,Scrum,6,Yes,Scrum: knocked on restart
+15,2,FIJ,POR,PK,14,Yes,PEN: collapsing ruck; PK: tap
+15,2,FIJ,POR,Restart,11,Yes,
+16,1,AUS,SCO,Restart,11,No,
+16,1,AUS,SCO,Scrum,11,Yes,
+16,1,AUS,SCO,Restart,11,No,
+16,1,SCO,AUS,Restart,12,No,Restart: direct to touch
+16,1,AUS,SCO,FK,8,Yes,FK: restart direct to touch
+16,1,SCO,AUS,Restart,12,No,
+16,1,AUS,SCO,FK,8,Yes,FK: restart direct to touch
+16,1,SCO,AUS,Scrum,6,Yes,
+16,1,SCO,AUS,PK,6,Yes,PEN: collapsing the scrum; PK: tap
+16,2,SCO,AUS,Restart,12,No,
+16,2,SCO,AUS,Scrum,12,No,
+16,2,SCO,AUS,Line out,4,No,Line out: not straight
+16,2,AUS,SCO,Scrum,12,Yes,
+16,2,AUS,SCO,Restart,11,Yes,
+16,2,AUS,SCO,PK,14,Yes,PEN: off side; PK: tap
+16,2,AUS,SCO,Restart,12,Yes,
+16,2,AUS,SCO,Restart,12,No,
+16,2,SCO,AUS,Scrum,4,Yes,
+16,2,SCO,AUS,PK,1,Yes,PEN: side entry; PK: tap
+17,1,USA,ARG,Restart,12,No,
+17,1,ARG,USA,PK,6,Yes,PEN: bc not releasing; PK: touch kick
+17,1,ARG,USA,Line out,9,Yes,
+17,1,ARG,USA,PK,8,Yes,PEN: diving over; PK: tap
+17,1,ARG,USA,Restart,10,No,
+17,1,USA,ARG,Restart,12,No,
+17,1,ARG,USA,Line out,13,Yes,
+17,1,ARG,USA,Restart,10,No,
+17,2,ARG,USA,Restart,10,No,
+17,2,ARG,USA,PK,13,Yes,PEN: diving over; PK: tap
+17,2,USA,ARG,Line out,3,Yes,
+17,2,ARG,USA,Scrum,9,Yes,Scrum: knock on
+17,2,ARG,USA,Restart,12,Yes,
+17,2,ARG,USA,Scrum,5,Yes,
+17,2,USA,ARG,Restart,10,No,
+18,1,CAN,ENG,Restart,10,No,
+18,1,ENG,CAN,PK,8,Yes,PEN: tackler not releasing; PK: tap
+18,1,ENG,CAN,Restart,11,No,
+18,1,CAN,ENG,Restart,11,Yes,
+18,1,ENG,CAN,PK,5,Yes,PEN: hands in ruck; PK: tap
+18,1,ENG,CAN,PK,14,Yes,PEN: diving over; PK: tap
+18,2,ENG,CAN,Restart,11,No,
+18,2,CAN,ENG,Scrum,5,Yes,
+18,2,ENG,CAN,PK,6,Yes,PEN: playing ball on ground; PK: touch kick
+18,2,ENG,CAN,Line out,9,Yes,
+18,2,CAN,ENG,Scrum,5,Yes,Scrum: knock on
+18,2,ENG,CAN,Scrum,7,Yes,Scrum: fwd pass
+18,2,ENG,CAN,Restart,11,No,
+18,2,CAN,ENG,PK,8,Yes,PEN: tackler not releasing; PK: tap
+18,2,CAN,ENG,Restart,10,No,
+18,2,CAN,ENG,PK,8,Yes,PEN: bc not releasing; PK: tap
+19,1,FRA,JPN,Restart,10,No,
+19,1,FRA,JPN,Restart,11,No,
+19,1,FRA,JPN,Restart,10,No,
+19,1,JPN,FRA,PK,10,Yes,PEN: diving over; PK: tap
+19,1,FRA,JPN,PK,11,Yes,PEN: bc not releasing; PK: tap
+19,1,FRA,JPN,Restart,12,No,
+19,1,FRA,JPN,PK,3,Yes,PEN: tackler not releasing; PK: tap
+19,1,JPN,FRA,Scrum,12,Yes,
+19,1,JPN,FRA,PK,11,Yes,PEN: hands in ruck; PK: tap
+19,1,JPN,FRA,PK,15,Yes,PEN: off side; PK: tap
+19,1,JPN,FRA,PK,13,Yes,PEN: not back 10; PK: tap
+19,1,JPN,FRA,PK,15,Yes,PEN: bc not releasing; PK: tap
+19,1,JPN,FRA,PK,14,Yes,PEN: off side; PK: tap
+19,2,JPN,FRA,Restart,10,No,
+19,2,FRA,JPN,Scrum,6,Yes,Scrum: knock on
+19,2,JPN,FRA,Scrum,12,Yes,Scrum: knock on
+19,2,JPN,FRA,Restart,10,No,
+19,2,FRA,JPN,Restart,12,No,
+19,2,FRA,JPN,Scrum,12,Yes,
+19,2,FRA,JPN,PK,8,Yes,PEN: bc not releasing; PK: tap
+19,2,JPN,FRA,PK,5,Yes,PEN: bc not releasing; PK: tap
+19,2,FRA,JPN,PK,1,Yes,PEN: off side; PK: tap
+20,1,SAM,NZL,Restart,13,No,
+20,1,NZL,SAM,Restart,12,No,
+20,1,SAM,NZL,Restart,13,No,
+20,1,NZL,SAM,PK,8,Yes,PEN: not rolling away; PK: touch kick
+20,1,NZL,SAM,Line out,9,Yes,
+20,1,NZL,SAM,PK,14,Yes,PEN: diving over; PK: tap
+20,1,NZL,SAM,Restart,12,No,Restart: knocked to touch
+20,1,NZL,SAM,Line out,12,Yes,
+20,2,NZL,SAM,Restart,14,No,
+20,2,SAM,NZL,PK,11,Yes,PEN: high tackle; PK: tap
+20,2,SAM,NZL,Restart,13,No,
+20,2,NZL,SAM,Restart,10,No,
+20,2,NZL,SAM,Scrum,12,Yes,
+20,2,NZL,SAM,Restart,10,No,
+21,1,WAL,ASM,Restart,10,Yes,
+21,1,WAL,ASM,Restart,10,No,
+21,1,ASM,WAL,PK,6,Yes,PEN: tackler not releasing; PK: tap
+21,1,WAL,ASM,Scrum,9,Yes,Scrum: knock on
+21,1,WAL,ASM,Restart,10,No,
+21,1,WAL,ASM,Scrum,10,Yes,Scrum: knock on restart
+21,1,WAL,ASM,Restart,11,Yes,
+21,2,ASM,WAL,Restart,11,No,
+21,2,ASM,WAL,Scrum,8,Yes,Scrum: knock on restart
+21,2,WAL,ASM,Line out,9,Yes,
+21,2,ASM,WAL,Line out,1,Yes,
+21,2,WAL,ASM,Restart,11,No,
+21,2,WAL,ASM,Scrum,6,Yes,Scrum: knock on
+21,2,WAL,ASM,PK,5,Yes,PEN: diving over; PK: tap
+21,2,WAL,ASM,Restart,10,No,
+21,2,WAL,ASM,Line out,10,Yes,
+21,2,WAL,ASM,PK,11,Yes,PEN: bc not releasing; PK: tap
+22,1,KEN,RSA,Restart,11,Yes,
+22,1,RSA,KEN,Line out,1,Yes,
+22,1,RSA,KEN,Restart,12,No,
+22,1,RSA,KEN,Restart,12,No,
+22,1,RSA,KEN,Scrum,12,Yes,Scrum: knock on restart
+22,1,RSA,KEN,Scrum,10,Yes,Scrum: knock on
+22,1,RSA,KEN,Restart,15,No,
+22,1,RSA,KEN,Scrum,15,Yes,Scrum: knock on
+22,2,RSA,KEN,Restart,15,No,
+22,2,RSA,KEN,Restart,12,No,
+22,2,KEN,RSA,PK,1,Yes,PEN: side entry; PK: tap
+22,2,RSA,KEN,Restart,15,No,
+22,2,KEN,RSA,Line out,1,Yes,Line out: quick
+22,2,RSA,KEN,Scrum,15,Yes,Scrum: knock on
+22,2,RSA,KEN,PK,14,Yes,PEN: not back 10; PK: tap
+22,2,RSA,KEN,Restart,12,No,
+22,2,RSA,KEN,PK,11,Yes,PEN: hands in ruck; PK: tap
+23,1,POR,SCO,Restart,10,No,
+23,1,SCO,POR,PK,8,Yes,PEN: off side; PK: tap
+23,1,POR,SCO,PK,8,Yes,PEN: side entry; PK: touch kick
+23,1,POR,SCO,Line out,13,No,
+23,1,SCO,POR,Restart,9,No,Restart not 10
+23,1,POR,SCO,FK,8,Yes,FK: restart not 10
+23,1,POR,SCO,Scrum,13,Yes,Scrum: 5m scrum
+23,1,POR,SCO,Line out,10,Yes,
+23,1,POR,SCO,Restart,10,No,
+23,1,SCO,POR,PK,6,Yes,PEN: side entry; PK: tap
+23,1,SCO,POR,PK,10,Yes,PEN: off side; PK: tap
+23,2,SCO,POR,Restart,11,Yes,
+23,2,POR,SCO,PK,5,Yes,PEN: bc not releasing; PK: tap
+23,2,POR,SCO,PK,6,Yes,PEN: side entry; PK: touch kick
+23,2,POR,SCO,Line out,15,Yes,\
+23,2,SCO,POR,Scrum,1,Yes,Scrum: knock on
+23,2,SCO,POR,FK,1,Yes,FK: foot up early in scrum
+23,2,SCO,POR,Restart,11,No,
+23,2,POR,SCO,PK,5,Yes,PEN: diving over; PK:kick
+23,2,POR,SCO,Line out,15,Yes,
+23,2,POR,SCO,Scrum,13,Yes,
+23,2,POR,SCO,Restart,11,Yes,
+24,1,FIJ,AUS,Restart,12,No,
+24,1,FIJ,AUS,Restart,11,No,
+24,1,AUS,FIJ,Scrum,5,Yes,Scrum: knock on restart
+24,1,FIJ,AUS,Restart,11,No,
+24,1,FIJ,AUS,Restart,11,No,
+24,1,FIJ,AUS,Line out,3,Yes,
+24,2,AUS,FIJ,Restart,12,No,
+24,2,FIJ,AUS,Restart,11,No,
+24,2,AUS,FIJ,Scrum,5,Yes,Scrum: kicked through goal
+24,2,FIJ,AUS,Scrum,12,Yes,Scrum: knock on
+24,2,AUS,FIJ,PK,12,Yes,PEN: tackler not releasing; PK: tap
+24,2,AUS,FIJ,Scrum,11,Yes,Scrum: knock on
+24,2,AUS,FIJ,Restart,12,No,
+24,2,FIJ,AUS,Line out,4,No,
+24,2,AUS,FIJ,PK,11,Yes,PEN: diving over; PK: tap
+24,2,AUS,FIJ,PK,14,Yes,PEN: diving over; PK: tap
+25,1,CAN,FRA,Restart,8,No,
+25,1,FRA,CAN,Restart,10,No,
+25,1,FRA,CAN,PK,3,Yes,PEN: bc not releasing; PK: tap
+25,1,FRA,CAN,Restart,11,No,
+25,1,CAN,FRA,Restart,11,No,
+25,1,CAN,FRA,Scrum,11,Yes,Scrum: knock on
+25,1,FRA,CAN,Scrum,9,Yes,Scrum: knock on
+25,2,FRA,CAN,Restart,10,No,
+25,2,FRA,CAN,PK,10,Yes,PEN: bc not releasing; PK: touch kick
+25,2,FRA,CAN,Line out,13,Yes,
+25,2,CAN,FRA,Scrum,5,Yes,Scrum: fwd pass
+25,2,CAN,FRA,Restart,11,No,
+25,2,CAN,FRA,PK,11,Yes,PEN: illegal ctc with receiver on restart; PK: touch  kick
+25,2,CAN,FRA,Line out,12,No,
+25,2,FRA,CAN,Restart,10,No,
+25,2,CAN,FRA,Restart,11,No,
+26,1,ASM,SCO,Restart,11,No,
+26,1,SCO,ASM,PK,14,Yes,PEN: high tackle; PK: tap
+26,1,SCO,ASM,Restart,11,Yes,
+26,1,SCO,ASM,Restart,12,Yes,
+26,1,SCO,ASM,Restart,10,No,
+26,1,SCO,ASM,Line out,10,Yes,Line out: restart lost to touch
+26,1,ASM,SCO,Scrum,9,Yes,Scrum: fwd pass
+26,1,ASM,SCO,PK,9,Yes,PEN: off side; PK: tap
+26,2,SCO,ASM,Restart,12,Yes,
+26,2,ASM,SCO,PK,5,Yes,PEN: hands in ruck; PK: tap
+26,2,ASM,SCO,Scrum,11,Yes,Scrum: knock on
+26,2,ASM,SCO,Line out,13,No,
+26,2,ASM,SCO,PK,14,Yes,PEN: bc not releasing; PK: tap
+26,2,ASM,SCO,Restart,12,No,
+26,2,SCO,ASM,PK,15,Yes,PEN: high tackle; PK: tap
+26,2,SCO,ASM,Restart,12,No,
+26,2,ASM,SCO,Scrum,4,No,Scrum: infraction
+26,2,SCO,ASM,FK,12,Yes,FK: pushing early in scrum
+26,2,ASM,SCO,Scrum,5,Yes,Scrum: knock on
+27,1,JPN,USA,Restart,12,No,
+27,1,JPN,USA,Scrum,4,Yes,Scrum: fwd pass
+27,1,USA,JPN,PK,11,Yes,PEN: bc not releasing; PK: tap
+27,1,USA,JPN,Restart,12,Yes,
+27,1,JPN,USA,Line out,6,No,Line out: knocked on
+27,1,USA,JPN,Scrum,10,Yes,Scrum: line out knocked on
+27,1,USA,JPN,Restart,12,No,
+27,1,JPN,USA,Scrum,4,,Scrum: restart knocked on by kicking team
+27,1,USA,JPN,PK,7,Yes,PEN: diving over; PK: tap
+27,1,USA,JPN,Restart,12,No,
+27,1,JPN,USA,PK,4,Yes,PEN: illegal ctc with receiver on restart; PK: tap
+27,1,JPN,USA,PK,12,Yes,PEN: side entry; PK: tap
+27,2,USA,JPN,Restart,10,No,
+27,2,JPN,USA,PK,6,Yes,PEN: high tackle; PK: tap
+27,2,USA,JPN,PK,5,Yes,PEN: bc not releasing; PK: tap
+27,2,JPN,USA,Scrum,7,Yes,Scrum: knock on
+27,2,USA,JPN,PK,7,Yes,PEN: bc not releasing; PK: tap
+27,2,USA,JPN,Restart,12,No,Restart: illegal contact with receiver on restart
+27,2,JPN,USA,PK,4,Yes,PEN: illegal ctc with receiver on restart; PK: tap
+27,2,JPN,USA,Restart,10,No,
+28,1,POR,KEN,Restart,7,No,Restart not 10
+28,1,KEN,POR,FK,8,Yes,FK: restart not 10
+28,1,KEN,POR,PK,10,Yes,PEN: off side; PK: tap
+28,1,KEN,POR,Restart,10,No,
+28,1,POR,KEN,PK,15,Yes,PEN: tackler not releasing; PK: tap
+28,1,POR,KEN,Restart,10,No,Restart direct to touch
+28,1,KEN,POR,FK,8,Yes,FK: restart direct to touch
+28,2,KEN,POR,Restart,13,No,
+28,2,KEN,POR,Restart,10,No,Restart direct to touch
+28,2,POR,KEN,FK,8,Yes,FK: restart direct to touch
+28,2,POR,KEN,PK,15,Yes,PEN: off side; PK: tap
+28,2,POR,KEN,PK,15,Yes,PEN: diving over; PK: tap
+28,2,POR,KEN,PK,14,Yes,PEN: off side; PK: tap
+28,2,POR,KEN,Restart,11,No,
+28,2,KEN,POR,PK,5,Yes,PEN: tackler not releasing; PK: tap
+28,2,POR,KEN,PK,6,Yes,PEN: off side; PK: touch kick
+28,2,POR,KEN,Line out,9,No,
+28,2,POR,KEN,Restart,12,No,
+28,2,POR,KEN,PK,12,Yes,PEN: 8 men on field; PK: touch kick
+29,1,ENG,NZL,Restart,11,No,
+29,1,NZL,ENG,Scrum,5,Yes,Scrum: knocked on restart by kicking team
+29,1,ENG,NZL,PK,9,Yes,PEN: tackler not releasing; PK: tap
+29,1,ENG,NZL,Restart,12,No,
+29,1,NZL,ENG,Restart,7,No,Restart: not 10 but played
+29,1,ENG,NZL,FK,8,Yes,FK: restart not 10
+29,1,ENG,NZL,PK,8,Yes,PEN: diving over; PK: tap
+29,1,ENG,NZL,PK,14,Yes,PEN: high tackle; PK: tap
+29,2,NZL,ENG,Restart,11,No,
+29,2,NZL,ENG,Scrum,8,Yes,Scrum: knock on
+29,2,ENG,NZL,Line out,7,Yes,
+29,2,ENG,NZL,Restart,12,No,
+29,2,ENG,NZL,Restart,12,No,
+29,2,ENG,NZL,Line out,12,Yes,
+29,2,ENG,NZL,Restart,11,No,
+30,1,WAL,FIJ,Restart,10,No,
+30,1,FIJ,WAL,Scrum,6,Yes,Scrum: knocked on restart by kicking team
+30,1,WAL,FIJ,Restart,11,No,
+30,1,FIJ,WAL,Restart,11,No,
+30,1,FIJ,WAL,Restart,11,No,
+30,1,WAL,FIJ,Scrum,5,Yes,Scrum: knock on
+30,2,FIJ,WAL,Restart,11,No,
+30,2,WAL,FIJ,PK,8,Yes,PEN: diving over; PK: tap
+30,2,WAL,FIJ,PK,11,Yes,PEN: side entry; PK: tap
+30,2,FIJ,WAL,Scrum,3,Yes,Scrum: collapsed maul
+30,2,WAL,FIJ,Scrum,10,Yes,Scrum: fwd pass
+30,2,WAL,FIJ,PK,10,Yes,PEN: playing the man; PK: tap
+30,2,FIJ,WAL,Scrum,5,Yes,
+30,2,FIJ,WAL,Restart,11,Yes,
+30,2,FIJ,WAL,Restart,10,No,
+30,2,FIJ,WAL,Restart,11,No,
+31,1,SAM,ARG,Restart,11,No,
+31,1,ARG,SAM,PK,11,Yes,PEN: off side; PK: tap
+31,1,SAM,ARG,Scrum,6,Yes,Scrum: knock on
+31,1,ARG,SAM,Scrum,14,Yes,Scrum: knock on
+31,1,SAM,ARG,Scrum,2,Yes,
+31,1,SAM,ARG,Restart,11,Yes,
+31,1,SAM,ARG,PK,11,Yes,PEN: not rolling away; PK: tap
+31,1,ARG,SAM,PK,3,Yes,PEN: throwing ball away; PK: touch kick
+31,1,ARG,SAM,Line out,6,No,
+31,1,ARG,SAM,FK,6,Yes,FK: no hooker at line out
+31,1,SAM,ARG,Scrum,4,No,Scrum: knock on
+31,2,ARG,SAM,Restart,11,Yes,
+31,2,SAM,ARG,Scrum,5,Yes,Scrum: knock on
+31,2,ARG,SAM,Restart,11,Yes,
+31,2,ARG,SAM,Restart,11,No,
+31,2,ARG,SAM,PK,2,Yes,PEN: tackler not releasing; PK: tap
+31,2,SAM,ARG,Restart,11,Yes,
+31,2,SAM,ARG,Restart,11,Yes,
+31,2,SAM,ARG,Restart,10,No,
+32,1,RSA,AUS,Restart,12,No,
+32,1,AUS,RSA,Scrum,3,Yes,Scrum: knock on
+32,1,AUS,RSA,Line out,15,Yes,
+32,1,AUS,RSA,PK,14,Yes,PEN: off side; PK: tap
+32,1,AUS,RSA,Restart,15,No,
+32,1,AUS,RSA,Line out,12,Yes,
+32,1,AUS,RSA,PK,11,Yes,PEN: tackler not releasing; PK: kick touch
+32,1,AUS,RSA,Line out,13,Yes,
+32,1,RSA,AUS,PK,2,Yes,PEN: bc not releasing; PK: touch kick
+32,1,RSA,AUS,Line out,7,Yes,
+32,1,RSA,AUS,PK,11,Yes,PEN: diving over; PK: tap
+32,1,RSA,AUS,Scrum,15,Yes,Scrum: knock on
+32,1,RSA,AUS,PK,15,Yes,PEN: off side; PK: tap
+32,2,AUS,RSA,Restart,15,No,
+32,2,AUS,RSA,Line out,9,Yes,
+32,2,AUS,RSA,PK,7,Yes,PEN: tackler not releasing; PK: kick touch
+32,2,AUS,RSA,Line out,10,Yes,
+32,2,RSA,AUS,PK,5,Yes,PEN: bc not releasing; PK: tap
+32,2,RSA,AUS,PK,10,Yes,PEN: tackler not releasing; PK: tap
+32,2,RSA,AUS,PK,13,Yes,PEN: not back 10; PK: tap
+32,2,RSA,AUS,Restart,12,Yes,
+32,2,RSA,AUS,Scrum,11,Yes,Scrum: knock on
+32,2,AUS,RSA,Scrum,5,No,
+32,2,RSA,AUS,PK,8,Yes,PEN: hands in ruck; PK: touch kick
+32,2,RSA,AUS,Line out,13,No,Line out: 4 man
+32,2,AUS,RSA,PK,9,Yes,PEN: hands in ruck; PK: touch kick
+32,2,AUS,RSA,Line out,15,Yes,
+32,2,AUS,RSA,PK,13,Yes,PEN: tackler not releasing; PK: tap
+33,1,CAN,ASM,Restart,11,Yes,
+33,1,CAN,ASM,Restart,10,Yes,
+33,1,CAN,ASM,Restart,10,Yes,
+33,1,CAN,ASM,PK,4,Yes,PEN: diving over; PK: tap
+33,1,CAN,ASM,Restart,12,Yes,
+33,1,CAN,ASM,Restart,11,No,
+33,1,CAN,ASM,PK,11,Yes,PEN: bc not releasing; PK: tap
+33,1,CAN,ASM,PK,14,Yes,PEN: off side; PK: tap
+33,2,ASM,CAN,Restart,15,No,
+33,2,CAN,ASM,Scrum,4,Yes,Scrum: knocked to touch
+33,2,CAN,ASM,Line out,3,Yes,Line out: quick
+33,2,CAN,ASM,Restart,11,No,
+33,2,CAN,ASM,Line out,15,Yes,
+33,2,CAN,ASM,Restart,11,Yes,
+33,2,CAN,ASM,Restart,10,Yes,
+33,2,CAN,ASM,PK,7,Yes,PEN: high tackle; PK: tap
+33,2,CAN,ASM,PK,11,Yes,PEN: dangerous tackle; PK: tap
+33,2,ASM,CAN,Scrum,6,Yes,Scrum: knock on
+34,1,KEN,JPN,Restart,13,No,
+34,1,KEN,JPN,Restart,10,No,
+34,1,KEN,JPN,Scrum,2,Yes,Scrum: maul held up
+34,1,JPN,KEN,PK,14,Yes,PEN: bc not releasing; PK: tap
+34,1,JPN,KEN,Restart,11,Yes,
+34,1,JPN,KEN,Restart,11,No,
+34,1,JPN,KEN,Line out,12,Yes,
+34,2,JPN,KEN,Restart,12,No,
+34,2,KEN,JPN,PK,9,Yes,PEN: hands in ruck; PK: tap
+34,2,KEN,JPN,Restart,10,No,
+34,2,JPN,KEN,Restart,10,No,
+34,2,JPN,KEN,Scrum,10,Yes,Scrum: knocked on restart
+34,2,KEN,JPN,PK,3,Yes,PEN: hands in ruck; PK: tap
+34,2,KEN,JPN,Restart,10,No,Restart direct to touch
+34,2,JPN,KEN,FK,8,Yes,FK: restart direct to touch
+35,1,SCO,FRA,Restart,11,No,
+35,1,SCO,FRA,Line out,4,No,
+35,1,FRA,SCO,Restart,11,No,
+35,1,FRA,SCO,PK,7,Yes,PEN: bc not releasing; PK: tap
+35,1,SCO,FRA,Scrum,5,Yes,Scrum: knock on
+35,1,FRA,SCO,Scrum,14,Yes,Scrum: knock on
+35,1,FRA,SCO,Scrum,11,Yes,Scrum: knock on
+35,1,SCO,FRA,PK,5,Yes,PEN: tackler not releasing; PK: tap
+35,1,FRA,SCO,Line out,12,Yes,
+35,1,FRA,SCO,Restart,11,Yes,
+35,2,FRA,SCO,Restart,10,Yes,
+35,2,FRA,SCO,Restart,12,Yes,
+35,2,FRA,SCO,PK,5,Yes,PEN: bc not releasing; PK: tap
+35,2,SCO,FRA,Line out,4,No,
+35,2,SCO,FRA,Scrum,1,Yes,Scrum: fwd pass
+35,2,FRA,SCO,Scrum,12,Yes,
+35,2,SCO,FRA,PK,10,Yes,PEN: off side in ruck; PK: tap
+35,2,FRA,SCO,Restart,12,No,
+35,2,SCO,FRA,PK,12,Yes,PEN: tackler not rolling away; PK: tap
+35,2,FRA,SCO,PK,1,Yes,PEN: bc not releasing; PK: touch kick
+36,1,USA,POR,Restart,12,No,
+36,1,POR,USA,PK,4,Yes,PEN: illegal ctc with receiver on restart; PK: touch  kick
+36,1,POR,USA,Line out,10,No,
+36,1,USA,POR,Restart,10,Yes,
+36,1,USA,POR,Restart,10,No,
+36,1,USA,POR,PK,5,Yes,PEN: bc not releasing; PK: touch kick
+36,1,USA,POR,Line out,10,Yes,
+36,1,POR,USA,Line out,4,Yes,
+36,1,POR,USA,PK,9,Yes,PEN: tackler not rolling away; PK: tap
+36,2,POR,USA,Restart,10,No,
+36,2,USA,POR,Restart,10,No,
+36,2,USA,POR,Line out,12,Yes,
+36,2,POR,USA,PK,9,Yes,PEN: bc not releasing; PK: tap
+36,2,POR,USA,PK,10,Yes,PEN: high tackle; PK: tap
+36,2,USA,POR,PK,1,Yes,PEN: collapsing ruck; PK: tap
+36,2,USA,POR,PK,12,Yes,PEN: off side; PK: tap
+36,2,USA,POR,PK,12,Yes,PEN: not back 10; PK: tap
+36,2,USA,POR,Restart,10,No,
+36,2,USA,POR,Scrum,7,Yes,Scrum: ball thrown to touch
+36,2,POR,USA,PK,5,Yes,PEN: trip; PK: tap
+37,1,NZL,WAL,Restart,10,No,
+37,1,NZL,WAL,PK,10,Yes,PEN: bc not releasing; PK: tap
+37,1,NZL,WAL,Restart,13,No,
+37,1,WAL,NZL,Restart,11,No,
+37,1,NZL,WAL,PK,10,Yes,PEN: playing ball on ground; PK: tap
+37,1,NZL,WAL,PK,13,Yes,PEN: diving over; PK: tap
+37,1,NZL,WAL,Restart,11,No,
+37,1,NZL,WAL,Scrum,4,Yes,
+37,2,WAL,NZL,Restart,11,No,
+37,2,NZL,WAL,Restart,10,No,Restart: lost to touch by receiving team
+37,2,NZL,WAL,Line out,7,Yes,Line out: quick
+37,2,NZL,WAL,Restart,11,No,
+37,2,NZL,WAL,Scrum,11,Yes,Scrum: knocked on restart
+37,2,NZL,WAL,Scrum,11,Yes,Scrum: knock on
+37,2,NZL,WAL,Restart,11,Yes,
+37,2,NZL,WAL,PK,14,Yes,PEN: off side in ruck; PK: tap
+37,2,NZL,WAL,Scrum,14,Yes,
+37,2,NZL,WAL,PK,14,Yes,PEN: kicked through scrum; PK: tap
+38,1,AUS,ARG,Restart,11,Yes,
+38,1,ARG,AUS,PK,4,Yes,PEN: playing ball on ground; PK: touch kick
+38,1,ARG,AUS,Line out,10,Yes,
+38,1,ARG,ARG,Restart,11,No,
+38,1,ARG,AUS,PK,8,Yes,PEN: bc not releasing; PK: touch kick
+38,1,ARG,AUS,Line out,10,Yes,
+38,1,AUS,ARG,Scrum,6,Yes,Scrum: knock on
+38,1,AUS,ARG,PK,5,Yes,PEN: tackler not rolling away; PK:touch kick
+38,1,AUS,ARG,Line out,10,Yes,
+38,1,AUS,ARG,Restart,11,Yes,
+38,1,AUS,ARG,PK,14,Yes,PEN: tackler not releasing; PK: tap
+38,2,ARG,AUS,Restart,11,No,
+38,2,ARG,AUS,Scrum,11,Yes,Scrum: knocked on restart
+38,2,AUS,ARG,22,1,No,"22: infraction, ball did not cross 22"
+38,2,ARG,AUS,Scrum,14,Yes,
+38,2,AUS,ARG,Scrum,6,Yes,
+38,2,AUS,ARG,Restart,11,Yes,
+38,2,ARG,AUS,PK,1,Yes,PEN: off side; PK: tap
+38,2,ARG,AUS,PK,2,Yes,PEN: tackler not rolling away; PK: tap
+38,2,AUS,ARG,Scrum,3,Yes,
+38,2,ARG,AUS,Line out,13,Yes,
+38,2,ARG,AUS,Restart,11,Yes,
+39,1,ENG,FIJ,Restart,11,No,
+39,1,FIJ,ENG,Restart,11,No,
+39,1,ENG,FIJ,Restart,12,No,
+39,1,FIJ,ENG,Scrum,4,Yes,
+39,1,FIJ,ENG,Line out,7,Yes,
+39,1,FIJ,ENG,Restart,10,No,
+39,1,FIJ,ENG,Scrum,11,Yes,
+39,1,FIJ,ENG,Restart,10,No,
+39,1,ENG,FIJ,PK,6,Yes,PEN: illegal ctc with receiver; PK: tap
+39,1,FIJ,ENG,PK,11,Yes,PEN: side entry; PK: tap
+39,2,FIJ,ENG,Restart,11,No,
+39,2,ENG,FIJ,PK,8,Yes,PEN: tackler not rolling away; PK: tap
+39,2,FIJ,ENG,Line out,7,No,
+39,2,FIJ,ENG,PK,8,Yes,PEN: bc not releasing; PK: tap
+39,2,FIJ,ENG,Restart,11,Yes,
+39,2,FIJ,ENG,Restart,11,Yes,
+39,2,FIJ,ENG,PK,11,Yes,PEN: bc not releasing; PK: tap
+39,2,FIJ,ENG,Restart,11,No,
+39,2,ENG,FIJ,PK,5,Yes,PEN: illegal ctc with receiver; PK: tap
+39,2,FIJ,ENG,PK,6,Yes,PEN: side entry; PK: tap
+40,1,RSA,SAM,Restart,12,No,
+40,1,RSA,SAM,PK,10,Yes,PEN: bc not releasing; PK: tap
+40,1,SAM,RSA,Restart,11,Yes,
+40,1,SAM,RSA,Restart,11,No,
+40,1,RSA,SAM,Scrum,6,Yes,Scrum: knocked on restart by kicking team
+40,1,SAM,RSA,Line out,6,Yes,
+40,1,RSA,SAM,PK,10,Yes,PEN: bc not releasing; PK: touch kick
+40,1,RSA,SAM,Line out,13,Yes,
+40,1,RSA,SAM,PK,13,Yes,PEN: high tackle; PK: tap
+40,2,SAM,RSA,Restart,11,No,
+40,2,RSA,SAM,Scrum,5,Yes,Scrum: knocked on restart by kicking team
+40,2,RSA,SAM,Restart,12,No,
+40,2,RSA,SAM,Line out,1,Yes,
+40,2,RSA,SAM,PK,2,Yes,PEN: playing man without the ball; PK: touch kick
+40,2,RSA,SAM,Line out,4,Yes,
+40,2,RSA,SAM,PK,12,Yes,PEN: bc not releasing; PK: tap
+40,2,SAM,RSA,Scrum,3,Yes,Scrum: knock on
+40,2,SAM,RSA,Restart,15,No,
+40,2,RSA,SAM,Line out,1,No,
+41,1,KEN,CAN,Restart,14,No,
+41,1,KEN,CAN,PK,4,Yes,PEN: bc not releasing; PK: tap
+41,1,CAN,KEN,Restart,10,Yes,
+41,1,CAN,KEN,PK,14,Yes,PEN: collapsing ruck; PK: tap
+41,1,CAN,KEN,Restart,12,No,
+41,1,CAN,KEN,Scrum,12,Yes,Scrum: knock on restart by receiving team
+41,1,KEN,CAN,Line out,1,Yes,Line out: quick
+41,1,KEN,CAN,Restart,13,Yes,
+41,2,CAN,KEN,Restart,7,Yes,
+41,2,CAN,KEN,Restart,10,No,
+41,2,KEN,CAN,Scrum,5,Yes,Scrum: knocked on restart by kicking team
+41,2,CAN,KEN,PK,10,Yes,PEN: bc not releasing; PK: tap
+41,2,CAN,KEN,Restart,12,Yes,
+41,2,CAN,KEN,Restart,11,No,
+41,2,CAN,KEN,PK,11,Yes,PEN: bc not releasing; PK: tap
+41,2,KEN,CAN,PK,3,Yes,PEN: playing man without the ball; PK: tap
+42,1,FRA,USA,Restart,11,No,
+42,1,FRA,USA,PK,10,Yes,PEN: bc not releasing; PK: tap
+42,1,USA,FRA,PK,6,Yes,PEN: side entry; PK: touch kick
+42,1,USA,FRA,Line out,9,Yes,
+42,1,USA,FRA,Restart,11,No,
+42,1,FRA,USA,Line out,6,Yes,
+42,1,FRA,USA,Line out,3,Yes,Line out: quick
+42,1,USA,FRA,PK,11,Yes,PEN: hands in ruck; PK: tap
+42,1,USA,FRA,Restart,12,No,
+42,1,USA,FRA,PK,5,Yes,PEN: collapsing ruck; PK: touch kick 
+42,1,USA,FRA,Line out,12,Yes,
+42,2,USA,FRA,Restart,12,No,
+42,2,FRA,USA,Restart,12,No,
+42,2,FRA,USA,PK,10,No,PEN: throwing ball away; PK: tap
+42,2,FRA,USA,Restart,10,No,
+42,2,FRA,USA,Line out,12,Yes,
+42,2,FRA,USA,Restart,10,No,
+42,2,USA,FRA,Restart,11,Yes,
+43,1,ARG,NZL,Restart,10,No,
+43,1,NZL,ARG,Restart,12,Yes,
+43,1,NZL,ARG,Restart,11,No,
+43,1,NZL,ARG,Scrum,11,Yes,Scrum: knocked on restart by receiving team
+43,1,NZL,ARG,Restart,11,No,
+43,1,ARG,NZL,PK,8,Yes,PEN: diving over; PK: tap
+43,1,NZL,ARG,Restart,11,No,
+43,1,NZL,ARG,PK,11,Yes,PEN: side entry; PK: tap
+43,1,NZL,ARG,PK,11,Yes,PEN: not back 10; PK: tap
+43,2,NZL,ARG,Restart,11,Yes,
+43,2,ARG,NZL,Line out,12,No,
+43,2,NZL,ARG,Restart,11,Yes,
+43,2,ARG,NZL,Restart,11,No,
+43,2,ARG,NZL,Restart,11,Yes,
+43,2,ARG,NZL,Line out,15,Yes,
+43,2,ARG,NZL,PK,14,Yes,PEN: hands in ruck; PK: tap
+44,1,RSA,ENG,Restart,12,No,
+44,1,ENG,RSA,Restart,12,Yes,
+44,1,ENG,RSA,PK,9,Yes,PEN: side entry; PK: tap
+44,1,ENG,RSA,PK,5,Yes,PEN: collapsing ruck; PK: touch kick 
+44,1,ENG,RSA,Line out,6,Yes,
+44,1,ENG,RSA,Restart,12,Yes,
+44,2,ENG,RSA,Restart,11,No,
+44,2,RSA,ENG,PK,9,Yes,PEN: off side in ruck; PK: tap
+44,2,ENG,RSA,PK,3,Yes,PEN: side entry; PK: touch kick
+44,2,ENG,RSA,Line out,6,Yes,
+44,2,RSA,ENG,Line out,1,Yes,
+44,2,ENG,RSA,PK,11,Yes,PEN: bc not releasing; PK: tap
+44,2,RSA,ENG,Scrum,5,Yes,Scrum: collapsed maul
+44,2,RSA,ENG,PK,2,Yes,PEN: kicked through scrum; PK: tap
+44,2,ENG,RSA,PK,3,Yes,PEN: bc not releasing; PK: touch kick
+44,2,ENG,RSA,Line out,6,No,
+44,2,ENG,RSA,Line out,1,Yes,
+44,2,ENG,RSA,Scrum,1,Yes,Scrum: knock on
+45,1,SAM,FIJ,Restart,11,No,
+45,1,FIJ,SAM,Restart,10,No,
+45,1,FIJ,SAM,Scrum,6,Yes,Scrum: knock on
+45,1,FIJ,SAM,Restart,8,No,Restart: not 10
+45,1,SAM,FIJ,FK,8,Yes,FK: restart not 10
+45,1,SAM,FIJ,Line out,9,Yes,
+45,1,FIJ,SAM,PK,8,Yes,PEN: side entry; PK: tap
+45,1,FIJ,SAM,Restart,10,No,
+45,1,FIJ,SAM,Scrum,5,Yes,Scrum: knock on
+45,1,FIJ,SAM,PK,10,Yes,PEN: high tackle; PK: tap
+45,1,FIJ,SAM,Restart,11,No,
+45,2,FIJ,SAM,Restart,12,No,
+45,2,SAM,FIJ,Line out,7,Yes,Line out: restart lost to touch by kicking team
+45,2,SAM,FIJ,PK,8,Yes,PEN: off side;; PK: tap
+45,2,SAM,FIJ,PK,11,Yes,PEN: off side;; PK: tap
+45,2,SAM,FIJ,Restart,11,No,Restart: knocked on restart by receiving team
+45,2,SAM,FIJ,Scrum,11,Yes,Scrum: knocked on restart by receiving team
+45,2,SAM,FIJ,Scrum,11,Yes,Scrum: knock on
+45,2,SAM,FIJ,Restart,11,No,
+45,2,SAM,FIJ,Scrum,5,Yes,Scrum: knock on
+45,2,SAM,FIJ,Restart,11,No,
+45,2,SAM,FIJ,Scrum,8,Yes,
+45,2,FIJ,SAM,PK,9,Yes,PEN: bc not releasing; PK: tap

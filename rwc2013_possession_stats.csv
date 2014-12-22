@@ -1,0 +1,1055 @@
+MATCH,HALF,POSS,TEAM,OPP,SOURCE,START,END,LOST,SOURCE NOTE,LOST NOTE
+1,1,1,SAM,ZIM,Scrum,10,15,Tackled to touch,,
+1,1,2,ZIM,SAM,Line out,15,15,Kick,,
+1,1,3,SAM,ZIM,Kick,5,10,Maul,,
+1,1,4,ZIM,SAM,Scrum,6,14,TRY,,
+1,1,5,SAM,ZIM,FK,8,11,Counter ruck,,
+1,1,6,ZIM,SAM,Counter ruck,5,8,PEN,,PEN: not releasing
+1,1,7,SAM,ZIM,PK,8,14,TRY,PK: not releasing,
+1,1,8,ZIM,SAM,Restart,5,14,TRY,,
+1,2,9,SAM,ZIM,Restart,1,14,TRY,,
+1,2,10,ZIM,SAM,Restart,5,8,HE,,HE: knock on
+1,2,11,SAM,ZIM,HE,8,14,TRY,,
+1,2,12,ZIM,SAM,Restart,5,6,HE,,HE: knock on
+1,2,13,SAM,ZIM,Scrum,10,13,Intercept,,
+1,2,14,ZIM,SAM,Intercept,3,11,PEN,,PEN: not releasing
+1,2,15,SAM,ZIM,PK,5,11,Counter ruck,PK: not releasing,
+1,2,16,ZIM,SAM,Counter ruck,5,14,HE,,HE: knock on
+2,1,1,KEN,PHL,Reclaim,3,14,TRY,,
+2,1,2,PHL,KEN,Restart,6,11,PEN,,PEN: not releasing
+2,1,3,KEN,PHL,PK,5,14,TRY,PK: not releasing,
+2,1,4,PHL,KEN,Restart,5,15,Kick,,
+2,1,5,KEN,PHL,Kick,3,3,PEN,,PEN: not releasing
+2,1,6,PHL,KEN,PK,13,13,TRY,PK: not releasing,
+2,1,7,KEN,PHL,Restart,6,7,Knock on,,
+2,2,8,KEN,PHL,Reclaim,7,13,Tackled to touch,,
+2,2,9,PHL,KEN,Line out,3,3,Line out stolen,,
+2,2,10,KEN,PHL,Line out steal,13,13,Poached,,
+2,2,11,PHL,KEN,Poach,3,1,Poached,,
+2,2,12,KEN,PHL,Poach,15,14,TRY,,
+2,2,13,PHL,KEN,Restart,6,12,Poached,,
+2,2,14,KEN,PHL,Poach,4,14,TRY,,
+2,2,15,KEN,PHL,Reclaim,11,14,TRY,,
+2,2,16,PHL,KEN,Restart,5,9,Intercept,,
+2,2,17,KEN,PHL,Intercept,7,14,TRY,,
+2,2,18,PHL,KEN,Restart,2,11,Poached,,
+2,2,19,KEN,PHL,Poach,5,15,TRY,,
+3,1,1,CAN,NZL,FK,8,11,HE,FK: restart not 10,HE: knock on
+3,1,2,NZL,CAN,Scrum,2,14,TRY,,
+3,1,3,CAN,NZL,Restart,4,13,Kick,,
+3,1,4,NZL,CAN,Kick,3,6,Kick,,
+3,1,5,CAN,NZL,Kick,5,12,PEN,,PEN: not releasing
+3,1,6,NZL,CAN,PK,4,15,TRY,PK: not releasing,
+3,1,7,CAN,NZL,FK,8,11,PEN,FK: restart not 10,PEN: not releasing
+3,1,8,NZL,CAN,PK,5,14,TRY,,
+3,1,9,CAN,NZL,Restart,5,6,PEN,,PEN: not releasing
+3,1,10,NZL,CAN,PK,10,12,HE,PK: not releasing,HE: knock on
+3,2,11,CAN,NZL,Reclaim,11,13,Intercept,,
+3,2,12,NZL,CAN,Intercept,3,3,Intercept,,
+3,2,13,CAN,NZL,Intercept,13,13,TRY,,
+3,2,14,CAN,NZL,Reclaim,11,8,PEN,,PEN: not releasing
+3,2,15,NZL,CAN,PK,8,13,TRY,PK: not releasing,
+3,2,16,CAN,NZL,Restart,3,14,TRY,,
+3,2,17,CAN,NZL,Reclaim,10,13,Intercept,,
+3,2,18,NZL,CAN,Intercept,3,14,TRY,,
+4,1,1,USA,GEO,Restart,4,14,TRY,,
+4,1,2,USA,GEO,Line out,12,15,Tackled to touch,Line out: restart knocked to touch,
+4,1,3,GEO,USA,Line out,1,14,TRY,,
+4,1,4,USA,GEO,FK,8,14,TRY,FK: restart direct to touch,
+4,1,5,USA,GEO,Reclaim,10,15,TRY,,
+4,1,6,USA,GEO,Reclaim,11,13,TRY,,
+4,2,7,GEO,USA,Scrum,5,7,Line out stolen,Scrum: knocked on restart,
+4,2,8,USA,GEO,Line out steal,9,12,PEN,,PEN: entering ruck from side
+4,2,9,GEO,USA,PK,4,14,TRY,PK: entering ruck from side,
+4,2,10,USA,GEO,Scrum,6,15,PEN,,PEN: not releasing
+4,2,11,GEO,USA,PK,1,4,HE,PK: not releasing,HE: knock on
+4,2,12,USA,GEO,Scrum,9,9,Intercept,,
+4,2,13,GEO,USA,Intercept,7,15,TRY,,
+5,1,1,TON,FIJ,Restart,2,4,Maul,,
+5,1,2,FIJ,TON,FK,12,15,HE,FK: scrum wheeled before put in,HE: knock on
+5,1,3,TON,FIJ,PK,4,8,PEN,PK: collapsed scrum,PEN: not releasing
+5,1,4,FIJ,TON,PK,8,14,TRY,PK: not releasing,
+5,1,5,TON,FIJ,Restart,3,6,Poached,,
+5,1,6,FIJ,TON,Poach,10,12,HE,,HE: fwd pass
+5,1,7,TON,FIJ,Scrum,4,12,HE,,HE: ball thrown to touch
+5,1,8,FIJ,TON,Line out,4,14,TRY,,
+5,2,9,FIJ,TON,Restart,1,14,TRY,,
+5,2,10,TON,FIJ,Restart,5,4,PEN,,PEN: diving over
+5,2,11,FIJ,TON,PK,12,15,TRY,PK: diving over,
+5,2,12,FIJ,TON,Reclaim,10,14,TRY,,
+5,2,13,TON,FIJ,Restart,6,8,Kick,,
+5,2,14,FIJ,TON,Kick,5,14,TRY,,
+5,2,15,FIJ,TON,Scrum,8,8,PEN,HE: knock on restart,PEN: pulled down scrum
+5,2,16,TON,FIJ,PK,8,8,Poached,,
+5,2,17,FIJ,TON,Poach,8,14,TRY,,
+6,1,1,URU,WAL,Reclaim,11,14,Maul,,
+6,1,2,WAL,URU,Scrum,2,2,Scrum lost,,
+6,1,3,URU,WAL,Scrum won,11,12,PEN,,PEN: not releasing
+6,1,4,WAL,URU,PK,4,15,Kick,,
+6,1,5,URU,WAL,22,5,5,FK,,FK: 22 not cross line
+6,1,6,WAL,URU,Scrum,11,14,TRY,,
+6,1,7,WAL,URU,Reclaim,10,13,Tackled to touch,,
+6,1,8,URU,WAL,Line out,3,3,Line out stolen,,
+6,1,9,WAL,URU,Line out stolen,13,14,TRY,,
+6,1,10,WAL,URU,Reclaim,10,14,TRY,,
+6,1,11,WAL,URU,Reclaim,10,11,PEN,,PEN: not releasing
+6,1,12,URU,WAL,PK,5,14,TRY,PK: not releasing,
+6,2,13,URU,WAL,Restart,9,9,Intercept,,
+6,2,14,WAL,URU,Intercept,4,14,HE,,HE: knock on
+6,2,15,URU,WAL,Scrum,2,7,HE,,HE: knock on
+6,2,16,WAL,URU,Scrum,9,10,Poached,,
+6,2,17,URU,WAL,Poach,6,12,PEN,,PEN: playing ball on ground
+6,2,18,WAL,URU,PK,4,9,Poached,PK: playing ball on ground,
+6,2,19,URU,WAL,Poach,7,14,HE,,HE: knock on
+6,2,20,WAL,URU,Scrum,2,14,TRY,,
+6,2,21,URU,WAL,Restart,4,2,Kick,,
+6,2,22,WAL,URU,Kick,7,14,TRY,,
+7,1,1,POR,ENG,Restart,8,8,Kick,,
+7,1,2,ENG,POR,Kick,5,13,PEN,,PEN: not releasing
+7,1,3,POR,ENG,PK,3,9,Line out stolen,PK: not releasing,
+7,1,4,ENG,POR,Line out stolen,7,14,TRY,,
+7,1,5,POR,ENG,Restart,6,14,TRY,,
+7,1,6,ENG,POR,Restart,6,5,PEN,,PEN: playing ball on ground
+7,1,7,POR,ENG,PK,11,11,Kick,PK: playing ball on ground,
+7,2,8,ENG,POR,Restart,4,7,Kick,,Kick: out back of goal
+7,2,9,POR,ENG,FK,6,8,Poached,FK: offside at scrum,
+7,2,10,ENG,POR,Poach,8,14,TRY,,
+7,2,11,POR,ENG,Restart,5,11,PEN,,PEN: not releasing
+7,2,12,ENG,POR,PK,5,14,TRY,PK: not releasing,
+7,2,13,POR,ENG,Restart,5,8,PEN,,PEN: not releasing
+7,2,14,ENG,POR,PK,8,12,HE,,HE: thrown to touch
+7,2,15,POR,ENG,Line out,4,7,HE,,HE: knock on
+8,1,1,ARG,HKG,Reclaim,10,11,Kick,,
+8,1,2,HKG,ARG,Kick,2,2,PEN,,PEN: not releasing
+8,1,3,ARG,HKG,PK,14,14,TRY,PK: not releasing,
+8,1,4,ARG,HKG,Reclaim,12,14,Maul,,
+8,1,5,HKG,ARG,Scrum,2,14,TRY,,
+8,1,6,ARG,HKG,Restart,5,2,Kick,,
+8,1,7,HKG,ARG,Kick,5,10,PEN,,PEN: not releasing
+8,1,8,ARG,HKG,PK,6,14,TRY,PK: not releasing,
+8,2,9,HKG,ARG,Reclaim,8,8,PEN,,PEN: offside on restart
+8,2,10,ARG,HKG,PK,8,14,TRY,PK: illegal touching,
+8,2,11,ARG,HKG,Reclaim,9,11,HE,,HE: knock on
+8,2,12,HKG,ARG,Scrum,5,7,Intercept,,
+8,2,13,ARG,HKG,Intercept,9,14,TRY,,
+8,2,14,ARG,HKG,Reclaim,8,9,Kick,,
+8,2,15,HKG,ARG,Line out,7,7,Line out stolen,,
+8,2,16,ARG,HKG,Line out stolen,9,14,TRY,,
+8,2,17,ARG,HKG,Reclaim,8,14,TRY,,
+8,2,18,ARG,HKG,Reclaim,8,14,TRY,,
+9,1,1,ESP,AUS,Restart,8,8,HE,,HE: knock on
+9,1,2,AUS,ESP,Scrum,5,5,Scrum lost,,
+9,1,3,ESP,AUS,Scrum won,11,14,PEN,,PEN: not releasing
+9,1,4,AUS,ESP,PK,2,9,HE,PK: not releasing,HE: knock on
+9,1,5,ESP,AUS,Scrum,7,9,PEN,,PEN: not releasing
+9,1,6,AUS,ESP,PK,8,15,TRY,,PK: not releasing
+9,1,7,ESP,AUS,Restart,4,7,Counter ruck,,
+9,1,8,AUS,ESP,Counter ruck,9,12,HE,,HE: knock on
+9,1,9,ESP,AUS,Scrum,4,5,Kick,,
+9,1,10,AUS,ESP,Kick,7,7,Tackled to touch,,
+9,1,11,ESP,AUS,Line out,9,10,Intercept,,
+9,1,12,AUS,ESP,Intercept,6,6,Kick,,
+9,1,13,ESP,AUS,Kick,4,4,HE,,HE: fwd pass
+9,1,14,AUS,ESP,Scrum,12,14,TRY,,
+9,2,15,ESP,AUS,Restart,4,10,HE,,HE: knock on
+9,2,16,AUS,ESP,Scrum,6,10,Kick,,
+9,2,17,ESP,AUS,Line out,3,3,Line out infraction,,LO: throw not 5
+9,2,18,AUS,ESP,FK,13,15,HE,FK:  LO throw not 5,HE: knock on
+9,2,19,ESP,AUS,Scrum,1,2,PEN,,PEN: not releasing
+9,2,20,AUS,ESP,PK,14,14,TRY,PK: not releasing,
+9,2,21,AUS,ESP,Reclaim,11,14,HE,,HE: knock on
+9,2,22,ESP,AUS,PK,2,5,Intercept,,PK: collapsed scrum
+9,2,23,AUS,ESP,Intercept,11,14,Poached,,
+9,2,24,ESP,AUS,Poach,2,15,Tackled to touch,,
+10,1,1,TUN,FRA,Restart,5,5,HE,,HE: knock on
+10,1,2,FRA,TUN,Scrum,11,13,TRY,,
+10,1,3,TUN,FRA,Restart,4,13,Poached,,
+10,1,4,FRA,TUN,Poach,3,14,TRY,,
+10,1,5,TUN,FRA,Restart,7,15,Poached,,
+10,1,6,FRA,TUN,Poach,1,11,Poached,,
+10,1,7,TUN,FRA,Poach,5,14,HE,,HE: knock on
+10,1,8,FRA,TUN,Scrum,2,1,HE,,HE: ball thrown to touch
+10,2,9,FRA,TUN,Restart,4,15,PEN,,PEN: not releasing
+10,2,10,TUN,FRA,PK,1,1,Kick,PK: not releasing,
+10,2,11,FRA,TUN,Kick,6,14,TRY,,
+10,2,12,FRA,TUN,Reclaim,10,13,Poached,,
+10,2,13,TUN,FRA,Poach,3,6,HE,,HE: ball thrown to touch
+10,2,14,FRA,TUN,Scrum,10,13,TRY,,
+10,2,15,TUN,FRA,Restart,2,14,TRY,,
+11,1,1,RSA,RUS,Restart,6,15,TRY,,
+11,1,2,RSA,RUS,Reclaim,12,11,HE,,HE: knock on
+11,1,3,RUS,RSA,Scrum,5,6,Maul,,
+11,1,4,RSA,RUS,Scrum,10,14,TRY,,
+11,1,5,RUS,RSA,Line out,4,4,HE,,HE: lost fwd in tackle
+11,1,6,RSA,RUS,Scrum,12,14,TRY,,
+11,1,7,RUS,RSA,PK,4,14,PEN,PK: interfering with jumper on restart,PEN leaving feet in ruck
+11,1,8,RSA,RUS,PK,5,2,Kicked to touch,,
+11,2,9,RUS,RSA,Restart,4,12,HE,,HE: fwd pass
+11,2,10,RSA,RUS,Scrum,4,15,Intercept,,
+11,2,11,RUS,RSA,Intercept,1,2,Tackled in goal,,
+11,2,12,RSA,RUS,Scrum,14,14,TRY,,
+11,2,13,RUS,RSA,Restart,1,1,HE,,HE: fwd pass
+11,2,14,RSA,RUS,Scrum,15,13,TRY,,
+11,2,15,RSA,RUS,Scrum,8,9,HE,,HE: ball thrown to touch
+12,1,1,JPN,SCO,Restart,5,4,Tackled to touch,,
+12,1,2,SCO,JPN,Line out,12,13,TRY,,
+12,1,3,SCO,JPN,PK,5,15,TRY,PK: offside on restart,
+12,1,4,JPN,SCO,Restart,6,8,HE,,HE: lost fwd in tackle
+12,1,5,SCO,JPN,Poach,8,12,HE,,HE: knock on
+12,1,6,JPN,SCO,PK,4,8,HE,PK: offside,HE: lost fwd in tackle
+12,1,7,SCO,JPN,Scrum,8,13,Tackled to touch,,
+12,1,8,JPN,SCO,Line out,6,2,Poached,,
+12,1,9,SCO,JPN,Poach,11,11,HE,HE: fwd pass,HE: fwd pass
+12,2,10,SCO,JPN,Line out,4,14,TRY,,
+12,2,11,JPN,SCO,Restart,5,14,TRY,,
+12,2,12,SCO,JPN,Line out,6,13,HE,,HE: knock on
+12,2,13,JPN,SCO,Scrum,1,15,TRY,,
+12,2,14,JPN,SCO,Reclaim,11,14,Poached,,
+12,2,15,SCO,JPN,Poach,2,5,PEN,,PEN: not releasing
+12,2,16,JPN,SCO,PK,11,13,TRY,PK: not releasing,
+13,1,1,SAM,PHL,Restart,6,5,HE,,HE: knock on
+13,1,2,PHL,SAM,Scrum,8,9,HE,,HE: knock on
+13,1,3,SAM,PHL,Scrum,7,13,HE,,HE: knock on
+13,1,4,PHL,SAM,Scrum,3,7,Poached,,
+13,1,5,SAM,PHL,Poach,9,10,HE,,HE: fwd pass
+13,1,6,PHL,SAM,Scrum,4,3,HE,,HE: knock on
+13,1,7,SAM,PHL,Scrum,13,13,Poached,,
+13,1,8,PHL,SAM,Poach,2,2,HE,,HE: fwd pass
+13,1,9,SAM,PHL,Scrum,14,14,TRY,,
+13,2,10,PHL,SAM,Scrum,6,6,HE,,HE: knock on
+13,2,11,SAM,PHL,Intercept,10,13,TRY,,
+13,2,12,PHL,SAM,Scrum,6,7,Poached,,
+13,2,13,SAM,PHL,Poach,9,13,TRY,,
+13,2,14,PHL,SAM,PK,8,2,Tackled in goal,PK: illegal contact on restart,
+13,2,15,SAM,PHL,Scrum,14,14,TRY,Scrum: tackled in own goal,
+13,2,16,PHL,SAM,FK,8,8,Counter ruck,FK: restart not 10,
+13,2,17,SAM,PHL,Counter ruck,8,13,TRY,,
+14,1,1,KEN,ZIM,Reclaim,11,11,PEN,,PEN: diving over
+14,1,2,ZIM,KEN,PK,5,9,Kick,PK: diving over,
+14,1,3,KEN,ZIM,Kick,1,3,Maul,,
+14,1,4,ZIM,KEN,Scrum,10,12,HE,,HE: ball thrown to touch
+14,1,5,KEN,ZIM,Line out,4,4,HE,,HE: not straight
+14,1,6,ZIM,KEN,Scrum,12,12,Counter ruck,,
+14,1,7,KEN,ZIM,Counter ruck,4,14,TRY,,
+14,1,8,KEN,ZIM,Reclaim,10,14,TRY,,
+14,1,9,ZIM,KEN,Restart,5,5,Poached,,
+14,1,10,KEN,ZIM,Poach,11,14,TRY,,
+14,1,11,ZIM,KEN,Restart,5,13,TRY,,
+14,2,12,KEN,ZIM,Restart,1,13,PEN,,PEN: not releasing
+14,2,13,ZIM,KEN,PK,3,3,Kick,PK: not releasing,
+14,2,14,KEN,ZIM,Kick,8,14,TRY,,
+14,2,15,KEN,ZIM,Reclaim,11,12,HE,,HE: knock on
+14,2,16,ZIM,KEN,Scrum,4,6,Kick,,
+14,2,17,KEN,ZIM,Kick,4,4,PEN,,PEN: not releasing
+14,2,18,ZIM,KEN,PK,12,8,Counter ruck,PK: not releasing,
+14,2,19,KEN,ZIM,Counter ruck,8,14,TRY,,
+14,2,20,ZIM,KEN,Restart,6,9,HE,,HE: fwd pass
+14,2,21,KEN,ZIM,Scrum,7,5,PEN,,PEN: hands in ruck
+14,2,22,ZIM,KEN,PK,12,7,HE,PK: hands in ruck,HE:knock on
+14,2,23,KEN,ZIM,Intercept,9,9,Tackled to touch,,
+15,1,1,GEO,NZL,Scrum,2,7,Line out stolen,,
+15,1,2,NZL,GEO,Line out stolen,9,13,Intercept,,
+15,1,3,GEO,NZL,Intercept,3,8,HE,,HE: lost fwd in tackle
+15,1,4,NZL,GEO,Intercept,8,14,TRY,,
+15,1,5,GEO,NZL,Restart,6,7,PEN,,PEN: not releasing
+15,1,6,NZL,GEO,PK,9,14,TRY,PK: not releasing,
+15,1,7,GEO,NZL,Restart,2,13,Poached,,
+15,1,8,NZL,GEO,Poach,1,9,Poached,,
+15,1,9,GEO,NZL,Poach,7,11,HE,,HE: knock on
+15,2,10,GEO,NZL,Reclaim,12,13,Poached,,
+15,2,11,NZL,GEO,Poach,3,14,TRY,,
+15,2,12,GEO,NZL,Restart,5,8,Kick,,
+15,2,13,NZL,GEO,Kick,2,2,Poached,,
+15,2,14,GEO,NZL,Poach,14,14,TRY,,
+15,2,15,NZL,GEO,Restart,4,14,TRY,,
+15,2,16,GEO,NZL,Restart,4,6,HE,,HE: knock on
+15,2,17,NZL,GEO,Scrum,10,15,HE,,HE: ball lost in tackle
+15,2,18,GEO,NZL,Poach,1,1,Kick,,
+15,2,19,NZL,GEO,Kick,3,8,HE,,HE: knock on
+15,2,20,GEO,NZL,FK,8,11,HE,FK: scrum failed to engage,
+16,1,1,CAN,USA,Reclaim,8,15,TRY,,
+16,1,2,USA,CAN,Restart,3,12,Tackled to touch,,
+16,1,3,CAN,USA,Line out,4,13,TRY,,
+16,1,4,USA,CAN,Restart,3,14,TRY,,
+16,1,5,CAN,USA,Restart,4,12,Counter ruck,,
+16,1,6,USA,CAN,Counter ruck,4,7,HE,,HE: ball thrown to touch
+16,2,7,CAN,USA,FK,8,13,TRY,FK: restart direct to touch,
+16,2,8,USA,CAN,Restart,6,14,TRY,,
+16,2,9,USA,CAN,Reclaim,13,15,Kicked to touch,,
+16,2,10,CAN,USA,Line out,1,9,Tackled to touch,,
+16,2,11,USA,CAN,Line out,7,7,Line out stolen,,
+16,2,12,CAN,USA,Line out stolen,9,11,HE,,HE: knock on
+16,2,13,USA,CAN,Scrum,5,2,Maul,,
+16,2,14,CAN,USA,Scrum,14,11,Kick,,Kick: kick to touch
+17,1,1,URU,FIJ,Restart,6,4,HE,,HE: ball lost in tackle
+17,1,2,FIJ,URU,Poach,12,14,TRY,,
+17,1,3,URU,FIJ,Restart,6,11,PEN,,PEN: not releasing
+17,1,4,FIJ,URU,PK,7,7,PEN,PK: not releasing,PEN: diving over
+17,1,5,URU,FIJ,Line out,15,15,Line out stolen,,
+17,1,6,FIJ,URU,Line out stolen,1,14,TRY,,
+17,1,7,URU,FIJ,Restart,6,9,PEN,,PEN: hands in ruck
+17,1,8,FIJ,URU,PK,7,15,TRY,,
+17,1,9,URU,FIJ,Restart,6,6,Kicked to touch,,
+17,1,10,FIJ,URU,Line out,1,14,TRY,,
+17,2,11,FIJ,URU,Restart,2,1,HE,,HE: knock on
+17,2,12,URU,FIJ,Scrum,15,12,HE,,HE: ball thrown to touch
+17,2,13,FIJ,URU,Line out,9,14,TRY,,
+17,2,14,FIJ,URU,Reclaim,12,13,HE,,HE: knock on
+17,2,15,URU,FIJ,Scrum,3,2,PEN,,PEN: not releasing
+17,2,16,FIJ,URU,PK,14,14,TRY,PK: not releasing,
+18,1,1,TON,WAL,PK,6,4,Counter ruck,PK: offside on restart,
+18,1,2,WAL,TON,Counter ruck,11,14,TRY,,
+18,1,3,TON,WAL,Restart,4,4,PEN,,PEN: not releasing
+18,1,4,WAL,TON,PK,15,14,TRY,PK: not releasing,
+18,1,5,WAL,TON,Reclaim,11,13,PEN,,PEN: not releasing
+18,1,6,TON,WAL,PK,6,13,TRY,PK: not releasing ,
+18,1,7,WAL,TON,FK,8,11,HE,FK: restart direct to touch,HE: fwd pass
+18,1,8,TON,WAL,Scrum,5,14,TRY,,
+18,2,9,TON,WAL,Reclaim,10,15,TRY,,
+18,2,10,WAL,TON,Restart,6,13,TRY,,
+18,2,11,TON,WAL,Restart,6,2,Intercept,,
+18,2,12,WAL,TON,Intercept,14,14,TRY,,
+18,2,13,TON,WAL,Restart,6,5,Counter ruck,,
+18,2,14,WAL,TON,Counter ruck,11,15,Tackled to touch,,
+18,2,15,TON,WAL,Line out,1,2,Maul,,
+18,2,16,WAL,TON,Scrum,14,10,HE,,HE: knock on
+18,2,17,TON,WAL,Scrum,6,6,Intercept,,
+18,2,18,WAL,TON,Intercept,13,13,Tackled to touch,,
+19,1,1,ARG,POR,Restart,7,4,HE,,HE: ball thrown to touch
+19,1,2,POR,ARG,Line out,12,13,TRY,,
+19,1,3,ARG,POR,Restart,6,7,Maul,,
+19,1,4,POR,ARG,Scrum,9,9,Kick,,
+19,1,5,ARG,POR,Kick,7,7,Poached,,
+19,1,6,POR,ARG,Poach,9,15,TRY,,
+19,1,7,ARG,POR,Restart,6,2,Maul,,
+19,1,8,POR,ARG,Scrum,14,15,TRY,,
+19,2,9,ARG,POR,Reclaim,7,7,HE,,HE: knock on
+19,2,10,POR,ARG,Scrum,9,8,Kick,,
+19,2,11,ARG,POR,Kick,5,7,HE,,HE: knock on
+19,2,12,POR,ARG,Scrum,9,9,Counter ruck,,
+19,2,13,ARG,POR,Counter ruck,7,13,TRY,,
+19,2,14,POR,ARG,Restart,6,5,Poached,,
+19,2,15,ARG,POR,Poach,11,11,PEN,,PEN: not releasing
+19,2,16,POR,ARG,PK,11,7,Counter ruck,PK: not releasing ,
+19,2,17,ARG,POR,Counter ruck,9,13,TRY,,
+19,2,18,ARG,POR,Scrum,10,13,HE,Scrum: knocked on restart,HE: ball lost fwd in tackle
+19,2,19,POR,ARG,Intercept,6,15,Tackled to touch,,
+19,2,20,ARG,POR,Line out,1,1,HE,,HE: ball lost in tackle
+19,2,21,POR,ARG,Intercept,15,13,Kicked to touch,,
+20,1,1,HKG,ENG,PK,5,14,TRY,PK: offside on restart,
+20,1,2,ENG,HKG,Restart,5,14,TRY,,
+20,1,3,HKG,ENG,PK,5,11,Kick,PK: ct with jumper,
+20,1,4,ENG,HKG,Kick,5,14,TRY,,
+20,2,5,ENG,HKG,Restart,5,13,TRY,,
+20,2,6,HKG,ENG,Scrum,8,2,HE,Scrum: knocked on reclaim,HE: knock on
+20,2,7,ENG,HKG,Scrum,11,13,TRY,,
+20,2,8,HKG,ENG,Restart,4,4,Counter ruck,,
+20,2,9,ENG,HKG,Counter ruck,12,14,TRY,,
+20,2,10,HKG,ENG,Restart,5,7,Line out stolen,,
+20,2,11,ENG,HKG,Line out stolen,9,7,HE,,HE: ball lost in tackle
+20,2,12,HKG,ENG,PK,9,9,Counter ruck,PK: playing ball on ground,
+20,2,13,ENG,HKG,Counter ruck,7,15,TRY,,
+21,1,1,AUS,TUN,Reclaim,10,15,PEN,,PEN: not releasing
+21,1,2,TUN,AUS,Line out,7,5,PEN,,PEN: not releasing
+21,1,3,AUS,TUN,PK,11,15,TRY,PK: not releasing,
+21,1,4,AUS,TUN,Reclaim,11,13,TRY,,
+21,1,5,AUS,TUN,Reclaim,9,14,TRY,,
+21,1,6,TUN,AUS,FK,8,7,PEN,FK: restart not 10,PEN: diving over
+21,1,7,AUS,TUN,PK,9,11,Intercept,PK: diving over,
+21,1,8,TUN,AUS,Intercept,6,14,PEN,,PEN: not releasing
+21,1,9,AUS,TUN,PK,2,13,Counter ruck,PK: not releasing,
+21,1,10,TUN,AUS,Counter ruck,3,2,Poached,,
+21,1,11,AUS,TUN,Poach,14,14,TRY,,
+21,2,12,AUS,TUN,Restart,4,13,HE,,HE: knock on
+21,2,13,TUN,AUS,Scrum,3,3,FK,,FK: foot up in scrum
+21,2,14,AUS,TUN,FK,13,14,TRY,FK: foot up in scrum,
+21,2,15,AUS,TUN,Reclaim,10,13,TRY,,
+21,2,16,AUS,TUN,Reclaim,10,13,HE,,HE: ball lost in tackle
+21,2,17,TUN,AUS,Intercept,3,12,PEN,,PEN: ruck in from side
+21,2,18,AUS,TUN,Line out,13,14,HE,,HE: knock on
+21,2,19,TUN,AUS,Intercept,2,4,PEN,,PEN: diving over
+21,2,20,AUS,TUN,PK,11,15,Intercept,PK: diving over,
+21,2,21,TUN,AUS,Intercept,1,14,TRY,,
+22,1,1,FRA,ESP,Restart,6,10,PEN,,PEN: not releasing
+22,1,2,ESP,FRA,PK,6,14,TRY,PK: not releasing,
+22,1,3,FRA,ESP,Restart,11,14,TRY,,
+22,1,4,FRA,ESP,Reclaim,11,14,TRY,,
+22,1,5,FRA,ESP,Reclaim,8,9,PEN,,PEN: not releasing
+22,1,6,ESP,FRA,PK,7,8,PEN,PK: not releasing ,PEN: hands in ruck
+22,1,7,FRA,ESP,PK,8,14,TRY,PK:hands in ruck,
+22,2,8,ESP,FRA,FK,8,14,HE,FK: restart not 10,HE: knock on
+22,2,9,FRA,ESP,Scrum,2,3,Kicked to touch,,
+22,2,10,ESP,FRA,Line out,10,10,Line out stolen,,
+22,2,11,FRA,ESP,Line out stolen,6,5,HE,,HE: knock on
+22,2,12,ESP,FRA,PK,11,10,HE,PK: delay of game,HE: knock on
+22,2,13,FRA,ESP,Scrum,6,6,Kicked to touch,,
+22,2,14,ESP,FRA,Line out,1,1,Line out stolen,,
+22,2,15,FRA,ESP,Line out stolen,15,14,PEN,,PEN: not releasing
+22,2,16,ESP,FRA,PK,2,15,TRY,PK: not releasing,
+22,2,17,ESP,FRA,Reclaim,14,13,TRY,,
+22,2,18,FRA,ESP,Restart,5,5,Kicked to touch,,
+23,1,1,RSA,JPN,FK,8,11,Poached,FK: restart not 10,
+23,1,2,JPN,RSA,Poach,5,8,Poached,,
+23,1,3,RSA,JPN,Poach,8,14,TRY,,
+23,1,4,JPN,RSA,Restart,4,4,HE,,HE: knock on
+23,1,5,RSA,JPN,Scrum,12,10,HE,,HE: ball lost in tackle
+23,1,6,JPN,RSA,Scrum,6,8,Poached,,
+23,1,7,RSA,JPN,Poach,8,8,HE,,HE: fwd pass
+23,1,8,JPN,RSA,Scrum,8,8,PEN,,PEN: not rolling away
+23,1,9,RSA,JPN,PK,8,12,PEN,PK: not rolling away,PEN: not releasing
+23,1,10,JPN,RSA,PK,4,8,Intercept,PK: not releasing,
+23,1,11,RSA,JPN,Intercept,8,14,TRY,,
+23,2,12,JPN,RSA,FK,8,11,HE,FK: restart not 10,HE: knock on
+23,2,13,RSA,JPN,Scrum,5,14,TRY,,
+23,2,14,JPN,RSA,Restart,1,12,Tackled to touch,,
+23,2,15,RSA,JPN,Line out,4,14,TRY,,
+23,2,16,JPN,RSA,Restart,1,3,Kick,,
+23,2,17,RSA,JPN,Scrum,1,14,TRY,,
+23,2,18,JPN,RSA,Restart,5,5,Poached,,
+23,2,19,RSA,JPN,Poach,11,11,HE,,
+24,1,1,RUS,SCO,Restart,5,15,Maul,,
+24,1,2,SCO,RUS,Scrum,1,9,Line out stolen,,
+24,1,3,RUS,SCO,Line out stolen,7,13,Poached,,
+24,1,4,SCO,RUS,Poach,3,1,Intercept,,
+24,1,5,RUS,SCO,Intercept,3,3,Tackled in goal,,
+24,1,6,SCO,RUS,Scrum,14,15,Poached,,
+24,1,7,RUS,SCO,Poach,1,4,Intercept,,
+24,1,8,SCO,RUS,Intercept,12,14,TRY,,
+24,2,9,SCO,RUS,Restart,5,11,HE,,HE: knock on
+24,2,10,RUS,SCO,Scrum,5,13,TRY,,
+24,2,11,SCO,RUS,Restart,5,14,TRY,,
+24,2,12,SCO,RUS,PK,10,14,TRY,PK: offside at scrum,
+24,2,13,RUS,SCO,Restart,2,7,PEN,,PEN: not releasing
+24,2,14,SCO,RUS,PK,9,9,Kicked to touch,PK: not releasing,
+25,1,1,PHL,ZIM,Reclaim,11,14,TRY,,
+25,1,2,ZIM,PHL,Restart,8,9,HE,,HE: ball lost in tackle
+25,1,3,PHL,ZIM,Scrum,7,12,Intercept,,
+25,1,4,ZIM,PHL,Intercept,4,15,Intercept,,
+25,1,5,PHL,ZIM,Intercept,1,6,Intercept,,
+25,1,6,ZIM,PHL,Intercept,10,14,TRY,,
+25,1,7,ZIM,PHL,PK,12,11,PEN,PK: offside on restart ,PEN: diving over
+25,1,8,PHL,ZIM,PK,5,7,Maul,,
+25,1,9,ZIM,PHL,Scrum,9,13,TRY,,
+25,2,10,ZIM,PHL,Reclaim,14,13,Tackled to touch,,
+25,2,11,PHL,ZIM,Line out,3,3,PEN,,PEN: not releasing
+25,2,12,ZIM,PHL,PK,13,15,Kicked to touch,PK: not releasing,
+25,2,13,PHL,ZIM,Scrum,1,1,Kick,,
+25,2,14,ZIM,PHL,Kick,6,13,HE,,HE:knock on
+25,2,15,PHL,ZIM,Scrum,3,7,Maul,,
+25,2,16,ZIM,PHL,Scrum,9,13,TRY,,
+25,2,17,PHL,ZIM,Restart,3,14,HE,,HE: knock on
+25,2,18,ZIM,PHL,Scrum,2,9,PEN,,PEN: diving over
+25,2,19,PHL,ZIM,PK,7,14,HE,PK: diving over,HE: knock on
+26,1,1,GEO,CAN,Reclaim,12,12,PEN,,PEN: diving over
+26,1,2,CAN,GEO,PK,4,9,Counter ruck,PK: diving over,
+26,1,3,GEO,CAN,Counter ruck,7,14,TRY,,
+26,1,4,CAN,GEO,Restart,4,9,Maul,,
+26,1,5,GEO,CAN,Scrum,7,4,Kick,,
+26,1,6,CAN,GEO,Kick,6,13,TRY,,
+26,1,7,GEO,CAN,Scrum,5,14,TRY,Scrum: knocked on restart,
+26,2,8,GEO,CAN,Restart,5,8,HE,,HE: knock on
+26,2,9,CAN,GEO,FK,8,7,Poached,FK: engaged early on scrum,
+26,2,10,GEO,CAN,Poach,9,7,Tackled to touch,,
+26,2,11,CAN,GEO,Line out,6,13,TRY,,
+26,2,12,CAN,GEO,Reclaim,11,14,TRY,,
+26,2,13,CAN,GEO,Reclaim,11,13,Tackled to touch,,
+26,2,14,GEO,CAN,Line out,3,3,Line out stolen,,
+26,2,15,CAN,GEO,Line out stolen,13,14,TRY,,
+26,2,16,GEO,CAN,Restart,6,11,HE,,HE: knock on
+26,2,17,CAN,GEO,Scrum,5,5,HE,,HE: knock on
+26,2,18,GEO,CAN,Scrum,11,13,Tackled to touch,,
+26,2,19,CAN,GEO,Line out,3,2,HE,,HE: knock on
+26,2,20,GEO,CAN,Intercept,14,14,TRY,,
+27,1,1,TON,URU,Restart,5,12,Tackled to touch,,
+27,1,2,URU,TON,FK,4,7,HE,FK: scrum early engage,HE: ball lost fwd in tackle
+27,1,3,TON,URU,Scrum,9,11,Counter ruck,,
+27,1,4,URU,TON,Counter ruck,5,5,Poached,,
+27,1,5,TON,URU,Poach,11,14,TRY,,
+27,1,6,URU,TON,Restart,6,9,HE,,HE: ball thrown to touch
+27,1,7,TON,URU,Line out,7,7,Line out stolen,,
+27,1,8,URU,TON,Line out stolen,9,7,Intercept,,
+27,1,9,TON,URU,Intercept,9,14,TRY,,
+27,2,10,URU,TON,Restart,6,6,HE,,HE: knock on
+27,2,11,TON,URU,Scrum,14,14,Intercept,,
+27,2,12,URU,TON,Intercept,2,2,Intercept,,
+27,2,13,TON,URU,Intercept,14,13,TRY,,
+27,2,14,TON,URU,Reclaim,10,13,TRY,,
+27,2,15,URU,TON,Restart,6,2,HE,,HE: knock on
+27,2,16,TON,URU,Scrum,14,13,TRY,,
+27,2,17,URU,TON,Restart,6,9,Line out stolen,,
+27,2,18,TON,URU,Line out stolen,7,14,HE,,HE: knock on
+27,2,19,URU,TON,Scrum,2,2,Intercept,,
+27,2,20,TON,URU,Intercept,14,14,TRY,,
+27,2,21,URU,TON,Restart,5,14,HE,,HE: knock on
+28,1,1,POR,HKG,Reclaim,11,11,HE,,HE: knock on
+28,1,2,HKG,POR,Scrum,5,6,Kick,,
+28,1,3,POR,HKG,Kick,1,14,TRY,,
+28,1,4,HKG,POR,Restart,4,13,Tackled to touch,,
+28,1,5,POR,HKG,Line out,3,2,Kick,,
+28,1,6,HKG,POR,Line out,7,12,PEN,,PEN: not releasing
+28,1,7,POR,HKG,PK,4,8,Intercept,,
+28,1,8,HKG,POR,Intercept,8,8,PEN,,PEN: not releasing
+28,1,9,POR,HKG,PK,8,10,Line out infraction,PK: not releasing,
+28,1,10,HKG,POR,Scrum,6,4,Kicked to touch,,
+28,2,11,POR,HKG,Restart,5,14,TRY,,
+28,2,12,POR,HKG,Reclaim,12,12,HE,,HE: knock on
+28,2,13,HKG,POR,Scrum,4,13,TRY,,
+28,2,14,POR,HKG,Restart,5,5,HE,,HE: knock on
+28,2,15,HKG,POR,Scrum,11,15,TRY,,
+28,2,16,HKG,POR,Reclaim,12,13,TRY,,
+29,1,1,ESP,TUN,Reclaim,8,13,TRY,,
+29,1,2,TUN,ESP,Restart,4,4,Kicked to touch,,
+29,1,3,ESP,TUN,Line out,6,3,Counter ruck,,
+29,1,4,TUN,ESP,Counter ruck,13,15,TRY,,
+29,1,5,ESP,TUN,FK,8,8,Kick,FK: restart not 10,
+29,1,6,TUN,ESP,Kick,5,4,Tackled to touch,,
+29,1,7,ESP,TUN,Line out,12,10,Intercept,,
+29,1,8,TUN,ESP,Intercept,6,6,Tackled to touch,,
+29,1,9,ESP,TUN,Line out,10,13,TRY,,
+29,1,10,ESP,TUN,Reclaim,10,13,TRY,,
+29,2,11,ESP,TUN,Restart,4,8,Intercept,,
+29,2,12,TUN,ESP,Intercept,8,14,TRY,,
+29,2,13,ESP,TUN,Restart,1,13,TRY,,
+29,2,14,TUN,ESP,Restart,2,5,Kick,,
+29,2,15,ESP,TUN,Kick,11,14,Poached,,
+29,2,16,TUN,ESP,Poach,2,14,TRY,,
+29,2,17,ESP,TUN,Restart,5,14,PEN,,PEN: not releasing
+29,2,18,TUN,ESP,PK,2,14,TRY,PK: not releasing,
+30,1,1,KEN,SAM,Reclaim,11,14,TRY,,
+30,1,2,KEN,SAM,Scrum,11,9,Intercept,Scrum: knocked on restart,
+30,1,3,SAM,KEN,Intercept,7,13,Tackled to touch,,
+30,1,4,KEN,SAM,Line out,3,13,TRY,,
+30,1,5,SAM,KEN,Restart,5,11,Counter ruck,,
+30,1,6,KEN,SAM,Counter ruck,5,5,Kick,,
+30,1,7,SAM,KEN,Kick,1,4,Tackled to touch,,
+30,2,8,KEN,SAM,Restart,6,10,PEN,,PEN: not releasing
+30,2,9,SAM,KEN,PK,6,9,HE,PK: not releasing,HE: ball thrown to touch
+30,2,10,KEN,SAM,Line out,7,7,Intercept,,
+30,2,11,SAM,KEN,Intercept,9,14,TRY,,
+30,2,12,KEN,SAM,Restart,11,15,Intercept,,
+30,2,13,SAM,KEN,Intercept,1,9,Kicked to touch,,
+30,2,14,KEN,SAM,Line out,7,8,Line out stolen,,
+30,2,15,SAM,KEN,Line out stolen,8,15,TRY,,
+30,2,16,KEN,SAM,Restart,5,15,TRY,,
+31,1,1,USA,NZL,Restart,1,6,Poached,,
+31,1,2,NZL,USA,Poach,10,14,TRY,,
+31,1,3,USA,NZL,Restart,4,13,TRY,,
+31,1,4,USA,NZL,Reclaim,10,14,TRY,,
+31,1,5,USA,NZL,Reclaim,15,14,HE,,HE: knock on
+31,1,6,NZL,USA,Scrum,2,13,Counter ruck,,
+31,1,7,USA,NZL,Counter ruck,3,3,Kicked to touch,,
+31,2,8,USA,NZL,Reclaim,12,14,TRY,,
+31,2,9,NZL,USA,Restart,1,15,HE,,HE: ball lost in tackle
+31,2,10,USA,NZL,Scrum,1,1,PEN,,PEN: PT
+31,2,11,NZL,USA,PT,15,14,TRY,,
+31,2,12,USA,NZL,Restart,2,2,HE,,HE: ball lost in tackle
+31,2,13,NZL,USA,Intercept,14,14,TRY,,
+31,2,14,USA,NZL,Restart,3,5,Maul,,
+31,2,15,NZL,USA,Scrum,11,13,TRY,,
+31,2,16,USA,NZL,Restart,2,3,Kick,,
+31,2,17,NZL,USA,Kick,10,10,Kicked to touch,,
+32,1,1,WAL,FIJ,Reclaim,10,15,HE,,HE: ball thrown to touch
+32,1,2,FIJ,WAL,Line out,1,1,Line out stolen,,
+32,1,3,WAL,FIJ,Line out stolen,15,15,Intercept,,
+32,1,4,FIJ,WAL,Intercept,1,7,Poached,,
+32,1,5,WAL,FIJ,Poach,9,9,PEN,,PEN: not releasing
+32,1,6,FIJ,WAL,PK,9,14,TRY,PK: not releasing,
+32,1,7,WAL,FIJ,Scrum,6,6,Kick,Scrum: knocked on restart,
+32,1,8,FIJ,WAL,Kick,2,1,HE,,HE: fwd pass
+32,1,9,WAL,FIJ,Scrum,15,11,Counter ruck,,
+32,1,10,FIJ,WAL,Counter ruck,5,8,Intercept,,
+32,1,11,WAL,FIJ,Intercept,8,8,HE,,HE: knock on
+32,1,12,FIJ,WAL,Scrum,8,6,Intercept,,
+32,1,13,WAL,FIJ,Intercept,10,13,TRY,,
+32,2,14,WAL,FIJ,Restart,5,13,Intercept,,
+32,2,15,FIJ,WAL,Intercept,3,3,PEN,,PEN: not releasing
+32,2,16,WAL,FIJ,PK,13,13,TRY,PK: not releasing,
+32,2,17,FIJ,WAL,Restart,6,6,Tackled to touch,,
+32,2,18,WAL,FIJ,Line out,10,13,TRY,,
+32,2,19,WAL,FIJ,Reclaim,10,10,Tackled to touch,,
+32,2,20,FIJ,WAL,Line out,6,13,HE,,HE: fwd pass
+32,2,21,WAL,FIJ,Scrum,3,3,Kick,,
+32,2,22,FIJ,WAL,Kick,7,14,TRY,,
+32,2,23,WAL,FIJ,Scrum,6,3,Kicked to touch,Scrum: knocked on restart,
+33,1,1,ENG,ARG,Scrum,11,4,Tackled to touch,Scrum: knocked on restart,
+33,1,2,ARG,ENG,Line out,12,11,Scrum lost,,
+33,1,3,ENG,ARG,Scrum won,5,8,PEN,,PEN: not releasing
+33,1,4,ARG,ENG,PK,8,5,HE,PK: not releasing,HE: ball lost in tackle
+33,1,5,ENG,ARG,Intercept,11,14,TRY,,
+33,1,6,ARG,ENG,Restart,2,3,HE,,HE: ball thrown to touch
+33,1,7,ENG,ARG,Line out,13,12,Intercept,,
+33,1,8,ARG,ENG,Intercept,4,2,HE,,HE: ball lost in tackle
+33,1,9,ENG,ARG,Intercept,14,14,TRY,,
+33,2,10,ENG,ARG,Restart,5,6,HE,,HE: knock on
+33,2,11,ARG,ENG,Scrum,10,13,TRY,,
+33,2,12,ENG,ARG,Restart,5,6,PEN,,PEN: obstruction
+33,2,13,ARG,ENG,Scrum,10,14,TRY,,
+33,2,14,ENG,ARG,FK,8,8,PEN,FK: restart not 10,PEN: not releasing
+33,2,15,ARG,ENG,PK,8,8,Kick,PK: not releasing,
+33,2,16,ENG,ARG,Kick,2,2,Kicked to touch,,
+33,2,17,ARG,ENG,Line out,12,9,HE,,HE: knock on
+33,2,18,ENG,ARG,Scrum,8,8,PEN,,PEN: not releasing
+33,2,19,ARG,ENG,PK,8,12,Tackled to touch,PK: not releasing,
+34,1,1,AUS,FRA,Reclaim,11,15,TRY,,
+34,1,2,FRA,AUS,Restart,5,13,Line out stolen,,
+34,1,3,AUS,FRA,Line out stolen,3,7,Intercept,,
+34,1,4,FRA,AUS,Intercept,6,13,Intercept,,
+34,1,5,AUS,FRA,Intercept,3,14,TRY,,
+34,1,6,FRA,AUS,Restart,2,5,Kick,,
+34,1,7,AUS,FRA,PK,2,7,HE,PK: illegal contact on restart,HE:knock on
+34,1,8,FRA,AUS,Scrum,9,7,PEN,,PEN: obstruction
+34,1,9,AUS,FRA,PK,9,15,HE,PK: obstruction,HE:knock on
+34,2,10,FRA,AUS,Reclaim,11,15,Kick,,
+34,2,11,AUS,FRA,Kick,1,1,HE,,HE: knock on
+34,2,12,FRA,AUS,Scrum,15,15,HE,,HE: knock on
+34,2,13,AUS,FRA,Scrum,1,15,TRY,,
+34,2,14,FRA,AUS,Restart,2,14,TRY,,
+34,2,15,FRA,AUS,Reclaim,11,14,TRY,,
+34,2,16,FRA,AUS,Reclaim,11,11,PG,,PK: GOAL
+34,2,17,AUS,FRA,Restart,6,10,PEN,,PEN: not releasing
+34,2,18,FRA,AUS,PK,6,6,Kicked to touch,PK: not releasing,
+35,1,1,RSA,SCO,Restart,2,13,TRY,,
+35,1,2,SCO,RSA,Restart,4,4,HE,,HE:fwd pass
+35,1,3,RSA,SCO,Scrum,12,15,TRY,,
+35,1,4,SCO,RSA,Restart,1,7,PEN,,PEN: not releasing
+35,1,5,RSA,SCO,PK,9,11,HE,PK: not releasing,HE: knock on
+35,1,6,SCO,RSA,Scrum,5,2,Poached,,
+35,1,7,RSA,SCO,Poach,14,13,TRY,,
+35,2,8,SCO,RSA,Restart,4,4,Tackled to touch,,
+35,2,9,RSA,SCO,Line out ,12,14,TRY,,
+35,2,10,SCO,RSA,Restart,4,2,PEN,,PEN: playing ball on ground
+35,2,11,RSA,SCO,PK,14,14,TRY,PK: playing ball on ground,
+35,2,12,RSA,SCO,Reclaim,12,15,TRY,,
+35,2,13,SCO,RSA,Restart,4,4,Poached,,
+35,2,14,RSA,SCO,Poach,12,13,TRY,,
+36,1,1,JPN,RUS,PK,8,15,Intercept,PK: offside on restart,HE: knock on
+36,1,2,RUS,JPN,Intercept,1,8,HE,,HE: knock on
+36,1,3,JPN,RUS,Scrum,8,10,HE,,HE: knock on
+36,1,4,RUS,JPN,Scrum,6,7,Tackled to touch,,
+36,1,5,JPN,RUS,Line out,9,15,PEN,,PEN: not releasing
+36,1,6,RUS,JPN,PK,1,15,Tackled to touch,PK: not releasing,
+36,1,7,JPN,RUS,Line out,1,15,TRY,,
+36,2,8,JPN,RUS,Restart,6,14,TRY,,
+36,2,9,JPN,RUS,Reclaim,10,12,HE,,HE: fwd pass
+36,2,10,RUS,JPN,Scrum,4,11,Intercept,,
+36,2,11,JPN,RUS,Intercept,5,14,HE,,HE: ball lost in tackle
+36,2,12,RUS,JPN,Intercept,2,14,TRY,,
+36,2,13,JPN,RUS,Scrum,6,6,Intercept,Scrum: knocked on restart,
+36,2,14,RUS,JPN,Intercept,10,15,TRY,,
+36,2,15,JPN,RUS,Restart,6,8,HE,,HE: knock on
+36,2,16,RUS,JPN,Intercept,8,9,Tackled to touch,,
+37,1,1,URU,TUN,Restart,5,14,TRY,,
+37,1,2,URU,TUN,Reclaim,8,13,HE,,HE: fwd pass
+37,1,3,TUN,URU,Scrum,3,7,Tackled to touch,,
+37,1,4,URU,TUN,Line out,9,7,Counter ruck,,
+37,1,5,TUN,URU,Counter ruck,9,15,TRY,,
+37,1,6,URU,TUN,Restart,4,12,Kick,,
+37,1,7,TUN,URU,Kick,1,1,Tackled to touch,,
+37,2,8,URU,TUN,Line out,10,3,HE,Line out: knocked to touch on restart,HE: ball thrown to touch
+37,2,9,TUN,URU,Line out,3,2,HE,,HE: knock on
+37,2,10,URU,TUN,Scrum,14,15,TRY,,
+37,2,11,TUN,URU,Restart,6,3,Tackled to touch,,
+37,2,12,URU,TUN,Line out,13,13,Kicked to touch,,
+37,2,13,TUN,URU,Line out,3,12,HE,,HE: knock on
+37,2,14,URU,TUN,Scrum,4,4,Line out infraction,,
+37,2,15,TUN,URU,Scrum,12,10,PEN,,PEN: not releasing
+37,2,16,URU,TUN,PK,6,6,Kicked to touch,PK: not releasing,
+38,1,1,RUS,ESP,Scrum,10,10,Scrum lost,Scrum: knocked on restart,
+38,1,2,ESP,RUS,Scrum won,6,8,Poached,,
+38,1,4,RUS,ESP,Poach,8,13,TRY,,
+38,1,5,ESP,RUS,Restart,3,14,Counter ruck,,
+38,1,6,RUS,ESP,Counter ruck,2,8,Poached,,
+38,1,7,ESP,RUS,Poach,8,0,HE,,HE: knock on
+38,1,8,RUS,ESP,Intercept,4,14,TRY,,
+38,1,9,ESP,RUS,Restart,5,14,HE,,HE: knock on
+38,1,10,RUS,ESP,Scrum,2,2,Tackled in goal,,
+38,2,11,ESP,RUS,Reclaim,5,14,TRY,,
+38,2,12,RUS,ESP,Scrum,5,10,HE,,HE: ball lost in tackle
+38,2,13,ESP,RUS,Scrum,6,2,HE,,HE: knock on
+38,2,14,RUS,ESP,Scrum,14,14,PEN,,PEN: offside
+38,2,15,ESP,RUS,PK,2,7,PEN,PK: offside,PEN: off side
+38,2,16,RUS,ESP,PK,9,13,TRY,,
+38,2,17,ESP,RUS,PK,5,8,PEN,PK: illegal touching,PEN: off side
+38,2,18,RUS,ESP,PK,8,8,Kicked to touch,,
+39,1,1,GEO,HKG,Restart,5,14,TRY,,
+39,1,2,HKG,GEO,Restart,5,14,TRY,,
+39,1,3,GEO,HKG,Restart,5,9,HE,,HE: fwd pass
+39,1,4,HKG,GEO,Scrum,7,8,PEN,,PEN: diving over
+39,1,5,GEO,HKG,PK,8,13,TRY,PK: diving over,
+39,2,6,GEO,HKG,Reclaim,8,13,TRY,,
+39,2,7,HKG,GEO,FK,8,14,Poached,FK: restart not 10,
+39,2,8,GEO,HKG,Poach,2,11,HE,,HE: knock on
+39,2,9,HKG,GEO,Intercept,5,13,TRY,,
+39,2,10,GEO,HKG,Restart,6,9,Tackled to touch,,
+39,2,11,HKG,GEO,Line out,7,9,HE,,HE: ball thrown to touch
+39,2,12,GEO,HKG,Line out,7,13,TRY,,
+39,2,13,HKG,GEO,Restart,6,9,Kick,,
+39,2,14,GEO,HKG,Kick,1,12,Intercept,,
+39,2,15,HKG,GEO,Intercept,4,9,Counter ruck,,
+39,2,16,GEO,HKG,Counter ruck,7,14,TRY,,
+40,1,1,JPN,PHL,Reclaim,7,14,TRY,,
+40,1,2,PHL,JPN,Restart,6,4,HE,,HE: knock on
+40,1,3,JPN,PHL,Scrum,12,14,TRY,,
+40,1,4,JPN,PHL,Reclaim,8,14,TRY,,
+40,1,5,JPN,PHL,Scrum,11,14,TRY,Scrum: knocked on restart,
+40,1,6,PHL,JPN,Restart,6,9,Intercept,,
+40,1,7,JPN,PHL,Intercept,4,14,HE,,HE: knock on
+40,2,8,JPN,PHL,Restart,8,14,HE,,HE: knock on
+40,2,9,PHL,JPN,Scrum,2,3,HE,,HE: knock on
+40,2,10,JPN,PHL,Intercept,13,13,TRY,,
+40,2,11,JPN,PHL,Reclaim,10,14,TRY,,
+40,2,12,JPN,PHL,Reclaim,10,14,TRY,,
+40,2,13,PHL,JPN,Restart,6,8,Counter ruck,,
+40,2,14,JPN,PHL,Counter ruck,8,15,TRY,,
+41,1,1,ZIM,SAM,Restart,5,15,TRY,,
+41,1,2,SAM,ZIM,Restart,4,4,Maul,,
+41,1,3,ZIM,SAM,Scrum,12,11,HE,,HE: knock on
+41,1,4,SAM,ZIM,Scrum,5,14,TRY,,
+41,1,5,SAM,ZIM,Reclaim,7,7,PEN,,PEN: not releasing
+41,1,6,ZIM,SAM,PK,9,14,HE,PK: not releasing,HE: knock on
+41,1,7,SAM,ZIM,Scrum,2,14,TRY,,
+41,2,8,ZIM,SAM,Reclaim,12,9,Intercept,,
+41,2,9,SAM,ZIM,Intercept,7,7,HE,,HE: ball lost  to touch
+41,2,10,ZIM,SAM,Line out,9,14,TRY,,
+41,2,11,SAM,ZIM,Restart,4,7,HE,,HE: lost fwd in tackle
+41,2,12,ZIM,SAM,Intercept,9,13,TRY,,
+41,2,13,SAM,ZIM,Restart,1,13,TRY,,
+41,2,14,SAM,ZIM,Reclaim,10,14,PT,,PT: obstruction
+42,1,1,ARG,USA,Reclaim,11,10,Maul,,
+42,1,2,USA,ARG,Scrum,6,5,HE,,HE: knock on
+42,1,3,ARG,USA,Scrum,11,14,Counter ruck,,
+42,1,4,USA,ARG,Counter ruck,2,2,Kick,,
+42,1,5,ARG,USA,Kick,9,13,TRY,,
+42,1,6,USA,ARG,Restart,4,4,Kick,,
+42,1,7,ARG,USA,Line out,4,4,Line out stolen,,
+42,1,8,USA,ARG,Line out stolen,12,14,TRY,,
+42,1,8,ARG,USA,FK,8,14,TRY,FK: restart direct to touch,
+42,2,9,USA,ARG,Reclaim,12,7,HE,,HE: knock on
+42,2,10,ARG,USA,Scrum,9,13,TRY,,
+42,2,11,ARG,USA,Reclaim,8,6,Intercept,,
+42,2,12,USA,ARG,Intercept,10,13,Intercept,,
+42,2,13,ARG,USA,Intercept,3,15,TRY,,
+42,2,14,USA,ARG,FK,8,14,HE,FK: ahead of kicker,HE: ball lost fwd in tackle
+42,2,15,ARG,USA,Scrum,2,7,HE,,HE: knock on
+43,1,1,POR,SCO,Scrum,11,15,PEN,Scrum: knocked on restart,PEN: not releasing
+43,1,2,SCO,POR,PK,1,14,TRY,,PK: not releasing
+43,1,3,POR,SCO,Restart,5,10,PEN,PEN: not releasing,
+43,1,4,SCO,POR,PK,6,9,Line out stolen,,
+43,1,5,POR,SCO,Line out stolen,7,14,Kick,,
+43,1,6,SCO,POR,Kick,2,6,HE,,HE: knock on
+43,1,7,POR,SCO,Scrum,7,12,Intercept,,
+43,1,8,SCO,POR,Intercept,4,15,TRY,,
+43,2,9,POR,SCO,Restart,5,5,Maul,,HE: lost fwd in tackle
+43,2,10,SCO,POR,Scrum,11,13,HE,,HE: knock on
+43,2,11,POR,SCO,Scrum,3,11,HE,,
+43,2,12,SCO,POR,Intercept,5,8,Kick,,
+43,2,13,POR,SCO,Kick,1,8,Kick,,
+43,2,14,SCO,POR,Kick,4,7,Kick,,
+43,2,15,POR,SCO,Kick,3,8,HE,,HE: fwd pass
+43,2,16,SCO,POR,Scrum,8,13,TRY,,
+43,2,17,POR,SCO,Line out,4,5,HE,,HE: knock on
+44,1,1,CAN,TON,Reclaim,11,14,Poached,,
+44,1,2,TON,CAN,Poach,2,3,HE,,HE: knock on
+44,1,3,CAN,TON,Scrum,10,12,Kicked to touch,,
+44,1,4,TON,CAN,Line out,1,14,Poached,,
+44,1,5,CAN,TON,Poach,2,13,TRY,,
+44,1,6,TON,CAN,Restart,8,8,Intercept,,
+44,1,7,CAN,TON,Intercept,8,14,TRY,,
+44,1,8,TON,CAN,Restart,5,11,HE,,HE: knock on
+44,1,9,CAN,TON,Intercept,5,14,Intercept,,
+44,1,10,TON,CAN,Intercept,2,2,Intercept,,
+44,1,11,CAN,CAN,Intercept,14,14,HE,,HE: fwd pass
+44,2,12,CAN,TON,FK,5,14,TRY,FK: scrum early engage,
+44,2,13,TON,CAN,Restart,6,6,Tackled to touch,,
+44,2,14,CAN,TON,Line out,10,13,TRY,,
+44,2,15,TON,CAN,Restart,6,6,PEN,,PEN: diving over
+44,2,16,CAN,TON,PK,10,14,HE,PK: diving over,HE: knock on
+44,2,17,TON,CAN,Scrum,2,9,Tackled to touch,,
+44,2,18,CAN,TON,Line out,7,9,Poached,,
+44,2,19,TON,CAN,Poach,7,10,Intercept,,
+44,2,20,CAN,TON,Intercept,6,6,Tackled to touch,,
+45,1,1,FIJ,RSA,Line out,4,6,PEN,Line out: restart to touch,PEN: diving over
+45,1,2,RSA,FIJ,PK,10,15,TRY,PK: diving over,
+45,1,3,FIJ,RSA,Restart,4,3,HE,,HE: ball lost  to touch
+45,1,4,RSA,FIJ,Line out,13,14,HE,,HE: lost fwd in tackle
+45,1,5,FIJ,RSA,Intercept,2,8,HE,,HE: fwd pass
+45,1,6,RSA,FIJ,Scrum,8,8,Scrum lost,,
+45,1,7,FIJ,RSA,Scrum won,8,15,Tackled to touch,,
+45,1,8,RSA,FIJ,Line out,1,2,Kick,,
+45,1,9,FIJ,RSA,Kick,8,13,TRY,,
+45,1,10,FIJ,RSA,Reclaim,11,14,TRY,,
+45,2,11,RSA,FIJ,Scrum,6,7,HE,Scrum: knocked on restart,HE: ball lost fwd in tackle
+45,2,12,FIJ,RSA,Scrum,9,7,HE,,HE: knock on
+45,2,13,RSA,FIJ,FK,9,11,PEN,FK: scrum early engage,PEN: diving over
+45,2,14,FIJ,RSA,PK,5,10,Line out stolen,PK: diving over,
+45,2,15,RSA,FIJ,Line out stolen,6,13,PEN,,PEN: not releasing
+45,2,16,FIJ,RSA,PK,3,0,Kicked to touch,PK: not releasing,
+45,2,17,RSA,FIJ,Line out,1,2,Kick,,
+45,2,18,FIJ,RSA,Kick,7,7,PEN,,PEN: not releasing
+45,2,19,RSA,FIJ,PK,9,13,TRY,PK: not releasing,
+45,2,20,FIJ,RSA,Restart,5,5,Kicked to touch,,
+46,1,1,NZL,WAL,Restart,6,8,HE,,HE: knock on
+46,1,2,WAL,NZL,Scrum,8,14,HE,,HE: knock on
+46,1,3,NZL,WAL,Scrum,2,14,TRY,,
+46,1,4,WAL,NZL,Restart,3,3,Kicked to touch,,
+46,1,5,NZL,WAL,Line out,4,14,TRY,,
+46,1,6,WAL,NZL,Restart,3,15,TRY,,
+46,2,7,WAL,NZL,Restart,2,5,PEN,,PEN: not releasing
+46,2,8,NZL,WAL,PK,11,13,PEN,PK: not releasing,PEN: diving over
+46,2,9,WAL,NZL,PK,3,7,Kick,PK: diving over,
+46,2,10,NZL,WAL,Kick,3,14,TRY,,
+46,2,11,NZL,WAL,Reclaim,10,13,TRY,,
+46,2,12,WAL,NZL,Restart,3,11,PEN,,PEN: not releasing
+46,2,13,NZL,WAL,PK,5,9,PEN,PK: not releasing,PEN: off side
+46,2,14,WAL,NZL,PK,7,14,PEN,PK: offside,PEN: diving over
+46,2,15,NZL,WAL,PK,2,15,PEN,PK: diving over,PEN: diving over
+46,2,16,WAL,NZL,PK,1,13,TRY,,
+47,1,1,AUS,ENG,Restart,5,11,Intercept,,
+47,1,2,ENG,AUS,Intercept,5,14,TRY,,
+47,1,3,ENG,AUS,Reclaim,11,12,Poached,,
+47,1,4,AUS,ENG,Poach,4,8,Intercept,,
+47,1,5,ENG,AUS,Intercept,8,14,TRY,,
+47,1,6,ENG,AUS,Reclaim,11,10,Tackled to touch,,
+47,1,7,AUS,ENG,Line out,6,6,Poached,,
+47,1,8,ENG,AUS,Poach,10,14,TRY,,
+47,1,9,AUS,ENG,Restart,5,7,Intercept,,
+47,1,10,ENG,AUS,Intercept,9,15,Tackled to touch,,
+47,1,11,AUS,ENG,PK,2,9,Kick,PK: illegal touching in line out,
+47,2,12,AUS,ENG,Reclaim,14,13,TRY,,
+47,2,12,ENG,AUS,Restart,1,2,Kicked to touch,,
+47,2,13,AUS,ENG,Line out,7,12,HE,,HE: knock on
+47,2,14,ENG,AUS,Scrum,4,2,Intercept,,
+47,2,15,AUS,ENG,Intercept,14,14,TRY,,
+47,2,16,AUS,ENG,Scrum,12,13,TRY,Scrum: knocked on restart,
+47,2,17,AUS,ENG,Reclaim,11,14,HE,,HE: knock on
+47,2,18,ENG,AUS,Intercept,2,4,Kicked to touch,,
+47,2,19,AUS,ENG,Line out,6,12,Line out stolen,,
+47,2,20,ENG,AUS,Line out won,4,4,PEN,,PEN: not releasing
+47,2,21,AUS,ENG,PK,12,11,HE,PK: not releasing,HE: knock on
+47,2,22,ENG,AUS,Intercept,8,9,HE,,HE: ball lost  to touch
+48,1,1,KEN,FRA,FK,8,8,HE,FK: restart direct to touch,HE: knock on
+48,1,2,FRA,KEN,Scrum,8,15,TRY,,
+48,1,3,KEN,FRA,Restart,5,14,TRY,,
+48,1,4,FRA,KEN,Scrum,5,13,TRY,Scrum: knocked on restart,
+48,1,5,FRA,KEN,Reclaim,11,13,Maul,,
+48,2,6,FRA,KEN,Restart,5,8,Kick,,
+48,2,7,KEN,FRA,Kick,6,13,TRY,,
+48,2,8,FRA,KEN,Restart,6,11,Counter ruck,,
+48,2,9,KEN,FRA,Counter ruck,5,13,TRY,,
+48,2,10,FRA,KEN,FK,8,14,TRY,FK: restart not 10,
+48,2,11,FRA,KEN,Scrum,11,10,HE,Scrum: knocked on restart,HE: knock on
+48,3,12,KEN,FRA,Reclaim,11,15,PEN,,PEN: not releasing
+48,3,13,FRA,KEN,PK,1,7,Maul,PK: not releasing,
+48,3,14,KEN,FRA,Scrum,9,9,Scrum lost,,
+48,3,15,FRA,KEN,Scrum won,7,7,PEN,,PEN: hands in ruck
+48,3,16,KEN,FRA,PK,9,12,TRY,PK: hands in ruck,
+URU,1,1,URU,RUS,Restart,5,7,HE,,HE: knock on
+49,1,2,RUS,URU,Scrum,9,14,TRY,,
+49,1,3,URU,RUS,Restart,5,5,HE,,HE: knock on
+49,1,4,RUS,URU,Scrum,11,11,HE,,HE: knock on
+49,1,5,URU,RUS,FK,5,5,Kick,FK: unbinding in scrum,
+49,1,6,RUS,URU,Kick,2,15,TRY,,
+49,1,7,URU,RUS,Line out,6,2,HE,Line out: restart to touch,HE: knock on
+49,1,8,RUS,URU,Scrum,14,14,TRY,,
+49,2,9,RUS,URU,Restart,6,14,TRY,,
+49,2,10,URU,RUS,Restart,4,7,Line out infraction,,Line out: not straight
+49,2,11,RUS,URU,FK,9,15,TRY,FK: line out infraction,
+49,2,12,URU,RUS,Restart,3,6,Intercept,,
+49,2,13,RUS,URU,Intercept,10,13,TRY,,
+50,1,1,JPN,GEO,Restart,4,4,HE,,HE: knock on
+50,1,2,GEO,JPN,Scrum,12,15,HE,,HE: knock on
+50,1,3,JPN,GEO,Scrum,1,12,HE,,HE: ball lost  to touch
+50,1,4,GEO,JPN,Line out,4,8,HE,,HE: lost fwd in tackle
+50,1,5,JPN,GEO,PK,8,11,HE,PK: Scrum,HE: knock on
+50,1,6,GEO,JPN,Scrum,5,14,TRY,,
+50,1,7,JPN,GEO,Restart,4,4,Counter ruck,,
+50,1,8,GEO,JPN,Counter ruck,12,13,TRY,,
+50,2,9,GEO,JPN,Restart,4,7,HE,,HE: knock on
+50,2,10,JPN,GEO,Scrum,9,14,TRY,,
+50,2,11,GEO,JPN,Restart,6,14,TRY,,
+50,2,12,JPN,GEO,Restart,5,13,TRY,,
+50,2,13,JPN,GEO,Reclaim,10,14,TRY,,
+50,2,14,JPN,GEO,Reclaim,10,11,PG,,
+51,1,1,SAM,ARG,Restart,4,6,Tackled to touch,,
+51,1,2,ARG,SAM,Line out,10,14,TRY,,
+51,1,3,SAM,ARG,PK,5,13,Tackled to touch,PK: obstruction,
+51,1,4,ARG,SAM,Line out,3,2,Kick,,
+51,1,5,SAM,ARG,Kick,8,12,Counter ruck,,
+51,1,6,ARG,SAM,Counter ruck,4,14,TRY,,
+51,1,7,SAM,ARG,Restart,5,10,HE,,HE: lost fwd in tackle
+51,1,8,ARG,SAM,Scrum,6,6,Kicked to touch,,
+51,2,9,SAM,ARG,Reclaim,8,13,TRY,,
+51,2,10,SAM,ARG,Scrum,11,15,TRY,Scrum: knocked on restart,
+51,2,11,ARG,SAM,Restart,6,6,PEN,,PEN: hands in ruck
+51,2,12,SAM,ARG,PK,10,15,Kick,PK: hands in ruck,
+51,2,13,ARG,SAM,Kick,1,1,HE,,HE: lost fwd in tackle
+51,2,14,SAM,ARG,Scrum,15,15,PEN,,PEN: not releasing
+51,2,15,ARG,SAM,Line out,7,13,HE,,HE: knock on
+51,2,16,SAM,ARG,Scrum,3,8,HE,,HE: lost fwd in tackle
+51,2,17,ARG,SAM,Intercept,8,8,Intercept,,
+51,2,18,SAM,ARG,Intercept,8,15,TRY,,
+52,1,1,CAN,SCO,Reclaim,10,13,HE,,HE: ball lost  to touch
+52,1,2,SCO,CAN,Scrum,3,8,HE,,HE:knock on
+52,1,3,CAN,SCO,Scrum,8,7,Intercept,,
+52,1,4,SCO,CAN,Intercept,9,8,Kicked to touch,,
+52,1,5,CAN,SCO,Kick,5,5,PEN,,PEN: not rolling away
+52,1,6,SCO,CAN,PK,11,14,TRY,PK: not rolling away,
+52,1,7,CAN,SCO,PK,5,8,HE,PK: illegal contact on restart,HE: knock on
+52,1,8,SCO,CAN,Scrum,8,11,Maul,,
+52,1,9,CAN,SCO,Scrum,5,5,Scrum lost,,
+52,1,10,SCO,CAN,Scrum won,11,13,HE,,HE: knock on
+52,2,11,CAN,SCO,Restart,5,14,TRY,,
+52,2,12,SCO,CAN,FK,8,8,PEN,FK: restart not 10,PEN: not releasing
+52,2,13,CAN,SCO,PK,8,14,TRY,PK: not releasing,
+52,2,14,SCO,CAN,Restart,6,8,Poached,,
+52,2,15,CAN,SCO,Poach,8,14,TRY,,
+52,2,16,CAN,SCO,Scrum,11,9,Intercept,Scrum: knocked on restart,
+52,2,17,SCO,CAN,Intercept,7,7,Intercept,,
+52,2,18,CAN,SCO,Intercept,9,9,Tackled to touch,,
+52,2,19,SCO,CAN,Line out,7,8,HE,,HE: knock on
+53,1,1,NZL,FIJ,Restart,3,4,HE,,HE: ball lost  to touch
+53,1,2,FIJ,NZL,Scrum,12,12,Scrum lost,,
+53,1,3,NZL,FIJ,Scrum won,4,13,TRY,,
+53,1,4,FIJ,NZL,Restart,5,5,PEN,,PEN: obstruction
+53,1,5,NZL,FIJ,PK,11,13,TRY,,
+53,1,6,FIJ,NZL,Line out,1,7,Line out stolen,Line out: restart to touch,
+53,1,7,NZL,FIJ,Line out won,9,13,TRY,,
+53,1,8,FIJ,NZL,Restart,3,14,PEN,,PEN: not releasing
+53,1,9,NZL,FIJ,PK,2,2,Kicked to touch,PK: not releasing,
+53,2,10,FIJ,NZL,Restart,3,6,HE,,HE: knock on
+53,2,11,NZL,FIJ,Scrum,10,11,HE,,HE: knock on
+53,2,12,FIJ,NZL,Scrum,5,11,HE,,HE: knock on
+53,2,13,NZL,FIJ,Scrum,5,2,Kick,,
+53,2,14,FIJ,NZL,Kick,5,11,Intercept,,
+53,2,15,NZL,FIJ,Intercept,5,2,Kick,,
+53,2,16,FIJ,NZL,Kick,5,11,PEN,,PEN: playing ball on ground
+53,2,17,NZL,FIJ,PK,5,9,Line out infraction,PK: playing ball on ground,Line out: not straight
+53,2,18,FIJ,NZL,Scrum,7,14,HE,,HE: knock on
+53,2,19,NZL,FIJ,Scrum,2,2,Tackled in goal,,
+53,2,20,FIJ,NZL,FK,14,14,Poached,FK: scrum early engage,
+53,2,21,NZL,FIJ,Poach,2,2,Kicked to touch,,
+54,1,1,KEN,ENG,Restart,2,3,HE,,HE: lost fwd in tackle
+54,1,2,ENG,KEN,Scrum,13,15,HE,,HE: knock on
+54,1,3,KEN,ENG,Scrum,1,3,HE,,HE: lost fwd in tackle
+54,1,4,ENG,KEN,Intercept,11,14,TRY,,
+54,1,5,ENG,KEN,Reclaim,13,13,TRY,,
+54,1,6,KEN,ENG,Restart,6,15,Intercept,,
+54,1,7,ENG,KEN,Intercept,2,2,Kicked to touch,,
+54,1,8,KEN,ENG,Line out,9,9,Line out infraction,,Line out: not straight
+54,1,9,ENG,KEN,Scrum,7,12,PEN,,PEN: hands in ruck
+54,1,10,KEN,ENG,PK,4,10,Tackled to touch,,
+54,1,11,ENG,KEN,Line out,6,6,Line out infraction,,Line out: not straight
+54,1,12,KEN,ENG,Scrum,10,10,Scrum lost,,
+54,1,13,ENG,KEN,Scrum won,6,4,Kick,,
+54,2,14,ENG,KEN,Restart,3,3,Kick,,
+54,2,15,KEN,ENG,Kick,1,1,Kick,,
+54,2,16,ENG,KEN,Kick,5,8,Kick,,
+54,2,17,KEN,ENG,Scrum,3,3,HE,,HE: knock on
+54,2,18,ENG,KEN,Scrum,13,14,HE,,HE: lost fwd in tackle
+54,2,19,KEN,ENG,Intercept,2,13,TRY,,
+54,2,20,ENG,KEN,Restart,6,2,Kick,,
+54,2,21,KEN,ENG,Kick,5,8,Kick,,
+54,2,22,ENG,KEN,Kick,4,4,Kicked to touch,,
+54,2,23,KEN,ENG,Line out,12,11,HE,,HE: knock on
+54,2,24,ENG,KEN,Intercept,5,5,Kick,,
+54,2,25,KEN,ENG,Kick,2,13,Tackled to touch,,
+55,1,1,RUS,JPN,Line out,3,2,Kick,Line out: restart to touch,
+55,1,2,JPN,RUS,Scrum,11,11,HE,,HE: knock on
+55,1,3,RUS,JPN,Scrum,5,5,HE,,HE: knock on
+55,1,4,JPN,RUS,Scrum,11,8,Counter ruck,,
+55,1,5,RUS,JPN,Counter ruck,8,14,PEN,,PEN: hands in ruck
+55,1,6,JPN,RUS,PK,2,8,Intercept,PK: hands in ruck,
+55,1,7,RUS,JPN,Intercept,9,15,TRY,,
+55,1,8,JPN,RUS,Line out,1,2,Intercept,Line out: restart to touch,
+55,1,9,RUS,JPN,Intercept,14,14,TRY,,
+55,1,10,JPN,RUS,Restart,6,15,TRY,,
+55,2,11,JPN,RUS,Line out,3,3,Kick,Line out: restart to touch,
+55,2,12,RUS,JPN,Kick,8,15,TRY,,
+55,2,13,JPN,RUS,Restart,1,1,Kick,,
+55,2,14,RUS,JPN,Line out,6,6,Line out stolen,,
+55,2,15,JPN,RUS,Line out won,10,10,HE,,HE: knock on
+55,2,16,RUS,JPN,Scrum,6,6,Kicked to touch,,
+55,2,17,JPN,RUS,Line out,10,15,PEN,,PEN: hands in ruck
+55,2,18,RUS,JPN,PK,1,1,Kick,PK: hands in ruck,
+55,2,19,JPN,RUS,Kick,8,11,HE,,HE: knock on
+55,2,20,RUS,JPN,Intercept,5,14,TRY,,
+55,2,21,JPN,RUS,Restart,6,9,Intercept,,
+55,2,22,RUS,JPN,Intercept,8,14,TRY,,
+56,1,1,SAM,CAN,Restart,6,7,PEN,,PEN: offside
+56,1,2,CAN,SAM,PK,9,15,Line out infraction,PK: offside,Line out: not straight
+56,1,3,SAM,CAN,Scrum,1,2,Kick,,
+56,1,4,CAN,SAM,Kick,8,13,Tackled to touch,,
+56,1,5,SAM,CAN,Line out,3,2,Kicked to touch,,
+56,1,6,CAN,SAM,Line out,12,14,TRY,,
+56,1,7,SAM,CAN,Scrum,6,5,HE,Scrum: knocked on restart,HE: knock on
+56,1,8,CAN,SAM,Scrum,11,13,TRY,,
+56,2,9,SAM,CAN,PK,10,9,Poached,PK: playing man in air,
+56,2,10,CAN,SAM,Poach,7,15,Line out stolen,,
+56,2,11,SAM,CAN,Line out won,1,2,PEN,,PEN: entering ruck from side
+56,2,12,CAN,SAM,PK,14,14,TRY,PK: entering ruck from side,
+56,2,13,SAM,CAN,Restart,6,15,Maul,,
+56,2,14,CAN,SAM,Scrum,1,1,Kicked to touch,,
+56,2,15,SAM,CAN,Line out,9,9,Line out stolen,,
+56,2,16,CAN,SAM,Line out won,7,8,Kick,,
+56,2,17,SAM,CAN,Kick,4,14,TRY,,
+56,2,18,CAN,SAM,Restart,6,8,Counter ruck,,
+56,2,19,SAM,CAN,Counter ruck,8,14,TRY,,
+57,1,1,KEN,FIJ,Restart,6,6,PEN,,PEN: not releasing
+57,1,2,FIJ,KEN,PK,10,15,TRY,PK: not releasing,
+57,1,3,FIJ,KEN,Scrum,10,14,TRY,Scrum: knocked on restart,
+57,1,4,KEN,FIJ,Restart,3,1,Kick,,
+57,1,5,FIJ,KEN,Kick,5,5,HE,,HE: knock on
+57,1,6,KEN,FIJ,Scrum,11,12,HE,,HE: lost fwd in tackle
+57,1,7,FIJ,KEN,Scrum,4,8,HE,,HE: lost fwd in tackle
+57,1,8,KEN,FIJ,Intercept,7,14,TRY,,
+57,2,9,FIJ,KEN,Restart,3,7,Poached,,
+57,2,10,KEN,FIJ,Poach,9,10,HE,,HE: lost fwd in tackle
+57,2,11,FIJ,KEN,Intercept,6,13,TRY,,
+57,2,12,KEN,FIJ,FK,8,10,Tackled to touch,FK: restart not 10,
+57,2,13,FIJ,KEN,Line out,6,6,Line out stolen,,
+57,2,14,KEN,FIJ,Line out won,7,5,HE,,HE: knock on
+57,2,15,FIJ,KEN,Intercept,11,14,Intercept,,
+57,2,16,KEN,FIJ,Intercept,2,1,Tackled to touch,,
+57,2,17,FIJ,KEN,Line out,15,14,TRY,,
+57,2,18,KEN,FIJ,Restart,6,1,HE,,HE: lost fwd in tackle
+57,2,19,FIJ,KEN,PK,15,15,TRY,PK: delay of game,
+57,2,20,KEN,FIJ,Restart,2,3,HE,,HE: lost fwd in tackle
+57,2,21,FIJ,KEN,Scrum,13,14,Poached,,
+57,2,22,KEN,FIJ,Poach,2,4,Tackled to touch,,
+58,1,1,NZL,ENG,Restart,6,14,TRY,,
+58,1,2,ENG,NZL,Restart,3,3,Kick,,
+58,1,3,NZL,ENG,Kick,1,1,Kicked to touch,,
+58,1,4,ENG,NZL,Line out,9,9,Line out stolen,,
+58,1,5,NZL,ENG,Line out won,7,9,PEN,,PEN: hands in ruck
+58,1,6,ENG,NZL,PK,7,7,HE,PK: hands in ruck,HE: knock on
+58,1,7,NZL,ENG,Scrum,9,7,Kicked to touch,,
+58,1,8,ENG,NZL,Line out,3,3,Line out stolen,,
+58,1,9,NZL,ENG,Line out won,13,13,TRY,,
+58,1,10,ENG,NZL,Restart,3,4,Poached,,
+58,1,11,NZL,ENG,Poach,12,13,TRY,,
+58,1,12,ENG,NZL,Restart,6,6,Kick,,
+58,1,13,NZL,ENG,Kick,1,2,Kicked to touch,,
+58,2,14,ENG,NZL,Restart,3,3,Kick,,
+58,2,15,NZL,ENG,Kick,1,1,Kick,,
+58,2,16,ENG,NZL,Kick,6,6,Kick,,
+58,2,17,NZL,ENG,Kick,1,1,Kick,,
+58,2,18,ENG,NZL,Kick,3,3,Kick,,
+58,2,19,NZL,ENG,Kick,7,7,Kick,,
+58,2,20,ENG,NZL,Kick,3,3,Kick,,
+58,2,21,NZL,ENG,Kick,4,5,Kicked to touch,,
+58,2,22,ENG,NZL,Line out,1,1,Kick,,
+58,2,23,NZL,ENG,Kick,9,14,HE,,HE: ball lost  to touch
+58,2,24,ENG,NZL,Line out,3,3,Line out stolen,,
+58,2,25,NZL,ENG,Line out won,13,10,Kick,,
+58,2,26,ENG,NZL,Kick,1,1,Kick,,
+58,2,27,NZL,ENG,Kick,3,3,Kick,,
+58,2,28,ENG,NZL,Kick,1,1,Kicked to touch,,
+58,2,29,NZL,ENG,Line out,9,9,Line out stolen,,
+58,2,30,ENG,NZL,Line out won,7,11,HE,,HE: knock on
+58,2,31,NZL,ENG,Scrum,5,5,Kick,,
+58,2,32,ENG,NZL,Kick,1,3,Counter ruck,,
+58,2,33,NZL,ENG,Counter ruck,13,14,TRY,,
+58,2,34,ENG,NZL,Restart,3,5,Maul,,
+58,2,35,NZL,ENG,Scrum,11,8,HE,,HE: knock on
+58,2,36,ENG,NZL,Scrum,8,8,PEN,,PEN: not releasing
+58,2,37,NZL,ENG,PK,8,13,TRY,PK: not releasing,
