@@ -2,9 +2,6 @@ library("dplyr")
 
 match_score <- function(matches=1:180, team="all", event="all", round="all") { 
   
-  # load data file
-  ws7s_poss <- read.csv("ws72014_poss_4.csv", header=TRUE, stringsAsFactors=FALSE)
-
   # validate input and subset data
   if (event != "all") { 
     if (!event %in% unique(ws7s_poss$EVENT)) stop('invalid event')
@@ -103,16 +100,19 @@ avg_victory_margin <- function(matches) {
 
 # show all stats by round
 first_score_summary <- function() { 
-  ws7s_poss <- read.csv("ws72014_poss_4.csv", header=TRUE, stringsAsFactors=FALSE)
   stat_table <- c()
   for (i in c("all",unique(ws7s_poss$ROUND))) { 
     x <- match_score(round=i)
     stat_table <-rbind(stat_table, c(i, nrow(x),first_try(x),first_goal(x),avg_victory_margin(x)))
   }
   colnames(stat_table) <- c("round","matches","try","goal","avm")
-  print(stat_table)
-  #View(stat_table)
+  #print(stat_table)
+  View(stat_table)
 }
+
+# begin analysis
+download.file("https://raw.githubusercontent.com/jliberma/rugby7s/master/01_first_blood/ws72014_poss_4.csv", destfile="ws72014_poss_4.csv", method="curl")
+ws7s_poss <- read.csv("ws72014_poss_4.csv", header=TRUE, stringsAsFactors=FALSE)
 first_score_summary()
 
 # Plot victory margins in pool play for 1st scorers and comebacks
@@ -125,6 +125,3 @@ y<-hist(y$diff, breaks=24)
 plot(x,col=rgb(0,0,1,1/4), xlim=c(0,60), main="Pool Victory Margins", xlab="Points" )
 plot(y,col=rgb(1,0,0,1/4), xlim=c(0,60), add=T)
 legend("topright", c("First Scorer","Comeback"), pch=15,col=c(rgb(0,0,1,1/3),rgb(1,0,0,1/3)))
-
-# what is the avm for score 1st vs comeback in pool play?
-# what happens if we remove the non-core teams from this?
