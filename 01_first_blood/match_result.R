@@ -1,7 +1,7 @@
 library("dplyr")
 
 # download the data file and save it to an object
-download.file("https://raw.githubusercontent.com/jliberma/rugby7s/master/ws72014_possession_stats.csv", destfile="ws72014_poss_5.csv", method="curl")
+download.file("https://raw.githubusercontent.com/jliberma/rugby7s/master/01_first_blood/ws72014_poss_5.csv", destfile="ws72014_poss_5.csv", method="curl")
 ws7s_poss <- read.csv("ws72014_poss_5.csv", header=TRUE, stringsAsFactors=FALSE)
 
 match_score <- function(matches=1:225, team="all", event="all", round="all") { 
@@ -60,5 +60,5 @@ match_score <- function(matches=1:225, team="all", event="all", round="all") {
 #NZL_pool <- match_score(team="NZL", round="Pool")
 #View(NZL_pool)
 
-#FIJ_pool <- match_score(team="FIJ", round="Pool")
-#View(FIJ_pool)
+FIJ_pool <- match_score(team="FIJ", round="Pool")
+View(FIJ_pool)
