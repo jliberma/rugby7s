@@ -60,5 +60,5 @@ match_score <- function(matches=1:225, team="all", event="all", round="all") {
 #NZL_pool <- match_score(team="NZL", round="Pool")
 #View(NZL_pool)
 
-FIJ_pool <- match_score(team="FIJ", round="Pool")
-View(FIJ_pool)
+#FIJ_pool <- match_score(team="FIJ", round="Pool")
+#View(FIJ_pool)
