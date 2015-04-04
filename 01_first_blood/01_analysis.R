@@ -1,5 +1,6 @@
-source("../func/match_func.R")
-source("../func/poss_func.R")
+library(devtools)
+source_url("https://raw.githubusercontent.com/jliberma/rugby7s/master/func/match_func.R")
+source_url("https://raw.githubusercontent.com/jliberma/rugby7s/master/func/poss_func.R")
 
 # Calculate win % by round for first try scorers
 first_score_summary <- function() {
