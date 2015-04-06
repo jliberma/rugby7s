@@ -1,0 +1,205 @@
+```{r set-options, echo=FALSE, cache=FALSE}
+options(width = 80)
+```
+![](https://raw.githubusercontent.com/jliberma/rugby7s/master/graphics/s7-analysis.png)
+***
+---
+#title: "Does scoring first affect the outcome of a rugby sevens match?"
+output: html_document
+---
+
+# Does scoring first affect the outcome of a rugby sevens match?
+
+According to the *2013-2014 HSBC World Sevens Series Statistical Report*, international rugby sevens matches averaged 5.2 to 5.4 tries per game from 2011-2014 (1189 matches). Kicking was decisive in less than %15 of those matches. The team with more tries won ~85% of all matches during that span. 
+
+Given the importance of try scoring in international rugby sevens, this report examines the affect of **scoring first** on match outcome. 
+
+We use scoring data from the 2014-2015 World Sevens Series to answer the following questions: 
+
+1. What is the probability that the first try-scoring team will win by tournament round?
+2. How do the probabilities change for converted tries?
+3. Does eliminating non-core teams change the overall findings?
+4. How does scoring first affect the victory margin in pool play versus comeback victories?
+
+***
+### Data and supporting functions
+The [raw data](https://raw.githubusercontent.com/jliberma/rugby7s/master/01_first_blood/ws72014_poss_5.csv) and supporting functions used in this report are available from [Github](https://raw.githubusercontent.com/jliberma/rugby7s/master/01_first_blood/ws72014_poss_5.csv). 
+
+```{r, message=FALSE}
+library(dplyr)
+library(devtools)
+source_url("https://raw.githubusercontent.com/jliberma/rugby7s/master/func/match_func.R")
+source_url("https://raw.githubusercontent.com/jliberma/rugby7s/master/func/poss_func.R")
+```
+
+
+The raw data used in this report were compiled by notational analysis of the first five tournaments of the 2014-2015 HSBC World Sevens Series. Scoring data were verified at [http://www.worldrugby.org/sevens-series/](http://www.worldrugby.org/sevens-series/).
+
+***
+### First try
+This function prints the probability that the front runner (team that scores the first try) will win the match by tournament round.
+
+
+```{r}
+# Calculate win % by round for first try scorers
+first_try_summary <- function() {
+  ft <- c()
+  for (i in c("all", "Pool", "Shield", "Bowl", "Plate", "Cup")) {
+    poss <- poss_filter(round=i)
+    score <- match_score(poss)
+    win <- match_winner(score)
+    trys <- first_try(poss)
+    goal <- first_goal(poss)
+    full <- cbind(score,win,trys,goal)
+    ft <-rbind(ft, c("round" = i, 
+                     "matches" = nrow(score),
+                     "try" = round(nrow(subset(full,full$win==full$trys))/nrow(full),2)))
+  }
+  return(ft)
+}
+
+ft <- first_try_summary()
+```
+
+
+Across all matches the front runner enjoyed a decisive advantage, winning **%72 overall**. Cup round (top 8) matches were closest. **Front runners won %65 of their matches in the Cup round**.
+
+
+```{r}
+print(ft)
+```
+
+***
+## First goal
+
+
+The previous function measured the likelihood that the first try scoring team would win regardless of whether the try was converted. (A converted try is referred to as a *goal*.)
+
+
+This function measures whether scoring a goal (as opposed to scoring an unconverted try) improves the front runner's odds of winning.
+
+
+```{r}
+# Calculate win % by round for first try scorers
+first_goal_summary <- function() {
+  fg <- c()
+  for (i in c("all", "Pool", "Shield", "Bowl", "Plate", "Cup")) {
+    poss <- poss_filter(round=i)
+    score <- match_score(poss)
+    win <- match_winner(score)
+    trys <- first_try(poss)
+    goal <- first_goal(poss)
+    full <- cbind(score,win,trys,goal)
+    fg <-rbind(fg, c("round" = i, 
+                     "matches" = nrow(score),
+                     "try" = round(nrow(subset(full,full$win==full$trys))/nrow(full),2), 
+                     "goal" = round(nrow(subset(full,full$win==full$goal))/nrow(subset(full,!is.na(full$goal))),2)))
+  }
+  return(fg)
+}
+
+fg <- first_goal_summary()
+```
+
+
+Goal scorers fared better across all knockout rounds and %5 better overall. **Odds improved by more than %10 for teams in the Shield, Plate, and Cup rounds**. The odds of winning for try and goal scorers were about equal in Pool play.
+
+
+```{r}
+print(fg)
+```
+
+***
+## First score (core only)
+
+
+Over the first five tournaments of the 2014-2105 season, non-core teams did not win a single match. The previous functions included both core and non-core teams in their analysis. This function eliminates all matches including a non-core team from the analysis to determine whether they skew the overall results. 
+
+
+```{r}
+# Calculate win % by round for first try scorers
+first_score_summary_core <- function() {
+  fsc <- c()
+  for (i in c("all", "Pool", "Shield", "Bowl", "Plate", "Cup")) {
+    # include core teams only
+    poss <- poss_filter(round=i, team="core")
+    score <- match_score(poss)
+    win <- match_winner(score)
+    trys <- first_try(poss)
+    goal <- first_goal(poss)
+    full <- cbind(score,win,trys,goal)
+    fsc <-rbind(fsc, c("round" = i, 
+                     "matches" = nrow(score),
+                     "try" = round(nrow(subset(full,full$win==full$trys))/nrow(full),2), 
+                     "goal" = round(nrow(subset(full,full$win==full$goal))/nrow(subset(full,!is.na(full$goal))),2)))
+  }
+  return(fsc)
+}
+
+fsc <- first_score_summary_core()
+```
+
+
+**Removing the non-core team has minimal impact on the previous findings**. In Pool play the first score advantage remains near %70. There is no impact to the top 8. 
+
+
+```{r]}
+print(fsc)
+```
+
+***
+### Average victory margin in pool play
+Teams are rewarded for outscoring their opposition in Pool play. Point and try differentials break ties and determine who advances to the Cup. This function plots the victory margin for front runners versus comeback winners in Pool play. It addresses whether scoring first not only predicts the *probability* but also the *quality* of winning in Pool play. *Victory margin* is calculated by subtracting the losing score from the winning score.
+
+
+```{r}
+plot_victory_margin <- function(round) {
+  poss <- poss_filter(round=round)
+  tm <- match_score(poss)
+  tm <- cbind(tm, win = match_winner(tm), first = first_try(poss))
+  tm1 <- tm %>% mutate(ws = ifelse(t2s>t1s, t2s, t1s)) %>% mutate(ls = ifelse(t2s>t1s, t1s, t2s))
+  x <- tm1 %>% filter(first==win) %>% transmute(diff = ws - ls) 
+  y <- tm1 %>% filter(first!=win) %>% transmute(diff = ws - ls)
+  avmfr <- round(mean(x[,1],2)) # avm for front runners in pool play
+  avmcb <- round(mean(y[,1],2)) # avm for come back winners in pool play
+  x <- hist(x$diff, breaks=24, plot=FALSE)
+  y <- hist(y$diff, breaks=24, plot=FALSE)
+  plot(x,col=rgb(0,0,1,1/4), xlim=c(0,60), main=paste(round, "Victory Margin"), xlab="Winning Point Differential" )
+  plot(y,col=rgb(1,0,0,1/4), xlim=c(0,60), add=T)
+  abline(v=avmfr, col="Blue", lwd=4)
+  abline(v=avmcb, col="Red", lwd=4)
+  legend("topright", c("Front runner","Comeback"), pch=15,col=c(rgb(0,0,1,1/3),rgb(1,0,0,1/3)))
+}
+```
+
+The histogram groups victories by point differential for both front runners and comeback winners. Except for 2-3 outliers, the comeback winners win by smaller margins than the front runners in Pool play. The comeback winners have a mean victory margin of 8 points (red horizontal line) while the front runners have a mean victory margin of 22 points (blue horizontal line) in Pool play.
+
+```{r}
+plot_victory_margin("Pool")
+```
+
+***
+### Summary of Key Findings
+
+1. First try scorers win ~70% of their matches.
+2. Converting the first try increases the probability of winning by 12% in the top 8 knockout rounds.
+3. Removing non-core teams does not greatly influence the results.
+4. First scorers in Pool play have an average margin of victory almost 3x higher than comeback winners.
+
+***
+### Analysis
+
+The first team to score will probably win an international sevens match. This holds true across all rounds and both with and without non-core teams. On average, the team that scores first wins 65-80% of their matches. Converting the first try can increase the probability of winning by up to 15%. There is a clear relationship between scoring first and winning.
+
+But how much does scoring the first try *contribute* to winning? Perhaps scoring first allows you to play conservatively while your opponent is forced to take risks. This phenomenon is widely observed in other sports. Near the end of the contest, the trailing competitor throws caution to the wind in hopes of scoring the improbable knockout. And in rugby sevens the entire match is near the end of the contest.
+
+On the other hand, it may be that scoring first confers no special advantage. The eventual winner scores first because they are the better team. Correlation is not causality. But the data also show that first scorers win *better* in Pool play. They are more likely to advance to the Cup round than comeback winners. So teams should strive to score first in Pool play even if they are confident of the eventual outcome.
+
+
+***
+Ideas for future work include:
+
+* Calculating confidence intervals for probabilities to account for small sample sizes
+* Extending the analysis to past and future events
+* Identifying other quantitative difference between front runners and comeback winners. (IE -- handling errors, time of possession, average starting field position.)
+* Drill down to results to quarter, semi, and finals by round.
