@@ -48,13 +48,15 @@ plot_victory_margin <- function(round) {
   y <- tm1 %>% filter(first!=win) %>% transmute(diff = ws - ls)
   avmfr <- round(mean(x[,1],2)) # avm for front runners in pool play
   avmcb <- round(mean(y[,1],2)) # avm for come back winners in pool play
-  x <- hist(x$diff, breaks=24)
-  y <- hist(y$diff, breaks=24)
+  x <- hist(x$diff, breaks=24, plot=FALSE)
+  y <- hist(y$diff, breaks=24, plot=FALSE)
+  png(filename="s7s_01_pvm.png", width=400, height=360, units="px")
   plot(x,col=rgb(0,0,1,1/4), xlim=c(0,60), main=paste(round, "Victory Margin"), xlab="Winning Point Differential" )
   plot(y,col=rgb(1,0,0,1/4), xlim=c(0,60), add=T)
   abline(v=avmfr, col="Blue", lwd=4)
   abline(v=avmcb, col="Red", lwd=4)
   legend("topright", c("Front runner","Comeback"), pch=15,col=c(rgb(0,0,1,1/3),rgb(1,0,0,1/3)))
+  dev.off()
 }
 
 first_score_summary()

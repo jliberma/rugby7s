@@ -2,7 +2,7 @@
 options(width = 80)
 ```
 ![](https://raw.githubusercontent.com/jliberma/rugby7s/master/graphics/s7-analysis.png)
-***
+<hr>
 ---
 #title: "Does scoring first affect the outcome of a rugby sevens match?"
 output: html_document
@@ -10,7 +10,7 @@ output: html_document
 
 # Does scoring first affect the outcome of a rugby sevens match?
 
-According to the *2013-2014 HSBC World Sevens Series Statistical Report*, international rugby sevens matches averaged 5.2 to 5.4 tries per game from 2011-2014 (1189 matches). Kicking was decisive in less than %15 of those matches. The team with more tries won ~85% of all matches during that span. 
+According to the [2013-2014 HSBC World Sevens Series Statistical Report](https://github.com/jliberma/rugby7s/raw/master/doc/2013-2014hsbcswsreport.pdf), international rugby sevens matches averaged 5.2 to 5.4 tries per game from 2011-2014 (1189 matches). Kicking was decisive in less than %15 of those matches. The team with more tries won ~85% of all matches during that span. 
 
 Given the importance of try scoring in international rugby sevens, this report examines the affect of **scoring first** on match outcome. 
 
@@ -80,7 +80,7 @@ This function measures whether scoring a goal (as opposed to scoring an unconver
 
 
 ```{r}
-# Calculate win % by round for first try scorers
+# Calculate win % by round for first goal scorers
 first_goal_summary <- function() {
   fg <- c()
   for (i in c("all", "Pool", "Shield", "Bowl", "Plate", "Cup")) {
@@ -117,7 +117,7 @@ Over the first five tournaments of the 2014-2105 season, non-core teams did not 
 
 
 ```{r}
-# Calculate win % by round for first try scorers
+# Calculate win % by round for first scorers among core teams only
 first_score_summary_core <- function() {
   fsc <- c()
   for (i in c("all", "Pool", "Shield", "Bowl", "Plate", "Cup")) {
@@ -153,6 +153,7 @@ Teams are rewarded for outscoring their opposition in Pool play. Point and try d
 
 
 ```{r}
+# plot average victory margin for front runners and comeback winners
 plot_victory_margin <- function(round) {
   poss <- poss_filter(round=round)
   tm <- match_score(poss)
