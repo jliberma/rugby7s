@@ -4,8 +4,10 @@ options(width = 80)
 ![](https://raw.githubusercontent.com/jliberma/rugby7s/master/graphics/s7-analysis.png)
 <hr>
 ---
-#title: "Does scoring first affect the outcome of a rugby sevens match?"
-output: html_document
+output:
+  html_document:
+    number_sections: yes
+    theme: readable
 ---
 
 # Does scoring first affect the outcome of a rugby sevens match?
