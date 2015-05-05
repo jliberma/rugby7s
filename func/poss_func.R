@@ -50,11 +50,11 @@ match_score <- function(poss) {
 poss_filter <- function(matches=1:225, team="all", event="all", round="all") { 
   
   # download the data file and save it to an object
-  if (!file.exists("ws72014_poss_5.csv")) {
-    download.file("https://raw.githubusercontent.com/jliberma/rugby7s/master/01_first_blood/ws72014_poss_5.csv", 
-                  destfile="ws72014_poss_5.csv", method="curl")
+  if (!file.exists("ws72014_poss_6.csv")) {
+    download.file("https://raw.githubusercontent.com/jliberma/rugby7s/master/data/ws72014_possession_stats.csv", 
+                  destfile="ws72014_poss_6.csv", method="curl")
   }
-  ws7s_poss <- read.csv("ws72014_poss_5.csv", header=TRUE, stringsAsFactors=FALSE)
+  ws7s_poss <- read.csv("ws72014_poss_6.csv", header=TRUE, stringsAsFactors=FALSE)
   
   # validate and subset by event
   if (event != "all") { 
