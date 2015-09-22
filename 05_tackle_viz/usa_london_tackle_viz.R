@@ -4,7 +4,9 @@ library(dplyr)
 library(tidyr)
 
 # import data
-team_tackles <- read.csv("Documents/rugby7s/05_tackle_viz/USA_tackle.csv", header=TRUE)
+download.file("https://raw.githubusercontent.com/jliberma/rugby7s/master/05_tackle_viz/USA_tackle.csv", 
+              destfile="USA_tackle.csv", method="curl")
+team_tackles <- read.csv("USA_tackle.csv", header=TRUE)
 str(team_tackles)
 
 # calculate tackle attempts per player by direction
