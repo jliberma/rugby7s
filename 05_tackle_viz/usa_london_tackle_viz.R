@@ -3,7 +3,7 @@
 library(dplyr)
 library(tidyr)
 
-# import data                       colClasses=c("numeric",rep("factor",9)))
+# import data
 team_tackles <- read.csv("Documents/rugby7s/05_tackle_viz/USA_tackle.csv", header=TRUE)
 str(team_tackles)
 
