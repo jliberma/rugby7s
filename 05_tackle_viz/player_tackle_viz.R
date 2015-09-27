@@ -18,7 +18,7 @@ colnames(player_tackles_made) <- paste(1:12, "tm", sep="")
 player_tackles <- round(player_tackles_made/player_tackle_attempts,2)
 colnames(player_tackles)<-c(1:12)
 rownames(player_tackles)<-names
-player_tackles[is.na(player_tackles)] <- 0
+#player_tackles[is.na(player_tackles)] <- 0
 team_tackles <- cbind(team,player_tackles)
 
 # calculate statistics overall team efficiency, 
@@ -30,10 +30,10 @@ player_eff <- round(apply(player_tackles_made, 1, sum)/apply(player_tackle_attem
 max_player <- paste(names[which.max(player_eff)], ":", max(player_eff))
 
 # create a background grid of efficiency circles
-locations <- matrix(c(2,4,6,8,2,4,6,8,2,4,6, 
-                      6,6,6,6,4,4,4,4,2,2,2), ncol=2, nrow=11)
+locations <- matrix(c(2,4,6,8,2,4,6,8,2,4,6, 6,6,6,6,4,4,4,4,2,2,2), ncol=2, nrow=11)
 circles <- matrix(1.0, ncol=12, nrow=11)
-stars(circles, radius=TRUE, draw.segments=FALSE, locations=locations,
+circles[is.nan(player_tackles[,1:12])] <- 0
+stars(circles[,c(3:1,12:4)], radius=TRUE, draw.segments=FALSE, locations=locations,
       labels=paste(numbers, names, player_eff), flip.labels=FALSE, scale=FALSE, len=.75,
       main = bquote("Directional Tackle" ~ epsilon ~ "by Player"))
 
@@ -43,6 +43,6 @@ stars(team_tackles[,c(6:4,15:7)], draw.segments=FALSE, scale=FALSE,
       len=.75, lwd=2, add=TRUE)
 
 # label with statistics
-text(3, 6.8, labels=bquote("Max dir" == .(max_dir)), cex=.8)
-text(5, 6.8, labels=bquote("Min dir" == .(min_dir)), cex=.8)
-text(7, 6.8, labels=bquote("Player" == .(max_player)), cex=.8)
+#text(3, 6.8, labels=bquote("Max dir" == .(max_dir)), cex=.8)
+#text(5, 6.8, labels=bquote("Min dir" == .(min_dir)), cex=.8)
+#text(7, 6.8, labels=bquote("Player" == .(max_player)), cex=.8)

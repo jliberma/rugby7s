@@ -1,0 +1,177 @@
+```{r set-options, echo=FALSE, cache=FALSE}
+options(width = 80)
+```
+![](https://raw.githubusercontent.com/jliberma/rugby7s/master/graphics/s7-analysis.png)
+<hr>
+---
+output:
+  pdf_document: default
+  html_document:
+    number_sections: yes
+    theme: readable
+---
+
+# Visualizing Directional Tackle Data
+
+This article describes an approach to visualizing open field tackle data. We use a clock face metaphor to describe the tackler's angle of approach. The ball carrier's running line is always 12 o'clock. The defender's *tackling angle* is the clock face number relative to the ball carrier's running line. 6 is directly behding the ball carrier. 12 is directly in front, and so on.
+
+Classifying tackles by direction reveals:
+
+1. Angle frequency
+2. Strong/weak angles
+3. Shoulder preference
+
+Coaches can analyze individual players, positions, or the entire team. Coaches can apply the results to practice planning, player selections, and game planning. Combining tackle visualization with descriptive statistics gives a basis for measuring improvement between competitions. 
+
+The remainder of the article uses example data and code to demonstrate tackle visualization by tacking angle. 
+
+***
+### Team tackle analysis
+In this section we perform some basic team tackle analysis. First we generate tackle data to simulate a contest. Next we plot tackles amde and missed in a traditional bar chart. Then we plot the same data in a polar coordinate chart to help visualize tackle angles.
+
+1. Load supporting libraries for displaying and manipulating the data.
+```{r, message=FALSE}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+```
+
+2. Simulate tackle data. This matrix contains the number of tackle attempts in each direction.
+```{r}
+set.seed(9940)
+T <- data.frame(dir = 1:12, att = sample(5:12, 12, replace=TRUE))
+head(T, 5)
+```
+
+3. Divide the attempts into made and missed tackles. Then calculate the _tackle efficiency_, which is the ratio between made and missed tackles. An efficiency of 1.0 means the team made every tackle from that direction.
+```{r}
+T <- T %>% 
+  mutate(made = att - ceiling(att*runif(12, 0, .3))) %>% 
+  mutate(miss = att - made) %>%
+  mutate(eff = round(made/att,2)) 
+
+T$eff[is.nan(T$eff)] <- NA
+```
+
+4. Calculate basic tackle statistics for all directions: total tackle attempts, total tackles made, team tackle efficiency.
+```{r}
+tmade <- sum(T$made)
+tatt <- sum(T$att)
+eff <- round(tmade/tatt,2)
+cat("Attempts:", tatt, "\nMade:", tmade, "\nEfficiency:", eff)
+```
+
+5. Put the data in _long_ format in order to plot it in a stacked bar chart. 
+```{r}
+Tl <- T %>% 
+  gather(res, count, made:miss) %>% 
+  select(dir, res, count)
+head(Tl, 5)
+```
+
+6. Visualize team tackle data in a stacked bar chart.
+``` {r}
+  ggplot(Tl, aes(factor(dir), count, fill=factor(res))) + 
+  geom_bar(width=.75, stat="identity") +
+  scale_fill_grey(name="Tackle\nResult", start=.5, end=.1) + 
+  xlab("Direction") +
+  ylab("Tackle Count") +
+  ggtitle("Tackle Attempts by Direction")
+```
+
+This chart plots made and missed tackles by direction. The total number of tackle attempts determines the bar height for each direction.
+# add substitution statistics for each height
+
+7. Visualize the same data in a consultant chart. 
+```{r}
+ggplot(Tl, aes(factor(dir), count, fill=factor(res))) + 
+  geom_bar(width=1, stat="identity", color="white") + coord_polar() + 
+  scale_fill_grey(name="Tackle\nResult", start=.5, end=.1) + 
+  theme(axis.ticks=element_blank(), 
+        axis.text.y=element_blank(),
+        axis.title.y=element_blank(),
+        axis.title.x=element_blank()) + 
+  ggtitle("Tackle Attempts by Direction")
+```
+
+<!-- add label with efficiency to each part of chart -->
+
+***
+
+### Player Analysis
+
+In this section we apply the same tackle visualization techniques to individual players.
+
+# Per Player tackling visualization
+
+1. Build a data frame of the team. Each player has a name, number, and position.
+```{r}
+names <- c("Sherwood", "Liberman", "Woodman", "Frieden", "Kivell", "Meyer", "Soto", "Steanson", "Hoetger", "Laibowitz", "Christie")
+numbers=c("33", "44", "16", "40", "20", "35", "56", "87", "70", "41", "87")
+position=c("LB", "DB", "DB", "DL", "LB", "DB", "LB", "LB", "DL", "DL", "DL")
+team <- data.frame("name"=names, "number"=numbers, "position"=position)
+team
+```
+
+2. Simulate tackles.
+```{r}
+player_tackle_attempts <- matrix(sample(0:9, 132, replace=TRUE), ncol=12, nrow=11)
+player_tackles_made <- 
+  ceiling(player_tackle_attempts-player_tackle_attempts*runif(length(player_tackle_attempts),0,.6))
+```
+
+3. Clean the tackle data: add column/row names and replace NAs with 0s for tackles made.
+```{r}
+player_tackles_made[is.na(player_tackles_made)] <- 0
+colnames(player_tackle_attempts) <- paste(1:12, "ta", sep="")
+colnames(player_tackles_made) <- paste(1:12, "tm", sep="")
+```
+
+3. Create a matrix of attempted/made tackles by direction.
+```{r}
+player_tackles <- round(player_tackles_made/player_tackle_attempts,2)
+colnames(player_tackles)<-c(1:12)
+rownames(player_tackles)<-names
+team_tackles <- cbind(team,player_tackles)
+head(team_tackles)
+```
+
+4. Calculate statistics overall team efficiency, min/max directional tackling, and player efficiency.
+```{r}
+dir_eff <- round(apply(player_tackles_made, 2, sum)/apply(player_tackle_attempts, 2, sum),2)
+max_dir <- paste(which.max(dir_eff), "(", max(dir_eff), ")")
+min_dir <- paste(which.min(dir_eff), "(", min(dir_eff), ")")
+player_eff <- round(apply(player_tackles_made, 1, sum)/apply(player_tackle_attempts, 1, sum),2)
+max_player <- paste(names[which.max(player_eff)], ":", max(player_eff))
+```
+
+5. Create a background grid of efficiency circles.
+```{r}
+locations <- matrix(c(2,4,6,8,2,4,6,8,2,4,6,6,6,6,6,4,4,4,4,2,2,2), ncol=2, nrow=11)
+circles <- matrix(1.0, ncol=12, nrow=11)
+circles[is.nan(player_tackles[,1:12])] <- 0
+```
+
+6. Plot directional player tackle efficiency. 
+```{r}
+stars(circles, radius=TRUE, draw.segments=FALSE, locations=locations,
+      labels=paste(numbers, names, player_eff), flip.labels=FALSE, scale=FALSE, len=.75,
+      main = bquote("Directional Tackle" ~ epsilon ~ "by Player"))
+
+stars(team_tackles[,c(6:4,15:7)], draw.segments=FALSE, scale=FALSE, 
+      radius=TRUE, key.loc=c(8,2), labels=NULL, locations=locations,
+      len=.75, lwd=2, add=TRUE, frame.plot=TRUE)
+```
+
+Each player has a separate radio chart. The interior black lines represent the tackle completion percentage in each direction. When the interior black line completely covers the exterior gray line the player made 100% of his tackles in that direction. Empty sections in the exterior gray circles mean the player did not have any tackle attempts in that direction. Hoetger, for example, completed 100% of his tackle attempts from directions 12, 9, 8, and 3. He did not have any attempts from direction 5. His lowest percentage directions were 7, 3, and 2. Unlike the team tackle graph, this graph does not indicate the number of tackle attempts in any direction, only the completion percentage.
+
+***
+### Key Findings
+
+
+
+
+
+***
+Ideas for future work include:
+
