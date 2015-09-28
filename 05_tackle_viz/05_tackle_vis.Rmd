@@ -5,21 +5,23 @@ options(width = 80)
 <hr>
 ---
 output:
-  pdf_document: default
   html_document:
     number_sections: yes
     theme: readable
+  pdf_document: default
 ---
 
 # Visualizing Directional Tackle Data
 
-This article describes an approach to visualizing tackle data. We use a clock face metaphor to categorize the tackler's angle of approach. The ball carrier's running line is always 12 o'clock. The defender's *tracking angle* is the clock face number corresponding to the tackler's angle of approach relative to the ball carrier's running line. 6 is directly behding the ball carrier. 12 is directly in front, and so on.
+[Ashley Evert](https://www.linkedin.com/pub/ashley-evert/ab/549/20b)'s 2006 [thesis](https://github.com/jliberma/rugby7s/raw/master/doc/Evert_thesis_full_2006.pdf) found that ball carriers had a distinct advantage over defenders forced to tackle with their **non-dominant shoulder**. Evert's premise was that rugby players are predominantly stronger with their right shoulders compared to their left. This premise was supported by his analysis of **try scoring origination data** from the 2003-2005 Super 12 Rugby competition. Per Evert's analysis, a tackler's _direction of approach_ is an important predictor of tackle success.  
 
-We use example data and code to demonstrate tackle visualization by tracking angle. First team tackle data is considered. Then player data.
+This article describes an approach to visualizing directional tackle data. We use a **clock face** metaphor to categorize the tackler's angle of approach. The ball carrier's running line is always 12 o'clock. The defender's **tracking angle** is the clock face number corresponding to the tackler's angle of approach relative to the ball carrier's running line. 6 is directly behind the ball carrier. 12 is directly in front, and so on.
+
+In this article we use example data and code to demonstrate tackle visualization by tracking angle. 
 
 ***
-### Visualizing team tackles
-In this section we analyze team directional tackle data. First we generate tackle data to simulate a contest. Next we plot made and missed tackles in a bar chart. Then we plot the same data in a polar coordinate chart to visualize tackle directions.
+### Visualize team tackles
+We begin by visualizing team directional tackle data. First we generate tackle data to simulate a contest. Next we plot made and missed tackles in a bar chart. Then we plot the same data in a polar coordinate chart that visualizes tracking angles.
 
 1. Load supporting libraries for displaying and manipulating the data.
 ```{r, message=FALSE}
@@ -35,7 +37,7 @@ T <- data.frame(dir = 1:12, att = sample(5:12, 12, replace=TRUE))
 head(T, 5)
 ```
 
-3. Divide the attempts into made and missed tackles. Then calculate the _tackle efficiency_ for each direction. Tackle efficiency is the ratio between made and missed tackles. An efficiency of 1.0 means the team made every tackle from that direction.
+3. Divide the attempts into made and missed tackles. Then calculate the **tackle efficiency** for each direction. _Tackle efficiency_ is the ratio between made and missed tackles. An efficiency of 1.0 means the team made every tackle from that direction.
 ```{r}
 T <- T %>% 
   mutate(made = att - ceiling(att*runif(12, 0, .3))) %>% 
@@ -58,7 +60,6 @@ cat("Attempts:", tatt, "\nMade:", tmade, "\nEfficiency:", eff)
 Tl <- T %>% 
   gather(res, count, made:miss) %>% 
   select(dir, res, count)
-head(Tl, 5)
 ```
 
 6. Visualize team tackle data in a stacked bar chart.
@@ -73,7 +74,7 @@ head(Tl, 5)
 
 This chart plots made and missed tackles by direction. The number of tackle attempts in each direction determines bar height.
 
-7. Visualize the same data in a polar coordinate chart. This chart maps the frequency of tackles made and missed to the defender's tracking angle.
+7. Visualize the same data in a polar coordinate chart. This chart visually maps the frequency of tackles made and missed to the defender's tracking angle.
 ```{r}
 ggplot(Tl, aes(factor(dir), count, fill=factor(res))) + 
   geom_bar(width=1, stat="identity", color="white") + coord_polar() + 
@@ -85,11 +86,15 @@ ggplot(Tl, aes(factor(dir), count, fill=factor(res))) +
   ggtitle("Tackle Attempts by Direction")
 ```
 
-The polar coordinate chart and the bar chart show the same data. The polar coordinate chart makes it easier to visualize the directional tackle data. The tackle attempt frequency increases as we move from the center of the chart. The different colors represent the number of tackles made and missed in each direction.
+### Interpret results
+
+The polar coordinate and bar charts show the same data. While the latter accurately conveys the information, the former makes it easier to visualize the directional tackle data. Tackle attempt frequency increases as we move from the center of the chart. The different colors represent the number of tackles made and missed in each direction.
+
+The example data reveal that the majority team's tackle attempts -- and tackle completions -- were from behind. (dirs 8-5) The team had fewer frontal tackle attempts (dirs 11-1) and completed a lower percentage of them relative to the rear tackles. They were slightly more efficient with left shoulder tackles (dirs 11-7) than right (dirs 5-1). The greater proportion of rear tackle attempts with the left shoulder partially explains the left shoulder dominance. Rear tackles are easier to complete than frontal or lateral tackles.
 
 ***
 
-### Visualizing player tackles
+### Visualize player tackles
 
 In this section we apply the same tackle visualization techniques to individual players.
 
@@ -130,17 +135,28 @@ head(team_tackles)
 player_eff <- round(apply(player_tackles_made, 1, sum)/apply(player_tackle_attempts, 1, sum),2)
 ```
 
-4. Specify the location of the background grid prior to visualizing the tackle data.
+5. Calculate summary statistics for most efficiency player, and most/least efficient direction for the whole team.
+```{r}
+dir_eff <- round(apply(player_tackles_made, 2, sum)/apply(player_tackle_attempts, 2, sum),2)
+max_dir <- paste(which.max(dir_eff), "(", max(dir_eff), ")")
+min_dir <- paste(which.min(dir_eff), "(", min(dir_eff), ")")
+max_player <- paste(names[which.max(player_eff)], ":", max(player_eff))
+```
+
+Most efficient player: **`r max_player`**  
+Most efficiency direction (all players): **`r max_dir`**  
+Least efficient direction (all players): **`r min_dir`** 
+
+6. Specify the location of the background grid prior to visualizing the tackle data.
 ```{r}
 locations <- matrix(c(2,4,6,8,2,4,6,8,2,4,6,6,6,6,6,4,4,4,4,2,2,2), ncol=2, nrow=11)
 circles <- matrix(1.0, ncol=12, nrow=11)
 circles[is.nan(player_tackles[,1:12])] <- 0
-circles
 ```
 
 The spokes of the background circle represent all of the tackle attempts from that direction. No spoke is drawn for directions where no tackles were attempted.
 
-5. Plot directional player tackle efficiency on top of the background grid. The black spoke length represents the percentage of tackles made in each direction. 
+7. Plot directional player tackle efficiency on top of the background grid. The black spoke length represents the percentage of tackles made in each direction. 
 ```{r}
 stars(circles, radius=TRUE, draw.segments=FALSE, locations=locations,
       labels=paste(numbers, names, player_eff), flip.labels=FALSE, scale=FALSE, len=.75,
@@ -151,32 +167,30 @@ stars(team_tackles[,c(6:4,15:7)], draw.segments=FALSE, scale=FALSE,
       len=.75, lwd=2, add=TRUE, frame.plot=TRUE)
 ```
 
-Each chart represents a player. The black spokes plot tackle completion percentage. The gray spokes represent all attempts in each direction. The player made 100% of his tackles in the directions where the black spoke completely covers the gray spoke. Empty sections in the chart mean the player did not attempt any tackles in that direction. 
+### Interpret results
 
-Hoetger, for example, completed 100% of his tackle attempts from directions 12, 9, 8, and 3. He did not have any attempts from direction 5. His lowest percentage directions were 7, 3, and 2. 
+Each chart represents a player. The black spokes plot tackle completion percentage. The gray spokes represent all attempts in each direction. The player made 100% of his tackles in the directions where the black spoke completely covers the gray spoke. Missing spokes mean the player did not attempt any tackles in that direction. 
 
-6. Calculate summary statistics for most efficienct player, and most/least efficient direction for the whole team.
-```{r}
-dir_eff <- round(apply(player_tackles_made, 2, sum)/apply(player_tackle_attempts, 2, sum),2)
-max_dir <- paste(which.max(dir_eff), "(", max(dir_eff), ")")
-min_dir <- paste(which.min(dir_eff), "(", min(dir_eff), ")")
-max_player <- paste(names[which.max(player_eff)], ":", max(player_eff))
-```
+**Hoetger**, for example, completed most of his frontal tackle attempts. He struggled to complete tackles when chasing the ball carrier from behind. (dirs 4-8) This is a typical tackle profile for a defensive lineman in football.
 
-Most efficient player: `r max_player`  
-Most efficienct direction (all players): `r max_dir`  
-Least efficient direction (all players): `r min_dir`  
+**Soto** completed the majority of his tackle attempts in every direction. His tackle profile is almost ideal.
+
+**Christie's** profile is typical of a right shoulder dominant tackler. Many excellent tacklers show shoulder dominance. They are adept at using their tracking angle to force ball carriers to their dominant shoulder. **Laibowitz** also shows right shoulder preference.
+
+**Liberman's** profile could indicate a left shoulder dominant tackle forced to attempt right shoulder tackles by positioning or footwork.  
 
 ***
 ### Discussion
 
-This article demonstrates how to quantify and visualize tackle directional tackle data from rugby or American football. Coaches can analyze individual players, positions, or the entire team, and apply the results to practice planning, player selections, and game planning.
+This article demonstrates how to quantify and visualize directional tackle data from rugby or American football. Coaches can analyze individual players, positions, or the entire team, and apply the results to practice plans, player selections, and game plans.
 
 Classifying tackles by direction reveals:
 
-1. Angle frequency
+1. Tacking angle frequency
 2. Strong/weak angles
-3. Shoulder preference
+3. Shoulder dominance
+4. Areas for improvement
 
-We use a polar coordinate plot to visualize tackle attempts and completions by direction. The individual player plots visualize tackle efficiency in each direction. However, the player graph can be used to summarize team tackle efficiency, and the team graph can be used to quantify tackle attempts for individual players.
+We used a polar coordinate plot to visualize team tackle attempts and completions by direction. The individual player plots visualize tackle efficiency in each direction. However, the player graph can be used to summarize team tackle efficiency, and the team graph can be used to quantify tackle attempts for individual players. Taken together, these visualization techniques and the accompanying clock face metaphor provide an intuitive framework for analyzing tackle data.
 
+One direction for future work is applying this visualization technique to recorded (rather than simulated) tackle data from actual competitions.
