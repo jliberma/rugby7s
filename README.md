@@ -1,9 +1,11 @@
 ## Rugby Sevens Repository
 
-This is a repository for rugby sevens data analysis. It includes data sets and analysis programs for World Rugby international sevens series events.
+This repository contains original data sets, scripts, and programs for analyzing rugby 7s performance.
 
-* rwc2013_possession_stats.csv 14.12.23 Possession stats from R7WC 2013
-* ws72014_possession_stats.csv 14.12.23 Possession stats from Gold Coast 7s 2014
-* ws72014_set_stats.csv 14.12.23 Set piece statistics from Gold Coast 7s 2014
+The *data* directory includes the following original data sets:
 
-Please contact me with any questions: jliberman@utexas.edu
+* Complete [possession statistics](data/rwc2013_possession_stats.csv) from the 2013 Rugby 7s World Cup.
+* Complete [possession statistics](data/ws72014_possession_stats.csv) from the 2014-2015 World Sevens Series.
+* Complete [set piece data](data/ws72014_set_stats.csv) from 2014-2015 World Sevens Series.
+
+Please report omissions and mistakes to *<jliberman@utexas.edu>*
