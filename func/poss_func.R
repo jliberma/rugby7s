@@ -50,7 +50,7 @@ match_score <- function(poss) {
 poss_filter <- function(matches=1:405, team="all", event="all", round="all") { 
   
   # download the data file and save it to an object
-  if (!file.exists("ws72014_poss_8.csv")) {
+  if (!file.exists("ws72014_poss.csv")) {
     download.file("https://raw.githubusercontent.com/jliberma/rugby7s/master/data/ws72014_possession_stats.csv", 
                   destfile="ws72014_poss.csv", method="curl")
   }
