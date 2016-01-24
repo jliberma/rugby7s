@@ -15,6 +15,6 @@ avg_victory_margin <- function(match_scores) {
 match_winner <- function(match_scores) {   
   # who won each match?
   match_scores %>% 
-    transmute(win = ifelse(t1s > t2s, paste(team1), ifelse(t2s > t1s, paste(team2), NA)))
-
+    transmute(win = ifelse(t1s > t2s, paste(team1), 
+                           ifelse(t2s > t1s, paste(team2), NA)))
 }

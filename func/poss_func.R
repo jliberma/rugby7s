@@ -25,6 +25,30 @@ first_try <- function(poss) {
          function(x) paste(x[min(grep("TRY|PT", x$LOST)),]$TEAM))  
 }
 
+# returns a wide data frame of match scores and possessions
+match_score_poss <- function(poss) {
+  
+  # calculate per team points and possessions
+  poss <- poss %>% select(match=SERIES.MATCH, 
+                                     team=TEAM, 
+                                     opp=OPP, 
+                                     lost=LOST, 
+                                     note=LOST.NOTE) %>%
+    mutate(score = ifelse(grepl("converted", note),7,
+                          ifelse(grepl("TRY|PT", lost),5,
+                                 ifelse(grepl("PG|DG", lost),3,0))
+    )) %>% 
+    group_by(match, team) %>%
+    summarise(count=n(), points = as.integer(sum(score)))
+  
+  # reshape data to wide format
+  poss <- reshape(transform(poss, i = 1:2),
+                        idvar = "match", timevar = "i", direction = "wide")
+  rownames(poss) <- 1:nrow(poss)
+  return(poss)
+}
+
+
 # returns a data frame of match scores
 match_score <- function(poss) { 
   
