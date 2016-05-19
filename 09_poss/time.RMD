@@ -1,0 +1,73 @@
+```{r set-options, echo=FALSE, cache=FALSE}
+options(width = 80)
+```
+
+![](/Users/jacobliberman/rugby7s/graphics/s7-analysis.png)
+<hr>
+---
+output:
+  pdf_document: default
+  html_document:
+    number_sections: yes
+    theme: readable
+---
+# Time of Possession in Rugby 7s
+
+This paragraph introduces the issues.
+- Everyone believes ball possession is important for winning rugby 7s matches
+- Look at the average time of possession for 2014-2015 World Sevens series
+-- the top two teams had below average time of possession
+-- the top team had the lowest time of possession
+-- the 7th place finisher had one of the highest time of possession averages
+- averages are difficult to interpret
+- what is the relationship between time of possession and winning in rugby 7s?
+
+![](/Users/jacobliberman/rugby7s/Stats/scripts/7s_poss_avg.png)
+
+First look at all matches. We might expect to see a relationship between points scored and time of possession.
+However, we don't see a strong relationship.
+Graph divided into four sections. All four sections are about the same size. Many teams had a lot of possession but could not score. Others had little possession but scored a lot.
+<hr>
+## Time of possession -- all matches
+
+Relationship between time of possession and scoring points. Plot time of possession and points scored for every team in every match form the series. 405 matches so 810 data points.
+
+On the X axis is the time of possession in seconds. On the Y axis is the number of points scored in that match.
+
+![](/Users/jacobliberman/rugby7s/Stats/scripts/7s_poss_scoring.png)
+
+A relationship between time of possession and scoring would mean that the graph would have a general shape with points ranging from lower left hand corner to upper right hand corner. However that is not what we see. The points are spread roughly evenly across all 4 qudrants on the graph. 
+
+Above average time of possession does not mean you wills core above average points -- or any points at all. And many of the highest scoring teams had below average time of possession.
+
+<hr>
+## Possession and scoring
+
+Scoring is different than winning. After all, you don't need to score a lot of points if your opponent doesn't score any. So possession may not result in points, but it might deprive your opponent of scoring opportunities. The best offense is a good defense.
+
+### All teams
+![](/Users/jacobliberman/rugby7s/Stats/scripts/7s_poss_diff_scoring_all.png)
+<hr>
+### Core teams
+![](/Users/jacobliberman/rugby7s/Stats/scripts/7s_poss_diff_scoring_core.png)
+<hr>
+## Discussion
+
+Time of possession reflects a style of play. Teams can be effective without the ball in hand. This is what we see in other sports. Basketball run and gun systems push the tempo. Ball hawking American football teams that score off turnovers or special teams plays can win without the ball. Therefore, do not force your team to play a possession oriented attack.
+
+The possession statistic only measures ball in play. If we look at bal out of play possession, the numbers may look different. It is possible to control the tempo of a 7s team by taking the maximum time to kick conversions, restart play, kicking for touch and running a lineout play to control the clock. The losing team will push quickly to get the ball back in play. An important area for future study is to measure dead ball possession.
+
+1. Some of the most successful teams do not dominate time of possession
+2. Small difference between top time of possession and least. (range)
+3. Averages mask what occurs in the individual matches -- but if we look at all matches, we don't see a strong relationship between time of possession and scoring.
+4. However, when we look at time of possession and point differential, we see that the teams with a possession advantage only win a little better than half the time.
+5. When non-core teams are removed, the results are even closer to 50/50 probability.
+6. Therefore there is not very much evidence that time of possession helps a team win as a general rule.
+
+## Summary
+
+1. Time of possession does is not related to scoring or winning
+2. The time of possession differences between the most successful teams and the least are small.
+3. Teams with a time of possession advantage only win about 50% of the time.
+4. Therefore, time of possession is a better indictator of a style of play than 7s dominance.
+5. Because time of possession does not measure dead bsll possession, yet the clock continues to run during a dead ball, it is difficult to see whether total time of possession is a more meaningful statisic.
