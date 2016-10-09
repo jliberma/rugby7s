@@ -13,17 +13,15 @@ output:
 ---
 # Time of Possession in Rugby 7s
 
-Ball possession is often cited as one of the most important factors for winning rugby 7s. Kicking away possession to improve field position is a common rugby 15s tactic rarely seen in 7s. New Zealand coaching legend Gordon Tietjens summarized this attitude toward kicking when he famously said "If you want to kick then do karate." Its hard to imagine a 15s coach saying the same thing. In sevens ball possession is king. 
+Ball possession is king in rugby sevens. Common sevens techniques such as the pull out and pocket pass intentionally lose ground in order to avoid tackle situations, as every tackle is a contest for possession. These techniques are rarely seen in rugby 15s. Conversely, tactitcally kicking away possession in order to improve field position is a common rugby 15s tactic rarely seen in sevens. New Zealand coaching legend Gordon Tietjens best summarized the prevailing sevens attitude toward kicking when he famously said "If you want to kick then do karate." Its hard to imagine a 15s coach saying the same thing. Ball possession -- or more commonly starving the opponent of possession -- is often cited as the most important factor for winning rugby sevens matches. However recent possession statistics challenge the conventional wisdom about ball possession. Figure 1 plots average time of possession for all core teams during the 2014-2015 World Sevens Series by order of finish.
 
-However recent possession statistics challenge the conventional wisdom about ball possession. Figure 1 plots average time of possession for all core teams during the 2014-2015 World Sevens Series. The teams are listed in order of finish from left to right. The horizontal dashed line marks the overall series average. On emight assume that the highest finishers also dominated average time of possesion.
+![](/Users/jacobliberman/rugby7s/09_poss/7s_poss_avg.png)
 
-![](/Users/jacobliberman/rugby7s/Stats/scripts/7s_poss_avg.png)   
-
-The overall series average was XYZ ... about three minutes. New Zealand (NZL) and Scotland (SCO) had the highest averages but finished third and seventh on the overall standings. Fiji (FIJ) and South Africa (RSA) -- the top two series finishers -- had less time of possession than the series average. FIJ finished first overall but had the lowest average of all core teams. 
+The horizontal dashed line marks the overall series average. One might assume that the highest finishers also dominated average time of possesion. The overall series average was XYZ ... about three minutes. New Zealand (NZL) and Scotland (SCO) had the highest averages but finished third and seventh on the overall standings. Fiji (FIJ) and South Africa (RSA) -- the top two series finishers -- had less time of possession than the series average. FIJ finished first overall but had the lowest average of all core teams.
 
 Based on this data there is no obvious relationship between average time of possession and winning. Some of the high finishers had less possession than the series average. Some of the low finishers had more.
 
-This raises the question -- is ball possession an important factor for winning in rugby 7s? 
+This raises the question -- is ball possession an important factor for winning in rugby 7s?
 
 The remainder of this post examines the relationship between winning and possession in rugby sevens using match statistics from the 2014-2015 World Rugby Sevens Series.
 
