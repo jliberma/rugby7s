@@ -76,8 +76,10 @@ plt.xlim(0,400)
 # add mean scoring/time of possession lines to the plot
 mt = np.mean(t)
 mp = np.mean(p)
+tmax = np.max(p)
 plt.plot([mt,mt],plt.gca().get_ylim(), linestyle="--")
 plt.plot(plt.gca().get_xlim(),[mp,mp], linestyle="--")
+print('mean time: %s, mean points: %s, max_points: %s' % (round(mt,0), round(mp,0), round(tmax,0)))
 
 # label the graph
 plt.ylabel("Points")
