@@ -11,13 +11,23 @@ output:
     number_sections: yes
     theme: readable
 ---
-# Time of Possession in Rugby 7s
+# "If You Want to Kick then Do Karate!"
 
-Ball possession is king in rugby sevens. Common sevens techniques such as the pull out and pocket pass intentionally lose ground in order to avoid tackle situations, as every tackle is a contest for possession. These techniques are rarely seen in rugby 15s. Conversely, tactitcally kicking away possession in order to improve field position is a common rugby 15s tactic rarely seen in sevens. New Zealand coaching legend Gordon Tietjens best summarized the prevailing sevens attitude toward kicking when he famously said "If you want to kick then do karate." Its hard to imagine a 15s coach saying the same thing. Ball possession -- or more commonly starving the opponent of possession -- is often cited as the most important factor for winning rugby sevens matches. However recent possession statistics challenge the conventional wisdom about ball possession. Figure 1 plots average time of possession for all core teams during the 2014-2015 World Sevens Series by order of finish.
+Ball possession is king in rugby sevens. Tactically kicking away possession in order to improve field position is a common rugby 15s tactic rarely seen in sevens. Gordon Tietjens summarized the prevailing attitude toward kicking in rugby sevens when he said "If you want to kick then do karate." It is hard to imagine a 15s coach saying the same thing. Sevens teams will often run the ball from deep inside their own 22, passing the ball through or around their own goal posts, rather than kick the ball away.
+
+Conversely, there are sevens techniques that intentionally lose ground -- such as the pull out and pocket pass -- in order to avoid a tackle and the subsequent contest for possession. These techniques are rarely seen in rugby 15s.
+
+The tactical differences between sevens and fifteens are based on the assumption that in sevens the best defense is a good offense, hence the reluctance to kick away possession and the willingness to sacrifice field position in order to hold onto the ball. Winning sevens teams often attribute their success starving their opponents of possession.
+
+However, recent possession statistics challenge the conventional wisdom about ball possession. Figure 1 plots average time of possession for all core teams during the 2014-2015 World Sevens Series. 
 
 ![](https://raw.githubusercontent.com/jliberma/rugby7s/master/graphics/s7s_09_7s_poss_avg.png)
 
-The horizontal dashed line marks the overall series average. One might assume that the highest finishers also dominated average time of possesion. The overall series average was XYZ ... about three minutes. New Zealand (NZL) and Scotland (SCO) had the highest averages but finished third and seventh on the overall standings. Fiji (FIJ) and South Africa (RSA) -- the top two series finishers -- had less time of possession than the series average. FIJ finished first overall but had the lowest average of all core teams.
+The teams are plotted from left to right on the X-axis by overall series order of finish. Fiji finished first overall. South Africa finished second, and so on. The Y-axis plots each teams' average time of possesion in seconds over the course of the series. 
+
+The horizontal dashed line marks the overall series average of
+
+If we subscribe to the conventional wisdom about ball possession in rugby sevens we would be safe to assume that the highest finishers also dominated time of possession. The overall series average was XYZ ... about three minutes. New Zealand (NZL) and Scotland (SCO) had the highest averages but finished third and seventh on the overall standings. Fiji (FIJ) and South Africa (RSA) -- the top two series finishers -- had less time of possession than the series average. FIJ finished first overall but had the lowest average of all core teams.
 
 Based on this data there is no obvious relationship between average time of possession and winning. Some of the high finishers had less possession than the series average. Some of the low finishers had more.
 
