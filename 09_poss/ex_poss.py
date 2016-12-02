@@ -47,9 +47,7 @@ top[['avg']] = top[['avg']].applymap(to_seconds)
 avg = round(top[['avg']].mean(),0)
 avg_min = round(top[['avg']].min(),0)
 avg_max = round(top[['avg']].max(),0)
-print('Mean: %s Min: %s Max: %s' %
-		(avg, avg_min, avg_max))
-# 17% performance difference between min (1st place) and max (3rd place)
+
 ax = top.plot(kind='bar')
 plt.plot(plt.gca().get_xlim(),[avg,avg], linestyle="--")
 #plt.legend((top,avg),('Non-core','Core'),loc='upper right',fontsize=8)
@@ -79,7 +77,6 @@ mp = np.mean(p)
 tmax = np.max(p)
 plt.plot([mt,mt],plt.gca().get_ylim(), linestyle="--")
 plt.plot(plt.gca().get_xlim(),[mp,mp], linestyle="--")
-print('mean time: %s, mean points: %s, max_points: %s' % (round(mt,0), round(mp,0), round(tmax,0)))
 
 # label the graph
 plt.ylabel("Points")
@@ -97,8 +94,6 @@ td = fp.T1t-fp.T2t
 # Calculate win frequency for teams with more possession
 total = (pd * td > 0).sum()
 pct = round(float(total.sum())/len(fp.index),2)
-print('Matches won by possession leaders (all teams): %s%% (%s/%s)' %
-    (int(100*pct), total, len(fp.index)))
 
 # plot differentials for matches with >= 1 non-core team
 noncore = ['BELGIUM','BRAZIL','RUSSIA','HONG KONG',
@@ -145,14 +140,10 @@ etframes.add_dot_dash_plot(plt.gca(), ys=ctp, xs=ctt)
 # core winning percentage for possession leader
 core_total = (ctt * ctp > 0).sum()
 c_pct = round(float(core_total.sum())/len(ct.index),2)
-print('Matches won by possession leaders (core teams): %s%% (%s/%s)' %
-    (int(100*c_pct), core_total, len(ct.index)))
 
 # non-core winning percentage for possession leader
 non_core_total = (nct * ncp > 0).sum()
 nc_pct = round(float(non_core_total.sum())/len(nc.index),2)
-print('Matches won by possession leaders (non-core): %s%% (%s/%s)' %
-    (int(100*nc_pct), non_core_total, len(nc.index)))
 
 # add best fit lines for both core and non-core
 plt.plot(td, ablineValues, 'b', c=".75")
