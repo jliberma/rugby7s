@@ -25,22 +25,20 @@ However, recent possession statistics challenge the conventional wisdom about ba
 
 The teams are plotted from left to right on the X-axis by overall series order of finish. Fiji finished first overall. South Africa finished second, and so on. The Y-axis plots each teams' average time of possesion in seconds over the course of the series. 
 
-The horizontal dashed line marks the overall series average of
+ 
 
-If we subscribe to the conventional wisdom about ball possession in rugby sevens we would be safe to assume that the highest finishers also dominated time of possession. The overall series average was XYZ ... about three minutes. New Zealand (NZL) and Scotland (SCO) had the highest averages but finished third and seventh on the overall standings. Fiji (FIJ) and South Africa (RSA) -- the top two series finishers -- had less time of possession than the series average. FIJ finished first overall but had the lowest average of all core teams.
+The average time of possession for the core teams was 213 seconds per match. This is marked by the horizontal dashed line. If we subscribe to the conventional wisdom about possession in sevens than we might assume that the highest series finishers held the ball longer than the series average. However, both of the top two finishers  -- Fiji (FIJ) and South Africa (RSA) -- had less time of possession than the series average. RSA held the ball for 3:22 per match. FIJ finished first overall yet had the lowest average time of possession among all core teams at 3:15 per match. New Zealand (NZL) and Scotland (SCO) had the highest average time of possession at 3:54 and 3:50 respectively, yet finished third and seventh on the overall standings.
 
-Based on this data there is no obvious relationship between average time of possession and winning. Some of the high finishers had less possession than the series average. Some of the low finishers had more.
+All teams finished within 30 seconds of the mean. The time average time difference between the team with the highest average and the lowest was only 39 seconds, a 17% difference.
 
-This raises the question -- is ball possession an important factor for winning in rugby 7s?
-
-The remainder of this post examines the relationship between winning and possession in rugby sevens using match statistics from the 2014-2015 World Rugby Sevens Series.
+These data points raise the question whether time of possession is an important factor for winning in rugby 7s. The remainder of this post examines the relationship between winning and possession in rugby sevens using match statistics from the 2014-2015 World Rugby Sevens Series.
 
 <hr>
 ## Possession and scoring
 
 One way possession might be related to winning is that more possession equals more points. After all, you need the ball to score trys.
 
-Figure 2 plots the relationship between time of possession on the x axis and scoring on the y. There were 405 total matches in the 2014-2015 series. The graph plots possession and scoring for every team in every match for 810 total data points. Some jitter was added to the individual data points to improve visibility.
+There were 405 total matches in the 2014-2015 series. Figure 2 shows the relationship between time of possession and scoring for both teams in all matches. There are 810 total data points. Please note that some jitter was added to the individual data points to improve visibility.
 
 The vertical red line shows the series average time of possession. The horizontal blue line shows the series scoring average. The lines divide the graph into four quadrants. Matches with above average possession and scoring are in the upper right qudrant. Matches with below average possession and scoring are in the lower left quadrant, and so on.
 
