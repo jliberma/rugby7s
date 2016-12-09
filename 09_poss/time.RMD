@@ -6,94 +6,87 @@ options(width = 80)
 <hr>
 ---
 output:
-  pdf_document: default
   html_document:
     number_sections: yes
     theme: readable
+  pdf_document: default
 ---
-# "If You Want to Kick then Do Karate!"
+# Analyzing Time of Possession in Rugby 7s
 
-Ball possession is king in rugby sevens. Tactically kicking away possession in order to improve field position is a common rugby 15s tactic rarely seen in sevens. Gordon Tietjens summarized the prevailing attitude toward kicking in rugby sevens when he said "If you want to kick then do karate." It is hard to imagine a 15s coach saying the same thing. Sevens teams will often run the ball from deep inside their own 22, passing the ball through or around their own goal posts, rather than kick the ball away.
+Ball possession is king in rugby sevens. Kicking away possession to improve field position is a common rugby 15s tactic rarely used in sevens. Gordon Tietjens summarized the sevens attitude toward kicking when he said "If you want to kick then do karate." It is hard to imagine a 15s coach saying the same thing. Sevens teams often attack from deep inside their own 22, electing to pass the ball around their own goal posts rather than kick.
 
-Conversely, there are sevens techniques that intentionally lose ground -- such as the pull out and pocket pass -- in order to avoid a tackle and the subsequent contest for possession. These techniques are rarely seen in rugby 15s.
+Conversely, there are sevens techniques that intentionally lose ground -- such as the pull out and pocket pass -- to avoid tackles and the ensuing contests for possession. These techniques are uncommon in 15s.
 
-The tactical differences between sevens and fifteens are based on the assumption that in sevens the best defense is a good offense, hence the reluctance to kick away possession and the willingness to sacrifice field position in order to hold onto the ball. Winning sevens teams often attribute their success starving their opponents of possession.
+Reluctance to kick away possession and willingness to go backwards in attack are based on the assumption that in sevens the best defense is a good offense. Tries are scored frequently. Winning sevens teams often attribute their success to starving their opponents of possession.
 
-However, recent possession statistics challenge the conventional wisdom about ball possession. Figure 1 plots average time of possession for all core teams during the 2014-2015 World Sevens Series. 
+However, recent possession statistics challenge the conventional wisdom about possession. Figure 1 plots the average per-match time of possession for all core teams during the 2014-2015 World Sevens Series. 
 
 ![](https://raw.githubusercontent.com/jliberma/rugby7s/master/graphics/s7s_09_7s_poss_avg.png)
 
-The teams are plotted from left to right on the X-axis by overall series order of finish. Fiji finished first overall. South Africa finished second, and so on. The Y-axis plots each teams' average time of possesion in seconds over the course of the series. 
+The teams are plotted from left to right by overall series order of finish. Fiji finished first overall. South Africa finished second, and so on. The Y-axis plots each team's per-match average time of possesion (in seconds) for the entire season. 
 
- 
+The average time of possession for all core teams was 3:33 (213 seconds) per match. This is marked by the horizontal dashed line in the graph. If we subscribe to the conventional wisdom about possession in sevens -- that ball possession is king and winning teams starve opponents of possession -- we would expect to see big differences in average time of possession, with the top series finishers holding the ball longer than the series average. 
 
-The average time of possession for the core teams was 213 seconds per match. This is marked by the horizontal dashed line. If we subscribe to the conventional wisdom about possession in sevens than we might assume that the highest series finishers held the ball longer than the series average. However, both of the top two finishers  -- Fiji (FIJ) and South Africa (RSA) -- had less time of possession than the series average. RSA held the ball for 3:22 per match. FIJ finished first overall yet had the lowest average time of possession among all core teams at 3:15 per match. New Zealand (NZL) and Scotland (SCO) had the highest average time of possession at 3:54 and 3:50 respectively, yet finished third and seventh on the overall standings.
+The data tell a different story. The core teams averaged roughly similar time of possession. All teams finished within 30 seconds of the mean. The average time difference between the team with the highest average and the lowest was only 39 seconds, a 17% difference.
 
-All teams finished within 30 seconds of the mean. The time average time difference between the team with the highest average and the lowest was only 39 seconds, a 17% difference.
+Drilling deeper, we see that New Zealand (NZL) and Scotland (SCO) had the highest average time of possession at 3:54 and 3:50 respectively, yet finished third and seventh in the overall standings. The top two series finishers  -- Fiji (FIJ) and South Africa (RSA) -- were among the lowest in average time of possession. RSA held the ball for 3:22 per match, while FIJ had the lowest average time among all core teams with 3:15 per match. 
 
-These data points raise the question whether time of possession is an important factor for winning in rugby 7s. The remainder of this post examines the relationship between winning and possession in rugby sevens using match statistics from the 2014-2015 World Rugby Sevens Series.
+Is time of possession an important factor for winning rugby 7s matches? Conventional wisdom says yes, but these data seem to tell a different story. This post examines the relationship between winning and possession in rugby sevens using match statistics from the 2014-2015 World Rugby Sevens Series.
 
 <hr>
 ## Possession and scoring
 
-One way possession might be related to winning is that more possession equals more points. After all, you need the ball to score trys.
+One way possession might be related to winning is that more possession equals more points. After all, you need the ball to score trys. This is the case in soccer. According to [fivethirtyeight](http://fivethirtyeight.com/features/what-analytics-can-teach-us-about-the-beautiful-game/), there was a .78 correlation coefficienct between time of possession and shots on goal in the English Premier League. In soccer shots on goal are hugely predictive of scoring rate which in turn predicts league standing. So in this section we explore whether more possession results in more scoring.
 
-There were 405 total matches in the 2014-2015 series. Figure 2 shows the relationship between time of possession and scoring for both teams in all matches. There are 810 total data points. Please note that some jitter was added to the individual data points to improve visibility.
+Figure 2 shows the relationship between time of possession during the 2014-2015 season. The graph contains 810 data points. Every point represents one team's time of possession and scoring in a match. Jitter was added to the data points in order to improve visibility. There were 405 total matches in the 2014-2015 season. 
 
-The vertical red line shows the series average time of possession. The horizontal blue line shows the series scoring average. The lines divide the graph into four quadrants. Matches with above average possession and scoring are in the upper right qudrant. Matches with below average possession and scoring are in the lower left quadrant, and so on.
+The graph helps us visualize the relationship between time of possession and scoring. The vertical red line shows the series average time of possession. The horizontal blue line shows the series scoring average. According to these averages a typical team possesses the ball for 208 seconds and scores 18 points. 
 
-According to these averages, in a typical match a team has scores about three trys in three minutes of possession.
+The series averages give us a strike rate of about one try per minute . But the relationship between possession and scoring is not so direct. There is substantial variation around the averages. More than 30 teams possessed tha ball for more than 3 minutes in a match yet failed to score more than 5 points. About 30 teams scored more than four trys in less than 3 minutes of possession. The most notable outlier was match eleven of the Gold Coast tournament where New Zealand won 59-0 versus Japan despite possessing the ball for only 108.
 
 ![](https://raw.githubusercontent.com/jliberma/rugby7s/master/graphics/s7s_09_7s_poss_scoring.png)
 
-A positive correlation between time of possession and scoring would mean they increase together. More possession would result in more scoring. On the graph the data points would trend upward as they move right.
-
-This graph does not show a positive correlation. Instead the points are spread nearly evenly across all 4 qudrants. Possession does not guarantee scoring. More than thirty teams had more than 3 minutes of ball possession yes failed to score more than 5 points. At the other extreme, New Zealand scored 59-0 versus Japan in match eleven of the Gold COast series with only 108 seconds of possession.
-
-Based on series averages alone we might say that in a typical match a team will have the ball for XYZ seconds and score XYZ points. However, there is a lot of variation around the mean. It is clear that more posssession does not guarantee more points -- or any points at all!
+The graph is also useful for visualizing the overall shape of the data. If scoring increased with time of possession we would expect our data points to trend upward as they move right. Instead we see a shape that looks a bit like a right triangle. For the most part the data tends upward and to the right, but we also have a bottom layer of teams with above average ball possession and few points to show for it. This graph shows that unlike the English Premier League more posssession does not translate to more points -- or any points at all!
 
 <hr>
 ## Possession and winning
 
-The previous section examined the relationship between possession and scoring.
-Scoring and winning are different things. Winning does not require scoring a lot of points. It only requires scoring more points than the opponent. And while possession does not necessarily aid in scoring points, it may aid in winning matches by depriving opponents of scoring opportunities. Starving the opponent of possession improves the likelihood of winning is another widely held conventional wisdom about sevens. Put another way, the best defense is a good offense.
+The previous section showed there is no direct relationship between possession and point scoring in rugby sevens. But scoring and winning are not the same thing. It is possible to dominate time of possession and score a lot of points yet still lose the match. It is also possible to grind out a win in a low scoring match while dominating possession. In either case the winner only needs to score more points than the opponent. So in this section we investigate the relationship between time of possession and scoring differential. Are teams with a possession advantage are more likely to win sevens matches?
 
-This section investigates the relationship between time of possession and scoring differential.
+Scoring differential is the difference between the number of points scored by both teams. For any match the team with the positive scoring differential won and the team with the negative scoring differential lost. For example, if the USA beat FIJ 28-10, the USA would have a positive scoring differential of +18. FIJ's scoring differentual would be -18. By plotting each match winner's time of possession against differential against their scoring differential we can visualize the relationship between possession and winning. 
 
-Scorign differential is the difference between the points scored by both teams. For any match the team with the positive scoring differential won. The team with a negative scoring differential lost. Plotting time of possession against scoring differential might visualize the relationship between possession and winning.
+### Time and Point Differential -- All teams
 
-### All teams
-
-Figure three shows the relationship between time of possession and scoring differential.
+Figure 3 shows the relationship between time of possession and scoring differential for all matches in the 2014-2015 World Sevens Series. Each point represents one of the 405 series matches. The pool play ties are plotted to a point differential of 0 on the x-axis.
 
 ![](https://raw.githubusercontent.com/jliberma/rugby7s/master/graphics/s7s_09_7s_poss_diff_scoring_all.png)
+
 <hr>
 
+The relatonship between possession and scoring differential is summarized by the solid gray line across the graph. This line visualizes the strength of the linear relationship between the two variables. What we see is a slight positive relationship between possession and scoring advantage, expressed by the r-value of 0.1786. Correlations less than .5 are generally classified as weak. 
 
-### Core teams
+Put another way, the team with more possession won 222 of 405 total series matches, or %55 of the time. Put another way, the odds of the team with more possession winning a sevens match were slightly better than a coin flip.
+
+### Time and Point Differential -- Core teams only
+
+Several non-core teams competed in the 2014-2015 World Sevens Series: Belgium, Brazil, Russia, Hong Kong, Zimbabwe, American Samoa, and Papua New Guinea. In theory World Sevens Series competition represents a tremendous development opportunity for the non-core sides. In reality, since the professionalization of sevens and its inclusion in the Olympics, the non-core teams results on the field have amounted to little more than sacrificial lambs. In 2014-2015 non-core teams lost 45 matches in 45 attempts. These teams were severely outmatched. Not only did the non-core teams lose every match, but not one of them won the possession differential either. 
+
+The match results featuring non-core teams diverge so strongly from the more evenly matched team results that they may introduce bias into the analysis. In this section we remove the non-core teams from our linear regression diagram.
+
 ![](https://raw.githubusercontent.com/jliberma/rugby7s/master/graphics/s7s_09_7s_poss_diff_scoring_core.png)
+
+In figure 4 the matches featuring non-core teams have been removed from the analysis. They are depicted by the lighter points in the diagram. All of these points are clustered in the positive possession and point differential ranges.
+
+If we remove the non-core teams from our analysis, the probability of the possession leader winning drops to %53 (191 of 360). The correlation coefficient also drops to 0.1497. The best fit linear regression line becomes (in red) flattens. This indicates a weakened relationship between positive point and time differentials when non-core teamsa removed from the analysis. By removing the non-core teams, figure 4 more accurately captures the advantage conferred by a positive possession differential among teams that are more evenly matched.
+
 <hr>
-
-
-## Discussion
-
-Time of possession reflects a style of play. Teams can be effective without the ball in hand. This is what we see in other sports. Basketball run and gun systems push the tempo. Ball hawking American football teams that score off turnovers or special teams plays can win without the ball. Therefore, do not force your team to play a possession oriented attack.
-
-The possession statistic only measures ball in play. If we look at bal out of play possession, the numbers may look different. It is possible to control the tempo of a 7s team by taking the maximum time to kick conversions, restart play, kicking for touch and running a lineout play to control the clock. The losing team will push quickly to get the ball back in play. An important area for future study is to measure dead ball possession.
-
-1. Some of the most successful teams do not dominate time of possession
-2. Small difference between top time of possession and least. (range)
-3. Averages mask what occurs in the individual matches -- but if we look at all matches, we don't see a strong relationship between time of possession and scoring.
-4. However, when we look at time of possession and point differential, we see that the teams with a possession advantage only win a little better than half the time.
-5. When non-core teams are removed, the results are even closer to 50/50 probability.
-6. Therefore there is not very much evidence that time of possession helps a team win as a general rule.
 
 ## Summary
 
-One of the problem with using averages is that they often do not depict the typical outcome.
+This analysis examined the relationship between time of possession, scoring, and winning in rugby sevens using data from the 2014-2015 World Sevens Series. What we found is that all core teams averaged about three minutes of possession per match over the course of the series. All teams were within 30 seconds of the series mean and the range between the top series average time of possession and the lowest was only %17. Some of the most successful sevens teams -- including series champion FIJ and series runner-up RSA, were among the lowest ranked teams in terms of average time of possession.  
 
-1. Time of possession does is not related to scoring or winning
-2. The time of possession differences between the most successful teams and the least are small.
-3. Teams with a time of possession advantage only win about 50% of the time.
-4. Therefore, time of possession is a better indictator of a style of play than 7s dominance.
-5. Because time of possession does not measure dead bsll possession, yet the clock continues to run during a dead ball, it is difficult to see whether total time of possession is a more meaningful statisic.
+On average a team enjoyed 208 seconds of possession and scored 18 points per match for a strike rate of about one try per minute of possession. However, these average values mask what occurs in individual matches. Many teams paired above average possession with below average scoring and vice versa. More possession did not translate to more points.
+
+Next we looked at the relationship between possession and winning. We plotted the winning team's point differential against their time of possession differential for each match. Teams with a possession advantage won %55 of all matches. But when non-core teams were removed from the model, the probability dropped to %53. These odds are slightly better than chance. Non-core teams did not enjoy a possession or scoring advantage in any World Series match.
+
+Based on this analysis there is no strong evidence that more possession results in higher scoring. And although core teams tended to dominate both possession and scoring against non-core teams, having the lion's share of possession does not confer a large advantage between teams that are more evenly matched. 
