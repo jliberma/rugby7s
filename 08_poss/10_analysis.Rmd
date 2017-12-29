@@ -306,25 +306,6 @@ Not surprisingly, winners had more scoring opportunities on average than the los
 
 The Winning Possession Margin is a useful statistic for considering the relationship between ball possession and victory.
 
-TODO:
- 1. percents to bar graph
- 2. add chart labels
- 3. summaries
- 4. separate old possession stats discussion to new
- 5. compare apples to apples -- per match possession advantages and likelihood of winning
- 6. compare to per match time of possession advantages and likelihood of winning
- 7. correlate poss advantage to order of finish?
- 8. if I separate articles, I don't have to compare them as much
- 9. add grouped bar graph
- 10. remove kernel density function or histogram
- 11. we need to look at possession, passes in individual matches
-
-
-# Sources of possession
-
-Where do the extra possessions come from?
-Compare possessions per half and reclaims
-
 ***
 # References
 
