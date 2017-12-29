@@ -5,8 +5,8 @@ library("gridExtra")
 source('~/rugby7s/func/poss_func.R')
 
 # TODO
-# Add ties to the analysis
-# Add match count to winning possession margin
+# Add legend to wpm graph
+# convert prob bar graph to stacked bar graph with prob label
 
 if (!file.exists("ws72014_poss.csv")) {
   download.file("https://raw.githubusercontent.com/jliberma/rugby7s/master/data/ws72014_possession_stats.csv", 
