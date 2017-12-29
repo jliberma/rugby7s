@@ -13,34 +13,43 @@ output:
 ---
 
 # Bones of the Game:
-## Possession as the Fundamental Unit of Rugby 7s Performance Analysis
+## Possession-based Performance Analysis for Rugby 7s
 
 ```{r, message=FALSE, echo=FALSE}
 library("dplyr")
 library("ggplot2")
+library("grid")
 library("gridExtra")
 source('~/rugby7s/func/poss_func.R')
 ```
 
-Many believe that __possession__ is the decisive factor in winning rugby sevens matches. [[1]](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3990890/) [[2]](http://www.rugbytoday.com/7s/essentials-sevens-coaching-tips) Finding statistics that connect possession to winning is surprisingly difficult. Possession statistics borrowed from 15s do not transfer well to sevens. An earlier study reported that pass completions and rucks indicate an _inability_ to score in rugby sevens. [[3]](http://www.rugby7.com/cm_genat.asp?L=E) When evenly matched teams play, the odds that the team with more time of possession will win is only %53 -- slightly better than chance. [[4]](https://starting7s.com/2016/12/11/analyzing-time-of-possession-in-7s/) Winning teams often complete less passes, retain fewer rucks, and hold the ball for less time than their opponents.  
+Analyzing rugby 7s performance is a difficult task. Game play can be fast paced and unstructured. The difference between winning or losing often seems to hinge on one bounce of the ball or a single moment of eye-popping individual brilliance. The performance analyst and coach are left with the difficult task of finding order in the apparent choas -- uncovering the key performance indicators underlying the spectacle.
 
-Recent series results support these studies. In the 2014-2015 HSBC Sevens Series, Japan and Brazil had passes per match and time of possession statistics at or above the series average. Both teams scored few points and rarely won. Scotland lead all core teams in pass completions, rucks won, and time of possession differential yet finished seventh overall. Fiji and South Africa held the ball and passed less than the series average en route to finishing first and second in the series overall. [[5]](https://github.com/jliberma/rugby7s/raw/master/doc/2014-2015_Sevens_report.pdf)
+Performance statistics borrowed from 15s do not transfer well to sevens. The most successful 7s teams often complete less passes, retain fewer rucks, and possess the ball for less time than their opponents. An analysis conducted by Starting 7s showed that An earlier study reported that pass completions and rucks indicate the _inability_ to score in rugby sevens. [[3]](http://www.rugby7.com/cm_genat.asp?L=E) 
 
-This post introduces the __individual possession__ as a fundamental unit of performance statistic that connects possession with winning in rugby 7s. An individual possession is a discrete scoring opportunity. It begins when a team takes ownership of the ball and ends when the team in possession either scores, turns the ball over to their opponent, or time expires. Individual possession -- and its corallaries __total possession count__ and __possession differential__ -- not only connect winning with possession, but also provide a simple framework for analyzing rugby 7s performance.  
+Recent series results support this idea. In the 2014-2015 World Rugby Sevens Series, Japan and Brazil were near the top in passes per match and at or above the series average in time of possession. Yet both teams scored few points and rarely won. Scotland lead all core teams in pass completions, rucks won, and time of possession differential yet finished seventh overall -- strictly in the middle of the pack. Fiji and South Africa had less time of possession and passed less than the series average en route to finishing first and second overall. 
 
-The remainder of this post uses a unique data set drawn from the 2014-2015 HSBC Sevens Series to describe 7s matches using possession count and establish the relationship between possession count and winning. It includes the source code and data necessary to reproduce the analysis. The post concludes with directions for future exploration.
+So the question remains unaswered. What statistic captures the importance of possession for rugby 7s?
+
+This article explores the relationship between possession and winning using data from the 2014-2015 World Rugby Sevens Series. It examines __total possession count__ and __possession differential__ as statistics that connect possession to winning in rugby sevens. It includes R code and source data to reproduce the analysis.
 
 ## Possession defined
 
-For the purposes of this study each possession corresponds to a **discrete scoring opportunity**. A possession begins when a team holds the ball following a restart or turnover. It continues through phases including the time the ball is both in and out of play. A possession ends when the team in possession scores, turns the ball over to their opponent, or time expires. 
+For the purposes of this study each possession should be thought of as a **continuous scoring opportunity**. It begins when a team holds the ball and ends when that team scores, turns the ball over to their opponent, or time expires. Stoppages due to penalties or infractions do not trigger new possessions unless the ball changes hands. It includes time that the ball is both in and out of play.
 
-For example, Team A wins a restart. They retain the ball through several phases. Eventually a tackler on Team B is penalized for not releasing the ball carrier. Team A elects to kick the penalty to touch. Team A wins the subsequent lineout and scores a try. By our definition all of this activity amounts to one possession. The stoppages due to penalties, set piece play, or infractions did not trigger a new possession because the ball did not change hands.
+For example, a team wins a restart and plays several phases. During the course of play their opponent is penalized for not releasing. The team kicks the penalty to touch, wins the subsequent lineout, and scores a try. All of this activity is a single possession.
 
-Continuing with this example, Team A reclaims the restart following their try. This begins their __second__ possession. A player from Team B poaches the ball during a tackle, ending Team A's second possession and beginning Team B's first. Possession alternates in this manner until points are scored or time expires in the half.
+The idea of counting possession this way is borrowed from American football, where possession count and turnover ratio are key performance indicators. This approach differs from how possessions are counted on the World Sevens Series. A new possession is counted every time the ball is put into play regardless of whether the ball changes hands. This would be analagous to counting every snap as a new possession in American football.
+
+Counting each continuous series of play as a single possession uncovers the relationship between possession and winning.
 
 ## Possessions per match
 
-This section of the analysis uses historical match data to describe the typical match in terms of ball possession. The data set is called __ws72014_possession_stats.csv__. The match data were collected through notational analysis of every rugby match in the 2014-2015 HSBC Sevens Series. Each row of the data set represents a unique possession. 
+This section describes the average match in terms of ball possession. How many possessions are typical in a sevens match and how much does possession vary around this number?
+
+1. Load supporting libraries and functions used to explore and graph the data into the R environment.
+
+2. Download the _ws72014_possession_stats.csv_ data set from github. These data were collected through notational analysis of every rugby match in the 2014-2015 World Sevens Series.
 
 ```{r, echo=FALSE}
 if (!file.exists("ws72014_poss.csv")) {
@@ -49,7 +58,11 @@ if (!file.exists("ws72014_poss.csv")) {
 }
 
 ws7s_poss <- read.csv("ws72014_poss.csv", header=TRUE, stringsAsFactors=FALSE)
+```
 
+3. Each row of the data set represents a unique possession. Display the first five rows of the data set.
+
+```{r}
 head(ws7s_poss,5)
 ```
 
@@ -62,16 +75,20 @@ analysis include:
 * TEAM: the team with possession
 * OPP: their opponent
 
-The analysis begins by counting the total number of possessions in each match. This is accomplished by counting the number of rows that contain each unique series match ID, 1-405. 
-
-```{r echo=FALSE}
+5. Count total possessions in each match with sapply() and save the result to _poss.per.match_.
+```{r}
 poss.per.match <- sapply(split(ws7s_poss,ws7s_poss$SERIES.MATCH), 
                          function(x) nrow(x))
+```
+
+6. _poss.per.match_ is the total possession count for each match including both teams. View the first ten entries in _poss.per.match_.
+
+```{r}
 head(poss.per.match,10)
 ```
-Match 1 had `r poss.per.match[1]` total possessions, match 2 had `r poss.per.match[2]`, and so on. Because the possession per match count is based on series match ID, and not team name, it represents the total number of possessions in each match including both teams.
+Match 1 had `r poss.per.match[1]` total possessions, match 2 had `r poss.per.match[2]`, and so on.
  
-Summarize possessions per match:
+7. Print summary statistics for _poss.per.match_ using the R summary() function.
 ```{r, echo=FALSE}
 summary(poss.per.match)
 ```
@@ -82,14 +99,6 @@ summary(poss.per.match)
 
 8. Visualize how possession counts were distributed across matches by plotting _poss.per.match_ as a cumulative density function. 
 
-```{r, echo=FALSE}
-cdf <- ggplot(as.data.frame(poss.per.match), 
-              aes(x=poss.per.match)) +
-  stat_ecdf(geom="smooth") + 
-  xlab("") + ylab("")
-cdf
-```
-
 The cumulative density function plots possessions per match on the X axis as a percentage of the total population on the Y axis. It shows that:
 
 * Approximately 50% of all matches had between `r quantile(poss.per.match)[2]` and `r quantile(poss.per.match)[4]` total possessions. 
@@ -99,12 +108,44 @@ The cumulative density function plots possessions per match on the X axis as a p
 9. Plot the same data in a histogram. The histogram helps visualize the data distribution and its central tendency around the mean.
 
 ```{r, echo=FALSE}
+# ppm without finals
+ws7s_poss_nofinals <- ws7s_poss %>%
+  filter(!MATCH==45)
+poss.per.match.nofinals <- sapply(split(ws7s_poss_nofinals,ws7s_poss_nofinals$SERIES.MATCH), 
+                                  function(x) nrow(x))
+# histogram of possessions per match
 ppm <- qplot(poss.per.match, binwidth=1) + 
-  geom_vline(x=median(poss.per.match)+.5, colour="red") + 
-  xlab("") + ylab("")
-ppm
-```
+  geom_vline(xintercept=median(poss.per.match)+.5, colour="red") +
+  theme(text = element_text(family = "Trebuchet MS", color="#666666")) +
+  theme(plot.title = element_text(face="bold", size=24, hjust=0)) +
+  xlab("Possessions") + ylab("Count")
 
+# cumulative distribution function of possessions per match
+cdf <- data.frame(x=c(poss.per.match,poss.per.match.nofinals),
+                  ggg=factor(rep(1:2, c(length(poss.per.match),
+                                        length(poss.per.match.nofinals)))))
+cdf_plot <- ggplot(cdf, aes(x, colour=ggg)) +
+  theme(legend.position = c(0.8, 0.3)) +
+  xlab("Possessions") + ylab("Probability") + 
+  stat_ecdf(geom="step") +
+  theme(text = element_text(family = "Trebuchet MS", color="#666666")) +
+  theme(plot.title = element_text(face="bold", size=24, hjust=0)) +
+  scale_y_continuous(position = "right") +
+  scale_colour_hue(name="Legend", labels=c('FINALS','NOFINALS'))
+
+# plot histogram and cdf side by side
+title1=textGrob("Possessions per match", gp=gpar(fontface="bold", 
+                                                 fontfamily="Trebuchet MS",
+                                                 fontsize=24, col="#666666"))
+caption1=textGrob("Source: http://starting7s.com", gp=gpar(fontsize=10,
+                                                           fontfamily="Trebuchet MS",
+                                                           col="#666666"))
+
+grid.arrange(ppm, cdf_plot, ncol=2, 
+             top = title1,
+             bottom = caption1
+             )
+```
 The X axis is the possession count per match. The Y axis is the number of matches at each possession count. The red line at ```r mean(poss.per.match)``` marks the series mean.
 
 * At first glance the histogram appears to have a bell shaped distribution symmetrical around the mean.
@@ -162,13 +203,17 @@ summary(wpm[,2])
 5. According to the summary statistics, match winner's with less possession than their opponents were rare. Visualize the wpm data to explore it further. 
 
 ```{r, echo=FALSE}
+# plot winning possession margin
 wpm1 <- ggplot(wpm, aes(x=match, y=wpm, fill=pos)) +
   geom_bar(stat="identity", position="identity") +
   geom_hline(yintercept=0, colour="grey") +
-  theme(axis.title=element_blank()) +
+  labs(title="Winning Possession Margin", subtitle="World Rugby Sevens Series 2014-2015", 
+       y="Possession Margin", x="", caption="Source: http://starting7s.com") +
+  theme(text = element_text(family = "Trebuchet MS", color="#666666")) +
+  theme(plot.title = element_text(face="bold", size=24, hjust=0)) +
   guides(fill=F) + 
   theme(axis.text.x = element_blank(), axis.ticks.x = element_blank())
-wpm1
+print(wpm1)
 ```
 
 Each bar on the X axis of this graph corresponds to a series match. The height of each bar on the Y axis represents winning possession margin. Blue bars denote that that the winner had more possessions than the loser. Red bars deonte that the loser had more possessions than the winner. 
@@ -199,8 +244,30 @@ for (i in 0:7)
 }
 ```
 
-# CREATE A VECTOR AND PLOT THIS IN A BAR CHART
+```{r, echo=FALSE}
+# calculate win probability by possession margin
+wpm2 <- wpm %>%
+  group_by(wpm) %>%
+  summarise(count=n())
+win_prob <- round(wpm2[wpm2$wpm>=0,]$count /
+                    sapply(split(wpm2,abs(wpm2$wpm)), 
+                           function(x) sum(x$count)),2)
+# create a data frame for ggplot
+df <- data.frame(cbind(names=c("4-7","3","2","1"),
+                       prob=win_prob[5:2]))
+np<-ggplot(data=df, aes(x=names, y=prob)) +
+  geom_bar(stat="identity", width=0.75, fill="steelblue") +
+  coord_flip() +
+  labs(title="Win Probability by Possession Advantage", subtitle="2014-2015 World Rugby Sevens Series", 
+       y="Win Probability", x="Possession Advantage", caption="Source: http://starting7s.com") +
+  theme(text = element_text(family = "Trebuchet MS", color="#666666")) +
+  theme(plot.title = element_text(face="bold", size=24, hjust=0))
+
+print(np)
+```
+
 2. Calculate the probability of winning at each positive possession margin.
+
 ```{r, echo=FALSE}
 for (i in 1:7)
 {
@@ -252,7 +319,6 @@ TODO:
  10. remove kernel density function or histogram
  11. we need to look at possession, passes in individual matches
 
-The idea of counting possession this way is borrowed from American football, where possession count and turnover ratio are key performance indicators. This differs from the approach taken by World Rugby statisticians. For World Rugby the possession count is incremented every time the ball is put in play regardless of whether the ball changes hands. Using our previous example, Team A would have had four possessions: winning the initial restart, the penalty kick, the lineout, and the reclaimed restart. Counting possession in this way would be analagous to counting every snap as a new possession in American football.
 
 # Sources of possession
 
@@ -262,45 +328,6 @@ Compare possessions per half and reclaims
 ***
 # References
 
-* [[1]](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3990890/) Performance Indicators Related to Points Scoring and Winning in International Rugby Sevens
-* [[2]](http://www.rugbytoday.com/7s/essentials-sevens-coaching-tips) Essentials of Sevens - Coaching Tips
-* [[3]](http://www.rugby7.com/cm_genat.asp?L=E) IRB SEVEN-A-SIDE COACHING MANUAL OUTCOME GOALS: ATTACK 
-* [[4]](https://starting7s.com/2016/12/11/analyzing-time-of-possession-in-7s/)Starting 7s: Analyzing Time of Possession in 7s
-* [[5]](https://github.com/jliberma/rugby7s/raw/master/doc/2014-2015_Sevens_report.pdf) 2014-2015 HSBC Sevens World Series Game Analysis Statistical Report
-
-1. perfect game - how do you know?
-  1a. score on every opportunity, prevent opponent from scoring
-  1b. possession as fundamental unit of performance analysis
-  1c. possession is a scoring opportunity
-  1d. scoring efficiency, opponent scoring efficiency
-2. analyzing possession -- typical match
-  2a. series average possession (mean, median, range, remove cup)
-  2b. series average scoring efficiency
-  2c. series average opponent scoring efficiency
-3. extra possession
-  video tracking possession
-  3a. possession differential (average 9,8)
-  3b. sources of extra possession (reclaim, 1st & last possession of the half)
-  3d. impact of extra possession (all matches by possession margin)
-  3e. probability of winning by possession margin
-8. efficiency
-  8a. defined 
-  8b. series numbers
-  8c. efficiency by team
-  8d. opponent scoring efficiency
-  8e. efficiency by field position
-9. points per possession
-  9a. not all scores are tries, not all tries are converted
-  9b. ppp - series
-  9c. ppp - team
-  9d. opp ppp
-10. summary
-  10a. new metrics: possession differential, efficiency, opponent efficiency, points per possession
-  10b. series numbers: avg pd, eff, etc
-  10c. the perfect match by the numbers
-  10d. performance targets: best team
-11. future
-  11a. unified metric
-  11b. using these stats to analyze performance
-  11c. using these stats to improve performance
-
+* [[1]](http://www.rugby7.com/cm_genat.asp?L=E) IRB SEVEN-A-SIDE COACHING MANUAL OUTCOME GOALS: ATTACK 
+* [[2]](http://www.rugbytoday.com/columns/hickie-essentials-7s-success-pt-1) Essentials of Sevens Success Part 1
+* [[3]](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3990890/) Performance Indicators Related to Points Scoring and Winning in International Rugby Sevens
