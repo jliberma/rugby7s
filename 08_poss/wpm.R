@@ -91,6 +91,7 @@ wpm <- all_scores %>%
 summary(wpm[,2])
 
 # plot winning possession margin
+# TODO: add a legend
 wpm1 <- ggplot(wpm, aes(x=match, y=wpm, fill=pos)) +
   geom_bar(stat="identity", position="identity") +
   geom_hline(yintercept=0, colour="grey") +
